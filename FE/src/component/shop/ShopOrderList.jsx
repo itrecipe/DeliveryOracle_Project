@@ -13,7 +13,7 @@ const ShopOrderList = ({ menu }) => {
         orderDetailsArray = JSON.parse(menu.order_details);
     } catch (e) {
         console.error("orderDetails가 유효한 JSON 배열이 아닙니다:", e);
-        // JSON 변환 실패 시, menu.orderDetails를 단일 문자열로 처리
+        // JSON 변환 실패시, menu.orderDetails를 단일 문자열로 처리
         orderDetailsArray = [menu.orderDetails];
     }
 
@@ -41,7 +41,6 @@ const ShopOrderList = ({ menu }) => {
                     menu.order_approval_status=2;
                     setSt(false)
                 }
-                
             }
              catch (e) {
                     console.log("연결실패", e);
@@ -60,13 +59,11 @@ const ShopOrderList = ({ menu }) => {
                     setrefuse(true)
                     menu.order_approval_status=5
                 }
-                
             }
              catch (e) {
                     console.log("연결실패", e);
             }
             }
-
     }
     //조리중
     const cook= async(e)=>{
@@ -80,13 +77,11 @@ const ShopOrderList = ({ menu }) => {
                     menu.order_approval_status=1;
                     setSt(true)
                 }
-                
             }
              catch (e) {
                     console.log("연결실패", e);
             }
             }
-
     }
 
     return (
@@ -97,11 +92,6 @@ const ShopOrderList = ({ menu }) => {
                 <Card.Text>
                     Price: {menu.total_price}
                 </Card.Text>
-                {/* <Button variant="primary" onClick={ondeliver}>
-                    {(st || menu.orderApprovalStatus !== 0 )? '배달중' : '배달'}
-                    </Button>
-                <Button variant="primary" onClick={refuse}> {(menu.orderApprovalStatus !== 0 )? '불가' : '거절'}</Button>
-             */}
             { menu.order_approval_status==0 && <div> 
                 <Button variant="primary" onClick={cook}>
                     조리하기</Button>

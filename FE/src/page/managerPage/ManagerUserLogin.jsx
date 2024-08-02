@@ -8,6 +8,7 @@ import { AdminFlagContext } from "../../flag/Flag.jsx";
 import { useCookies } from 'react-cookie';
 import Header from '../../component/main/Header.jsx';
 import Footer from '../../component/common/Footer.jsx';
+
 const ManagerUserLogin = () => {
     const {user,setUser}=useContext(AdminFlagContext)
     const [email, setEmail] = useState("");
@@ -19,9 +20,9 @@ const ManagerUserLogin = () => {
 
         try{
         const rs=await api.post(`http://localhost:8080/loginAdmin?email=${email}&password=${password}`)
-        const data=rs.data
+        const data = rs.data
         const headers=rs.headers
-        // console.log(headers.authorization.replace("Bearer ",""))
+
         if (rs.status==200){
 
             //토큰으로 저장

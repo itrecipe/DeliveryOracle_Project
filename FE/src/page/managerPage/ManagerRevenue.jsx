@@ -1,4 +1,3 @@
-// 리엑트 차트 그래프 예제 코드 
 import Rechart from "../../component/manager/ManagerRechart";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Header from '../../component/manager/headside/Header';

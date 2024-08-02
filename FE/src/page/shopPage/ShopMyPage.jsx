@@ -12,19 +12,27 @@ const ShopMyPage = () => {
     const [cookies] = useCookies(['jwtToken']);
     const [userInfo, setUserInfo] = useState(null);
 
-    // useEffect는 컴포넌트가 처음 렌더링될 때, 그리고 user가 변경될 때마다 서버에서 사용자 정보를 가져와 userInfo를 업데이트 한다.
-    // fetchUserInfo 함수는 axios.get을 사용하여 서버에 요청을 보내고
-    // 서버에서 받은 응답 데이터를 setUserInfo(response.data)를 사용해 userInfo 상태로 저장해요.
-    // userInfo가 업데이트되면 컴포넌트는 다시 렌더링되고, userInfo의 값이 화면에 표시돼요.
+    /*
+       useEffect는 컴포넌트가 처음 렌더링될 때, 그리고 user가 변경될 때마다
+       서버에서 사용자 정보를 가져와 userInfo를 업데이트 한다.
+
+       fetchUserInfo 함수는 axios.get을 사용하여 서버에 요청을 보내고
+       서버에서 받은 응답 데이터를 setUserInfo(response.data)를 사용해 userInfo 상태로 저장해요.
+       userInfo가 업데이트되면 컴포넌트는 다시 렌더링되고, userInfo의 값이 화면에 표시돼요.
+    */
 
     useEffect(() => {
+
         const fetchUserInfo = async () => {
+
             try {
                 const response = await axios.get('http://localhost:8080/api/api/userinfo', {
+
                     headers: {
                         Authorization: `Bearer ${user}`
                     }
                 });
+
                 console.log(response.data);
                 setUserInfo(response.data);
                 setUserId(response.data.user_id)
@@ -34,6 +42,7 @@ const ShopMyPage = () => {
         };
 
         fetchUserInfo();
+
     }, [user]);
 
     return (

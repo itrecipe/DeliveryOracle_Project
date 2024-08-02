@@ -3,12 +3,12 @@ import axios from 'axios';
 import { Container, Row, Col } from 'react-bootstrap';
 import Header from './headside/Header';
 import Sidebar from './headside/Sidebar';
-import ShopOrderReceiptList from './ShopOrderReceiptList'; // ShopOrderReceiptList를 불러옵니다.
-import { AdminFlagContext } from "../../flag/Flag.jsx"; // AdminFlagContext를 불러옵니다.
+import ShopOrderReceiptList from './ShopOrderReceiptList'; //ShopOrderReceiptList를 불러옵니다.
+import { AdminFlagContext } from "../../flag/Flag.jsx"; //AdminFlagContext를 불러옵니다.
 
 const ShopOrderReceipt = () => {
     const { shopId } = useContext(AdminFlagContext);
-    const [order, setOrder] = useState(); // 주문 정보 상태를 설정합니다.
+    const [order, setOrder] = useState(); //주문 정보 상태를 설정합니다.
 
     useEffect(() => {
         const fetchData = async () => {
@@ -22,11 +22,11 @@ const ShopOrderReceipt = () => {
                     setOrder(response.data);
                 } else {
                     console.log("주문 내역 없음");
-                    setOrder([]); // 데이터가 없을 경우 빈 배열로 설정합니다.
+                    setOrder([]); //데이터가 없을 경우 빈 배열로 설정합니다.
                 }
             } catch (error) {
                 console.error("주문 내역 조회 실패:", error);
-                setOrder([]); // 에러 발생 시 빈 배열로 설정합니다.
+                setOrder([]); //에러 발생 시 빈 배열로 설정합니다.
             }
         };
         fetchData();

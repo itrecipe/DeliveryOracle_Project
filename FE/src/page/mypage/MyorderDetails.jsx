@@ -12,8 +12,6 @@ const MyorderDetails = () => {
     const {user,setUser,userId,setUserId,shopId,setShopid}=useContext(AdminFlagContext)
     const [orderDetails, setOrderDetails] = useState([]);
 
-    
-
     useEffect(() => {
         const fetchOrderDetails = async () => {
            
@@ -35,7 +33,7 @@ const MyorderDetails = () => {
             <Header />
         <div id="main_container2" className="text-center">
 
-                    {/* <Card.Title>주문 내역</Card.Title> */}
+                    <Card.Title>주문 내역</Card.Title>
                     {
                         orderDetails.map(order => (<MypageDetailsList order={order} />
             

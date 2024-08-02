@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal'; 
 import { AdminFlagContext } from "../../flag/Flag.jsx";
+
 const MypageDetailsList = ({ order }) => {
     const [showModal, setShowModal] = useState(false); // 팝업 창 열고 닫기 상태
     const [reportText, setReportText] = useState(''); // 신고 내용을 저장할 상태 변수
@@ -31,6 +32,7 @@ const MypageDetailsList = ({ order }) => {
         
         check()
     },[value])
+
     let orderDetailsArray = [];
     try {
         orderDetailsArray = JSON.parse(order.orderDetails);
@@ -71,7 +73,6 @@ const MypageDetailsList = ({ order }) => {
         const handleCloseModal = () => {
             setShowModal(false);
         }
-    //신고하기
     
     //신고하기 버튼
     const handleReport =async(e)=>{
@@ -84,7 +85,6 @@ const MypageDetailsList = ({ order }) => {
             reporterId: userId
         };
 
-        
         try{
             const rs=await axios.post("http://localhost:8080/userReport/store", reportData)
             if(rs.status==200){
@@ -93,16 +93,10 @@ const MypageDetailsList = ({ order }) => {
                 handleCloseModal();
                 setValue(1)
             }
-
-                
-
-            
         }catch(e){
             console.log("신고실패",e)
         }
-
     }
-
 
     return (
         <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>

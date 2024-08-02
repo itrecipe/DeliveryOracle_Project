@@ -4,7 +4,6 @@ import axios from 'axios';
 import { AdminFlagContext } from '../../flag/Flag.jsx';
 import Header from './headside/Header.jsx';
 
-
 const ManagerMyPagemodify = () => {
     const { userId, user, setUserId } = useContext(AdminFlagContext);
     const [nickname, setNickname] = useState('');

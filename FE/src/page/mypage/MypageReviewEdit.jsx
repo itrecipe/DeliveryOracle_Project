@@ -21,6 +21,7 @@ const MypageReviewEdit = () => {
 
     // 실제 서버로 별점을 전송하는 함수 (예시)
     const sendRatingToServer = async(e) => {
+        
         e.preventDefault();
 
         const reviewData={
@@ -33,7 +34,6 @@ const MypageReviewEdit = () => {
             const rs = await axios.put("http://localhost:8080/comments/Edit", reviewData);
             if (rs.status === 200) {
                 console.log(rs.data);
-
 
                 if (rs.data=="SUCCESS") {
                     alert("댓글수정 완료")
@@ -50,9 +50,7 @@ const MypageReviewEdit = () => {
         } catch (e) {
             console.log("연결실패", e);
         }
-
     };
-
 
     return (
         <div>

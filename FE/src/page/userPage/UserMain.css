@@ -1,5 +1,4 @@
 /* UserMain.css */
-
 .menuitem {
     border: 1px solid #ccc;
     padding: 20px;
@@ -23,14 +22,6 @@
     text-align: center;
     padding: 20px 0;
 }
-
-/* .crossline {
-    width: 100%;
-    height: 2px;
-    background-color: #ccc;
-    margin: 20px 0;
-} */
-
 
 .user-location {
     text-align: center;

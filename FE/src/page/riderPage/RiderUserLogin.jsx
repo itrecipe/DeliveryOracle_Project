@@ -8,20 +8,24 @@ import { AdminFlagContext } from "../../flag/Flag.jsx";
 import { useCookies } from 'react-cookie';
 import Header from '../../component/main/Header.jsx';
 import Footer from '../../component/common/Footer.jsx';
+
 const RiderUserLogin = () => {
+
     const {user,setUser}=useContext(AdminFlagContext)
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
     const [cookies, setCookie] = useCookies(['jwtToken']);
+    
     const loginClick = async(e) => {
+    
         e.preventDefault();
 
         try{
-        const rs=await api.post(`http://localhost:8080/loginRider?email=${email}&password=${password}`)
-        const data=rs.data
-        const headers=rs.headers
-        // console.log(headers.authorization.replace("Bearer ",""))
+            const rs=await api.post(`http://localhost:8080/loginRider?email=${email}&password=${password}`)
+            const data=rs.data
+            const headers=rs.headers
+
         if (rs.status==200){
 
             //토큰으로 저장
@@ -52,6 +56,7 @@ const RiderUserLogin = () => {
                 <div className="form_container">
                     <div className="form">
                         <form action="#">
+                            
                             <p className="login_user_name">
                                 <label htmlFor="user_name">아이디(이메일):</label>
                                 <input type="text" id="user_name" onChange={(e) => setEmail(e.target.value)} />

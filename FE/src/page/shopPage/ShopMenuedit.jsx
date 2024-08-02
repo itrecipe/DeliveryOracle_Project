@@ -11,6 +11,7 @@ import Sidebar from '../../component/shop/headside/Sidebar';
 //메뉴수정
 const ShopMenuedit = () => {
     const location = useLocation();
+    
     //넘어온값
     const approvalStatus = location.state?.menu;
 
@@ -18,23 +19,24 @@ const ShopMenuedit = () => {
 
     //메뉴이름
     const [name,setName]=useState(approvalStatus.menuName)
+    
     //메뉴가격
     const [price,setPrice]=useState(approvalStatus.menuPrice)
+    
     //메뉴이미지
     const [img,setImg]=useState(null)
 
-
     const buttonClick=async(e)=>{
-       
-
+        
         e.preventDefault()
+
         const formData = new FormData();
         formData.append("name",name)
         formData.append("price",price)
         formData.append("shopid",approvalStatus.storeId)
+        
         if (img){
           formData.append("img",img)  
-
         }
 
         try{
@@ -44,18 +46,16 @@ const ShopMenuedit = () => {
                 if(rs.data==1){
                     alert("메뉴수정완료")
                     navigate("/ShopMain")
-
                 }
+
                 else{
                     alert("내용을 수정해주세요 같은 메뉴가 존재하거나 잘못된 입력을 하셨습니다.")
                 }
-
             }
         }catch(e){
             console.log("등록실패",e)
         }
     }
-
 
     return (
         <div>
@@ -79,24 +79,22 @@ const ShopMenuedit = () => {
                     <input type="text" id="shop_name"  value={name} readOnly/>
                 </p>
 
-
                 <p class="shop_name">
                     <label htmlFor="shop_name">메뉴가격</label>
                         <input 
-                        type="text" 
-                        id="shop_name"  
-                        onChange={(e)=>setPrice(e.target.value)}
-                        onKeyDown={(e) => {
-                            // 허용되는 키 코드: 0~9, 백스페이스(8), 화살표(37~40), 탭(9)
-                            const allowedKeys = /[0-9,"Backspace"\b]/;
-                            if (!allowedKeys.test(e.key)) {
-                                e.preventDefault();
-                            }
+                            type="text" 
+                            id="shop_name"  
+                            onChange={(e)=>setPrice(e.target.value)}
+                            onKeyDown={(e) => {
+                                
+                                // 허용되는 키 코드: 0~9, 백스페이스(8), 화살표(37~40), 탭(9)
+                                const allowedKeys = /[0-9,"Backspace"\b]/;
+                                if (!allowedKeys.test(e.key)) {
+                                    e.preventDefault();
+                                }
                         }}
                     value={price}/>
                 </p>
-
-
 
                 <p class="shop_img">
                     <label for="shop_img">메뉴이미지</label>
@@ -109,15 +107,10 @@ const ShopMenuedit = () => {
         </div>
         </div>
         </div>
-
                 </Col>
             </Row>
         </Container>
-
-
     </div>
-
-    
     );
 };
 

@@ -6,17 +6,11 @@ import { AdminFlagContext } from '../../flag/Flag.jsx';
 import { useCookies } from 'react-cookie';
 import Header from '../../component/rider/headside/Header.jsx';
 
-
 const RiderMyPage = () => {
     const navigate = useNavigate();
     const { user,setUser,userId,setUserId,shopId,setShopid } = useContext(AdminFlagContext); //현재 로그인된 사용자 정보 얻기 user 정보는 서버 요청 시 인증 토큰으로 사용됨.
     const [cookies] = useCookies(['jwtToken']);
     const [userInfo, setUserInfo] = useState(null);
-
-    // useEffect는 컴포넌트가 처음 렌더링될 때, 그리고 user가 변경될 때마다 서버에서 사용자 정보를 가져와 userInfo를 업데이트 한다.
-    // fetchUserInfo 함수는 axios.get을 사용하여 서버에 요청을 보내고
-    // 서버에서 받은 응답 데이터를 setUserInfo(response.data)를 사용해 userInfo 상태로 저장해요.
-    // userInfo가 업데이트되면 컴포넌트는 다시 렌더링되고, userInfo의 값이 화면에 표시돼요.
 
     useEffect(() => {
         const fetchUserInfo = async () => {

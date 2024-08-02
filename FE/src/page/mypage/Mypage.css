@@ -8,9 +8,9 @@
 .user-profile {
     display: flex;
     align-items: center;
-    padding: 100px; /* 예시로 패딩 추가 */
-    border: 1px solid #ddd; /* 예시로 테두리 추가 */
-    border-radius: 20px; /* 예시로 둥근 모서리 추가 */
+    padding: 100px; /* 패딩 추가 */
+    border: 1px solid #ddd; /* 테두리 추가 */
+    border-radius: 20px; /* 둥근 모서리 추가 */
 }
 
 .profile-img {

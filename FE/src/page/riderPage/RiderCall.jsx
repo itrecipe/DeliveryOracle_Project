@@ -10,7 +10,7 @@ import { CompatClient, Stomp } from '@stomp/stompjs';
 import SockJS from 'sockjs-client';
 import { useWebSocket  } from "../../flag/WebSocketContext.jsx";
 import { Link, useNavigate } from 'react-router-dom';
-//샵 메뉴 참조 //주문내역도 그냥 이거 쓰자.
+
 const RiderCall = () => {
 
     const {user,setUser,userId,setUserId,shopId,setShopId,user_x,setX,user_y,setY}=useContext(AdminFlagContext)
@@ -30,36 +30,13 @@ const RiderCall = () => {
             console.log(error);
         }
     };
+
     useEffect(()=>{
         if (!user_x){
             alert("로그인해주세요")
             navigate("/")
         }
-
         orderList();
-        // console.log("연결")
-        // const socket = new SockJS(`http://localhost:8080/ws?token=Bearer ${user}`);
-        // const client = Stomp.over(socket);
-
-        // client.connect({ Authorization: `Bearer ${user}` }, () => {
-        //     client.subscribe('/user/topic/sendMessage', (msg) => {
-        //         console.log("응답 메세지");
-        //         console.log(msg);
-        //         const newMessage = JSON.parse(msg.body);
-        //         console.log(newMessage)
-        //         setMes(newMessage);
-        //     });
-        //     setStompClient(client);
-        // });
-
-        // return () => {
-        //     if (client) {
-        //         client.disconnect(() => {
-        //             console.log('Disconnected');
-        //         });
-        //     }
-        // };
-        
     },[])
 
     useEffect(() => {
@@ -68,14 +45,13 @@ const RiderCall = () => {
             if (messages.content === "true") {
                 console.log(messages.content)
 
-                //바꿔야할것들
- 
+                //추후 수정이 필요한 부분
                 const orderData = {
                     orderId: data.orderId,
                     storeId: data.storeId,
                     storeName: data.storeName,
                     storeOwnerEmail: data.storeOwnerEmail,
-                    riderId:userId, // 내꺼
+                    riderId:userId, // 내 ID
                     distanceToStore:data.distanceToStore,
                     distanceToUser:data.distanceToUser,
                     deliveryPrice:data.deliveryPrice,
@@ -108,7 +84,6 @@ const RiderCall = () => {
     const handleOrder = async (s) => {
         if (stompClient) {
             setData(s)
-            //from 에 나중에 이 상점 주인 아이디를 넣어야 하는데 이때 앞에서 상점 주인 아이디(이메일을)까지 받아와야한다.
             stompClient.send('/app/sendMessage', {}, JSON.stringify({ from: s.storeOwnerEmail, content: "message" }));
         }
     };
@@ -124,11 +99,9 @@ const RiderCall = () => {
                     <Col xs={10} id="page-content-wrapper">
                     <h1>CALL</h1>
                     {orderData.reduce((acc, order, index) => {
-                            // Every 4th item or the first item, create a new container
                             if (index % 4 === 0) {
                                 acc.push([]);
                             }
-                            // Add the current menu item to the last container
                             acc[acc.length - 1].push(order);
                             return acc;
                         }, []).map((orderGroup, groupIndex) => (
@@ -138,8 +111,6 @@ const RiderCall = () => {
                                 ))}
                             </div>
                         ))}
-
-
                     </Col>
                 </Row>
             </Container> 

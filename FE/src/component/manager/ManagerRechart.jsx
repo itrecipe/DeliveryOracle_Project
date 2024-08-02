@@ -2,11 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-
 const ManagerRechart = () => {
 
   const [data, setData] = useState([]);
-
   
   useEffect(() => {
     const fetchData = async () => {

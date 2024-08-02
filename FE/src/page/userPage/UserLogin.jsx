@@ -8,7 +8,9 @@ import { AdminFlagContext } from "../../flag/Flag.jsx";
 import { useCookies } from 'react-cookie';
 import Header from '../../component/main/Header.jsx';
 import Footer from '../../component/common/Footer.jsx';
+
 const UserLogin = () => {
+
     const {user,setUser}=useContext(AdminFlagContext)
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -18,11 +20,12 @@ const UserLogin = () => {
         e.preventDefault();
 
         try{
-        const rs=await auth.login(email,password)
-        const data=rs.data
-        const headers=rs.headers
-        console.log(headers.authorization.replace("Bearer ",""))
-        console.log(rs)
+            const rs=await auth.login(email,password)
+            const data=rs.data
+            const headers=rs.headers
+            console.log(headers.authorization.replace("Bearer ",""))
+            console.log(rs)
+
         if (rs.status==200){
 
             //토큰으로 저장
@@ -39,7 +42,6 @@ const UserLogin = () => {
             alert("아이디 정지 상태 관리자 한테 문의 하세요")
             navigate("/UserMain")
         }
-        
     }
         catch(e){
             console.log("로그인오류",e)
@@ -50,35 +52,16 @@ const UserLogin = () => {
                 alert('id가 존재하지 않습니다')
             }
         }
-
-
     }
 
     //카카오 로그인
     const REST_API_KEY=process.env.REACT_APP_REST_API_KEY;
     const REDIRECT_URI="http://localhost:3000/auth/80";
     const kakaurl=`https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}`
+    
     const kakao = () => {
-        // const width = 500;
-        // const height = 600;
-        // const left = window.screen.width / 2 - width / 2;
-        // const top = window.screen.height / 2 - height / 2;
-
-        // window.open(
-        //     kakaurl,
-        //     "KakaoLogin",
-        //     `width=${width},height=${height},left=${left},top=${top}`
-            
-        // );
         window.location.href = kakaurl;
-
-
-
-
     }
-
-
-
 
     return (
         <div>

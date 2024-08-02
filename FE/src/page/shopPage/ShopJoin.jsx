@@ -15,35 +15,30 @@ import Sidebar from '../../component/shop/headside/Sidebar.jsx';
 const ShopJoin = () => {
   const {role,user,setUser,userId,setUserId,shopId,setShopid}=useContext(AdminFlagContext)
   const location = useLocation();
-  //넘어온값
-  // const id = location.state?.id;
   const navigate = useNavigate();
-
   const id = userId;
-    
 
-
-    //상점이름
+    // 상점명
     const [name,setName]=useState("")
-    //주소
+
+    // 주소
     const[address,setAddress]=useState({
         address:'',
     });
-    //가게설명
+
+    // 가게설명
     const[text,setTest]=useState("")
-    //이미지
+    
+    // 이미지
     const[img,setImg]=useState()
-        //  x,y좌표
+    
+    // x,y좌표
     const [query, setQuery] = useState('');
     const [coordinates, setCoordinates] = useState([]);
 
-    //옵션
+    // 옵션
     const [category,setcategory]=useState("")
 
-    //후에 해야할거 x,y 좌표 넘기기와 주소받아오기
-
-
-    //추후  jwt 아이딕값 넘겨야함
     const shopjoin=async(e)=>{
         e.preventDefault();
         handleSearch()
@@ -52,22 +47,21 @@ const ShopJoin = () => {
         formData.append("name", name);
         formData.append("address", address.address);
         formData.append("text", text);
-        formData.append("img", img); // 이 부분은 파일 객체여야 합니다.
+        formData.append("img", img); // 이 부분은 파일 객체여야 한다.
         formData.append("storeX", coordinates[0].x);
         formData.append("storeY", coordinates[0].y);
         formData.append("category", category);
         formData.append("id", id);
-        
 
         try{
             const rs=await axios.post("http://localhost:8080/store/join", formData)
             if(rs.status==200){
                 alert("등록이 요청 되었습니다!")
                 navigate("/ShopMain")
-
             }
+
         }catch(e){
-            console.log("등록실패",e)
+            console.log("등록 실패",e)
         }
     }
 
@@ -87,19 +81,15 @@ const ShopJoin = () => {
 
     useEffect(()=>{
         handleSearch()
-
-
     },[address])
 
-
-
     //x,y좌표 받아오기
-
     const handleSearch = async () => {
 
       console.log(address)
+
       try {
-        const response = await axios.get('/api/kakao/v2/local/search/address.json', {
+          const response = await axios.get('/api/kakao/v2/local/search/address.json', {
           params: {
             query: address.address,
           },
@@ -111,6 +101,7 @@ const ShopJoin = () => {
         }));
   
         setCoordinates(coords);
+
       } catch (error) {
         console.error('Error fetching data from Kakao API:', error);
       }
@@ -171,7 +162,9 @@ const ShopJoin = () => {
                         </form>
 
                         <ul>
+
                     {coordinates.map((coord, index) => (
+                      
                       <li key={index}>
                         X: {coord.x}, Y: {coord.y}
                       </li>
@@ -184,7 +177,6 @@ const ShopJoin = () => {
                     </Col>
                 </Row>
             </Container>
-
     </div>
     );
 };

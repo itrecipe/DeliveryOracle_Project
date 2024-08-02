@@ -12,9 +12,9 @@ import Card from 'react-bootstrap/Card';
 import StarRating from '../../component/user/StartRating.jsx';
 
 const UserShopComment = () => {
+    
     const navigate = useNavigate();
     const location = useLocation();
-    let datas = location.state.data || -1;
     const [comment, setComment] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -26,6 +26,8 @@ const UserShopComment = () => {
     const [username, setUserName] = useState("");
     const [email, setEmail] = useState("");
     const { stompClient, messages, sendMessage, setMessages, connected } = useWebSocket();
+    
+    let datas = location.state.data || -1;
 
     useEffect(() => {
         const fetchData = async () => {

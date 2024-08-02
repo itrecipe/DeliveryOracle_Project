@@ -14,70 +14,44 @@ import './ShopMain.css';  // CSS 파일 가져오기
 import Footer from '../../component/common/Footer.jsx';
 
 const ShopMain = () => {
+    
     const navigate = useNavigate();    
 
     //상점아이디
     const {role, setRole,user,setUser,userId,setUserId,shopId,setShopid,userDate, setUserDate}=useContext(AdminFlagContext)
+    
     //쿠키에 저장된 jwt를 기반으로 아이디값 받아오기
     useEffect(() => {
+            
         const fetchUserInfo = async () => {
-
             const token = user
             console.log(token)
             console.log("jwt 불러오는 중")
+            
             try {
                 const response = await axios.get('http://localhost:8080/api/api/userinfo', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
                 });
+
                 console.log(response.data);
                 console.log(response.data.user_id);
                 setUserDate(response.data)
                 setRole(response.data.authList[0].auth)
-                // setUserDate(response.data.user_id)
-                //유저아이디를 플래그에 저장
+
+                //User ID를 Flag에 저장
                 setUserId(response.data.user_id)
+
             } catch (error) {
                 console.log(error);
             }
         };
 
         fetchUserInfo();
+
     }, [user]);
     
-// const shoppMenu=async(e)=>{
-//     e.preventDefault()
-//     //아이디값을 넘겨서 그 아이디값의 상점 주인이 승인 되었는 확인하는 절차
-
-//     //상점 아이디값이 받아오는
-//     try {
-//         const rs = await axios.get("http://localhost:8080/store/menuRs", {
-//             params: { id: userId }
-//         });
-//         if (rs.status === 200) {
-//             console.log(rs.data)
-//             if (rs.data != -1) {
-//                 navigate("/ShopMenu", { state: { approvalStatus: rs.data } });
-//             } else {
-//                 console.log("승인받지 못함");
-//             }
-//         }
-//     } catch (e) {
-//         console.log("연결실패", e);
-//     }}
-
-//     const shopOrder=async(e)=>{
-//         e.preventDefault()
-//         //아이디값을 넘겨서 그 아이디값의 상점 주인이 승인 되었는 확인하는 절차
-    
-//         //상점 아이디값이 받아오는
-    
-
-//             navigate("/ShopOrder", {state : {id:userId}})
-
-
-// }
 return (
     <div>
         <Header />

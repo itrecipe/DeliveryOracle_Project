@@ -1,15 +1,10 @@
-/* html, body {
-    height: 100%;
-    margin: 0;
-} */
-
 .ft{
     padding-bottom: 15px;
 }
+
 #root {
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
 }
 #main-content {
     flex: 1;
@@ -25,9 +20,9 @@
     padding-bottom: 10px;
     width: 100%;
     margin-top: 0px; /* 푸터를 페이지 하단에 고정 */
-    clear: both; /* 추가 */
-    position: relative; /* 추가 */
-    bottom: 0; /* 추가 */
+    clear: both;
+    position: relative;
+    bottom: 0;
 }
 
 .footer-column {

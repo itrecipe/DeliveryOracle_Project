@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import Footer from '../../component/common/Footer';
 import Header from '../../component/main/Header';
 
-//상점 회원 가입 페이지 
-const ManagerUserJoin = () => {
+    //상점 회원 가입 페이지 
+    const ManagerUserJoin = () => {
     const navigate=useNavigate()
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -13,17 +13,17 @@ const ManagerUserJoin = () => {
     const [emailPass, setEmailPass] = useState(false);
     const [emailError, setEmailError] = useState("");
 
-    
     //회원가입
     const joinClick= (e) => {
+
         e.preventDefault();
+
         if (name && email && password && emailPass) {
             const signupData = {
                 email: email,
                 password: password,
                 name: name
             };
-          
           
           // POST 요청을 보냅니다.
           axios.post('http://localhost:8080/user/admin', signupData,)
@@ -53,11 +53,11 @@ const ManagerUserJoin = () => {
 // 중복확인
 const emailPassButton = (e) => {
 e.preventDefault();
-// 나중에 주석 취소하기
-// if (emailError) {
-//     alert("올바른 이메일 형식을 입력해주세요.");
-//     return;
-// }
+
+if (emailError) {
+    alert("올바른 이메일 형식을 입력해주세요.");
+    return;
+}
 
 axios.post('http://localhost:8080/user/checkEmail', { email: email })
     .then(rs => {

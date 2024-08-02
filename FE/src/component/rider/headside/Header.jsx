@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AdminFlagContext } from "../../../flag/Flag.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const Header = () => {
     const { user, setUser, userDate } = useContext(AdminFlagContext);
     const navigate = useNavigate();

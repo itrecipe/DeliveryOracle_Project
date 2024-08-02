@@ -12,20 +12,12 @@ const TabMenu = () => {
   const currentLocation = useLocation();
   const handleTabClick = (ca) => {
     console.log("실행버튼",ca)
-    setActiveTab(ca); // 탭이 클릭했을때 nav-link active 활성화
+    setActiveTab(ca); // 탭이 클릭 되었을때 nav-link active 활성화
 
   };
-  // useEffect(() => {
-  //   const path = currentLocation.pathname;
-  //   if (path.includes('/UserMenuCaList')) {
-  //     const tab = new URLSearchParams(currentLocation.search).get('ca');
-  //     setActiveTab(Number(tab));
-  //   } else if (path.includes('/UserAiList')) {
-  //     setActiveTab(6);
-  //   }
-  // }, []);
 
     useEffect(() => {
+      
     const state = currentLocation.state;
     const ca = state?.ca;
 
@@ -37,7 +29,6 @@ const TabMenu = () => {
       setActiveTab(null); // 기본값으로 설정
     }
   }, [currentLocation]);
-
 
   useEffect(() => {
     if (navigator.geolocation) {

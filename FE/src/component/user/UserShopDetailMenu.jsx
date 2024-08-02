@@ -6,12 +6,8 @@ const UserShopDetailMenu = ({data,plus}) => {
     const clickButton=()=>{
         console.log(data)
         plus(data)
-        
     }
-
-
     return (
-        
         <div class="item-card" onClick={clickButton}>
             <div class="item-image">
                 <img  src={`/imgs/${data.menuImage}`} width="70"/>

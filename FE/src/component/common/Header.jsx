@@ -13,10 +13,8 @@ import '../../css/Header.css';
 
 const Header = () => {
 
-
     const { role, setRole,user,setUser,userDate,setUserDate,userId,setUserId,shopId,setShopid,user_x,setX,user_y,setY,userInfo,setUserInfo} = useContext(AdminFlagContext);
     const navigate = useNavigate();  
-
     
     useEffect(() => {
         const fetchUserInfo = async () => {
@@ -57,9 +55,7 @@ const Header = () => {
         e.preventDefault()
         setUser(null)
         window.location.href = "/UserMain";
-
     }
-
 
     return (
         

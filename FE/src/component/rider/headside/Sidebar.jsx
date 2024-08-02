@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { FaHome, FaBiking, FaClipboardList, FaHistory, FaDollarSign } from 'react-icons/fa';
 import { AdminFlagContext } from "../../../flag/Flag.jsx";
 
-
 const Sidebar = () => {
     const { role } = useContext(AdminFlagContext);
     const navigate = useNavigate();  
@@ -28,6 +27,7 @@ const Sidebar = () => {
 
     return (
         <Nav defaultActiveKey="/dashboard" className="flex-column bg-light sidebar" style={{ height: '100vh', padding: '10px' }}>
+            
             <Nav.Item onClick={() => roleExist("RiderCall")}>
                 <Nav.Link>
                     <FaBiking className="me-2" /> 콜받기

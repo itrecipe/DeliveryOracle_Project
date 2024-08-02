@@ -51,7 +51,9 @@ const MypageComments = () => {
 
     // 실제 서버로 별점을 전송하는 함수 (예시)
     const sendRatingToServer = async(e) => {
+        
         e.preventDefault();
+
         // 여기서 서버로 rating 변수를 전송하는 로직을 추가할 수 있음
         console.log(`별점 ${rating}을 서버에 전송합니다.`);
         try {
@@ -77,7 +79,6 @@ const MypageComments = () => {
         }
 
     };
-
 
     return (
         <div>

@@ -8,7 +8,9 @@ import TabMenu from '../../component/common/TabMenu.jsx';
 import { useContext } from "react";
 import { AdminFlagContext } from "../../flag/Flag.jsx";
 import { useWebSocket } from "../../flag/WebSocketContext.jsx";
+
 const UserSearchList = () => {
+
     const location = useLocation();
     const searchTerm = location.state?.searchTerm || -1;//검색정보
     const [data, setData] = useState([]);
@@ -25,7 +27,8 @@ const UserSearchList = () => {
             alert("잘못된 접근입니다");
             navigate("/");
         }
-    }, []);    
+    }, []);
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -43,6 +46,7 @@ const UserSearchList = () => {
         };
 
         fetchData();
+
     }, [user_x,user_y,searchTerm]);
 
     useEffect(() => {
@@ -58,20 +62,19 @@ const UserSearchList = () => {
             }));}
             }
         };
+
         if (data.length > 0) {
             console.log("for문동작시작")
             checkAllShops();
         }
+
     }, [data]);
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
-
-
-    // Check shop status
     const check = async (array) => {
-        setCurrentCheck(array); // Store the current item being checked
+        setCurrentCheck(array);
 
         try {
             const rs = await axios.get("http://localhost:8080/search/emailTrue", {
@@ -85,7 +88,6 @@ const UserSearchList = () => {
         }
     };
 
-    //
     const check2=(value,array)=>{
        
         if (value){

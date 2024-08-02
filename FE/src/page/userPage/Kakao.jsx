@@ -4,6 +4,7 @@ import { AdminFlagContext } from "../../flag/Flag.jsx";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Spinner from 'react-bootstrap/Spinner';
+
 const Kakao = () => {
     const navigate = useNavigate();
     const {user,setUser}=useContext(AdminFlagContext)
@@ -13,14 +14,14 @@ const Kakao = () => {
         if (code) {
             console.log(code)
             const loginClick = async(e) => {
-    
         
                 try{
-                const rs=await axios.get("http://localhost:8080/kakao/kakaoToken",{params:{code:code} })
-                const data=rs.data
-                const headers=rs.headers
-                console.log(headers.authorization.replace("Bearer ",""))
-                console.log(rs)
+                    const rs=await axios.get("http://localhost:8080/kakao/kakaoToken",{params:{code:code} })
+                    const data=rs.data
+                    const headers=rs.headers
+                    console.log(headers.authorization.replace("Bearer ",""))
+                    console.log(rs)
+
                 if (rs.status==200){
         
                     //토큰으로 저장
@@ -30,21 +31,18 @@ const Kakao = () => {
         
                     navigate("/UserMain")
                 }
-                
-                
             }
                 catch(e){
                     console.log("로그인오류",e)
                     alert("로그인 오류")
                 }
-
-
             }
 
             loginClick();
 
         }
     }, []);
+    
     return (
         <div className="loading-container"> 
         <Spinner animation="border" variant="secondary" className='spinner-ai'/>

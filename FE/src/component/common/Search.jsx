@@ -3,6 +3,7 @@ import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../css/search.css';
 import { Link, useNavigate } from 'react-router-dom';
+
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();  
@@ -13,7 +14,6 @@ const Search = () => {
   const handleSearch = (event) => {
     event.preventDefault(event);
     navigate("/UserSearchList",{state : {searchTerm:searchTerm}})
-
   };
 
   return (
@@ -27,7 +27,6 @@ const Search = () => {
           </Col>
           <Col>
             <Form className="d-flex" onSubmit={handleSearch}>
-                
               <Form.Control
                 type="search"
                 placeholder="식당을 입력해주세요"

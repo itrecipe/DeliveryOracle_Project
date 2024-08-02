@@ -9,7 +9,6 @@ const ShopOrderList = ({ orders }) => {
 
     return (
         <ListGroup>
-            {/* 너무 이상한 코드를 준 gpt */}
             {orders.map(order => {
                 let orderDetailsArray = [];
                 try {
@@ -50,17 +49,3 @@ const ShopOrderList = ({ orders }) => {
 };
 
 export default ShopOrderList;
-
-
-// return (
-//     <ListGroup>
-//         {orders.map(order => (
-//             <ListGroup.Item key={order.order_id}>
-//                 <h5><strong>Order ID:</strong>{order.order_id}</h5>
-//                 <p>고객정보: {order.name} ({order.email})</p>
-//                 <p>주문정보: {cleanOrderDetails.join(", ")}</p>
-//                 <p>가격: {order.total_price}</p>
-//             </ListGroup.Item>
-//         ))}
-//     </ListGroup>
-// );

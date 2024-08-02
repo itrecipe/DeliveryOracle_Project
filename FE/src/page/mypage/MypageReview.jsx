@@ -12,11 +12,8 @@ const MypageReview = () => {
     const [review, setReview] = useState([]);
     const [check,setCheck]=useState('')
 
-    
-
     useEffect(() => {
         const fetchOrderDetails = async () => {
-           
                 const response = await axios.get('http://localhost:8080/search/review', {
                     params: {
                         id: userId
@@ -26,24 +23,18 @@ const MypageReview = () => {
                 console.log(response.data);
                 setReview(response.data);
         };
-
         fetchOrderDetails();
     }, [user,check]);
+
     return (
         <div>
             <Header />
-        <div className="text-center" style={{  margin: '25px' , minHeight: '70vh'}}>
-
-                    {/* <Card.Title>주문 내역</Card.Title> */}
-                    {
-                        review.map(reviews => (<MypageReviewList review={reviews} setCheck={setCheck} />
-            
-                            
-                        ))
-                   }
-  
-        </div>
-        <Footer />
+                <div className="text-center" style={{  margin: '25px' , minHeight: '70vh'}}>
+                            {
+                                review.map(reviews => (<MypageReviewList review={reviews} setCheck={setCheck} />))
+                            }
+                </div>
+            <Footer />
         </div>
     );
 };

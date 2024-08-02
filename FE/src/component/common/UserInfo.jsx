@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
-import { FaUserCircle } from 'react-icons/fa'; // Using react-icons for the account circle icon
+import { FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AdminFlagContext } from '../../flag/Flag';
 

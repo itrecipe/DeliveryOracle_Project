@@ -1,5 +1,4 @@
-/* 장바구니 */
-
+/* 장바구니 css */
 .basket-header {
     background-color: #8BD0DD;
     color: white;
@@ -73,7 +72,6 @@
     background-color: #ddd;
 }
 
-/*  */
 .section#c {
     background-color: white; /* 원하는 배경색으로 변경 가능 */
     padding: 20px;

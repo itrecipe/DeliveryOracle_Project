@@ -12,7 +12,6 @@ import { MdOutlineMonetizationOn } from 'react-icons/md';
 import { FaRankingStar } from "react-icons/fa6";
 import Footer from '../../component/common/Footer.jsx';
 
-
 const MypageMain = () => {
     const navigate = useNavigate();
     const { user,setUser,userId,setUserId,shopId,setShopid } = useContext(AdminFlagContext); //현재 로그인된 사용자 정보 얻기 user 정보는 서버 요청 시 인증 토큰으로 사용됨.
@@ -22,10 +21,14 @@ const MypageMain = () => {
     const [amount,setamount]=useState()
     const [rankName,setRankName]=useState("")
 
-    // useEffect는 컴포넌트가 처음 렌더링될 때, 그리고 user가 변경될 때마다 서버에서 사용자 정보를 가져와 userInfo를 업데이트 한다.
-    // fetchUserInfo 함수는 axios.get을 사용하여 서버에 요청을 보내고
-    // 서버에서 받은 응답 데이터를 setUserInfo(response.data)를 사용해 userInfo 상태로 저장해요.
-    // userInfo가 업데이트되면 컴포넌트는 다시 렌더링되고, userInfo의 값이 화면에 표시돼요.
+    /*
+      useEffect는 컴포넌트가 처음 렌더링될 때, 그리고 user가 변경될 때마다 
+      서버에서 사용자 정보를 가져와 userInfo를 업데이트 한다.
+
+      fetchUserInfo 함수는 axios.get을 사용하여 서버에 요청을 보내고
+      서버에서 받은 응답 데이터를 setUserInfo(response.data)를 사용해 userInfo 상태로 저장한다.
+      userInfo가 업데이트되면 컴포넌트는 다시 렌더링되고, userInfo의 값이 화면에 표시한다.
+    */
 
     useEffect(() => {
         const fetchUserInfo = async () => {
@@ -42,8 +45,6 @@ const MypageMain = () => {
                 console.log(error);
             }
         };
-
-
         fetchUserInfo();
     }, [user]);
 
@@ -51,14 +52,13 @@ const MypageMain = () => {
         const fetchUserInfo = async () => {
             try {
                 const response = await axios.get('http://localhost:8080/account/amount', {params: {id:userId}
-
                 });
                 setAccount(response.data)
-
             } catch (error) {
                 console.log(error);
             }
         };
+
         const rank = async () => {
             try {
                 const response = await axios.post('http://localhost:8080/account/rank', {id:userId}
@@ -67,8 +67,6 @@ const MypageMain = () => {
                 if(response.status==200){
                     setRankName(response.data)
                 }
-
-   
             } catch (error) {
                 console.log(error);
             }
@@ -88,9 +86,8 @@ const MypageMain = () => {
     //충전하기
     const charge = async () => {
         try {
-            const response = await axios.post('http://localhost:8080/account/deposit', {id:userId,price:amount
-
-            });
+            const response = await axios.post('http://localhost:8080/account/deposit', 
+                {id:userId,price:amount});
             if (response.data==-1){
                 handleCloseModal()
                 alert("잘못된 입력입니다")
@@ -100,7 +97,6 @@ const MypageMain = () => {
             handleCloseModal()
            alert(`${amount} 원충전완료`) 
            setamount(0)}
-            
 
         } catch (error) {
             console.log(error);
@@ -122,31 +118,28 @@ const MypageMain = () => {
             <Card>
                 <Card.Body>
                     <Card.Title>User Information</Card.Title>
+                 
                     <div className="user-profile d-flex align-items-center mb-4">
                        
                        {userInfo ? (
-                            
                             <div><h4 className='rank-padding'><FaRankingStar className='sidebar-icon2'/>등급 : {rankName}</h4>
-                            <div className="d-flex align-items-center">
-                                
-                                <img src="/imgs/profile.jpg" alt="Profile" className="profile-img mr-3" />
-                                <div>
-                                    <p className="mb-0"><strong>이메일(Id): {userInfo.email}</strong></p>
-                                    <p className="mb-0"><strong>닉네임: {userInfo.name}</strong></p>
-                                    <p className="mb-0"><Link to="/MypageUserEdit" style={{color:"blue"}}><strong>계정관리/수정</strong></Link> </p>
-                                    <p className="mb-0"><MdOutlineMonetizationOn className='sidebar-icon'/>잔액: {account} 원 / <Button className='charge-button' onClick={handleOpenModal}>충전하기</Button></p>
+                            
+                                <div className="d-flex align-items-center">
+                                    
+                                    <img src="/imgs/profile.jpg" alt="Profile" className="profile-img mr-3" />
+
+                                    <div>
+                                        <p className="mb-0"><strong>이메일(Id): {userInfo.email}</strong></p>
+                                        <p className="mb-0"><strong>닉네임: {userInfo.name}</strong></p>
+                                        <p className="mb-0"><Link to="/MypageUserEdit" style={{color:"blue"}}><strong>계정관리/수정</strong></Link> </p>
+                                        <p className="mb-0"><MdOutlineMonetizationOn className='sidebar-icon'/>잔액: {account} 원 / <Button className='charge-button' onClick={handleOpenModal}>충전하기</Button></p>
+                                    </div>
                                 </div>
-                               
                             </div>
-                            
-                            </div>
-                            
                         ) : (
                             <p>Loading user info...</p>
                         )}
-                        
                     </div> 
-                    
 
                     <div className="navigation-boxes">
                         <Row className="text-center">
@@ -165,7 +158,6 @@ const MypageMain = () => {
                 </Card.Body>
             </Card>
         </Container>
-
 
         <Modal show={showModal} onHide={handleCloseModal}>
             <Modal.Header closeButton>
@@ -189,47 +181,7 @@ const MypageMain = () => {
             </Modal.Footer>
         </Modal>
         <Footer />
-            {/* <div className="container mt-5">
-                <Card>
-                    <Card.Body>
-                        <Card.Title>사용자 정보</Card.Title>
-                        {userInfo ? (
-                            <div>
-                                <p><strong>user_id:</strong> {userInfo.user_id}</p>
-                                <p><strong>이메일(id):</strong> {userInfo.email}</p>
-                                <p><strong>Username:</strong> {userInfo.name}</p>
-                            </div>
-                        ) : (
-                            <p>Loading user info...</p>
-                        )}
-                    </Card.Body>
-                </Card>
-            </div>
-            <div id="main_container">
-                <div className="container mt-5">
-                    <Link className="item-list" to="/MyorderDetails">
-                        <div className="item">
-                            <p className="item-maintext">주문내역</p>
-                        </div>
-                    </Link>
-                </div>
-                <div className="container mt-5">
-                    <Link className="item-list" to="/MypageComments">
-                        <div className="item">
-                            <p className="item-maintext">리뷰관리</p>
-                        </div>
-                    </Link>
-                </div>
-            </div>
-            <div className="container mt-5">
-                <Card>
-                    <Card.Body>
-                        <Card.Title>업체이름</Card.Title>
-                        // Add company name details here 
-                    </Card.Body>
-                </Card>
-            </div> */}
-        </div>
+    </div>
     );
 };
 

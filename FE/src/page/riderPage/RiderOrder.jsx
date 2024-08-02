@@ -9,11 +9,13 @@ import RiderOrderList from '../../component/rider/RiderOrderList.jsx';
 import { CompatClient, Stomp } from '@stomp/stompjs';
 import SockJS from 'sockjs-client';
 import { useWebSocket  } from "../../flag/WebSocketContext.jsx";
+
 const RiderOrder = () => {
     const { user, userId } = useContext(AdminFlagContext);
     const [orderData, setOrderData] = useState([]);
     const { stompClient, messages, setMessages } = useWebSocket();
     const[data,setData]=useState([])
+    
     const orderList = async () => {
         try {
             const response = await axios.get('http://localhost:8080/rider/orderCall', {
@@ -27,7 +29,6 @@ const RiderOrder = () => {
     };
 
     useEffect(() => {
-
         orderList();
     }, [userId]);
 
@@ -37,8 +38,7 @@ const RiderOrder = () => {
             if (messages.content === "true") {
                 console.log(messages.content)
 
-                //바꿔야할것들
-
+                //추후 수정이 필요한 부분
                 const orderData = {
                     deliveryId:data.deliveryId,
                     orderId: data.orderId,
@@ -49,7 +49,6 @@ const RiderOrder = () => {
                     distanceToStore:data.distanceToStore,
                     distanceToUser:data.distanceToUser,
                     deliveryPrice:data.deliveryPrice
-
                 };
 
                 try {
@@ -67,7 +66,6 @@ const RiderOrder = () => {
                 alert("현재 음식점이 열려있지 않습니다")
             }
         };
-
         if (messages.content) {
             handleMesUpdate();
         }
@@ -91,22 +89,21 @@ const RiderOrder = () => {
                     <Col xs={10} id="page-content-wrapper">
                     <h1>진행중인 배달</h1>
                         {orderData.reduce((acc, order, index) => {
-                            // Every 4th item or the first item, create a new container
                             if (index % 4 === 0) {
                                 acc.push([]);
                             }
-                            // Add the current menu item to the last container
                             acc[acc.length - 1].push(order);
                             return acc;
                         }, []).map((orderGroup, groupIndex) => (
                             
                             <div id={`order-group-${groupIndex} `} key={groupIndex}>
                                 <div id="main_container">
-                                {orderGroup.map((order, index) => (
-                                    
-                                    <RiderOrderList key={order.deliveryId} order={order} handleOrder={handleOrder} keyProp={`order-${order.deliveryId}`} />
-                                ))}
-                            </div></div>
+                                    {orderGroup.map((order, index) => (
+                                        
+                                        <RiderOrderList key={order.deliveryId} order={order} handleOrder={handleOrder} keyProp={`order-${order.deliveryId}`} />
+                                    ))}
+                                </div>
+                            </div>
                         ))}
                     </Col>
                 </Row>

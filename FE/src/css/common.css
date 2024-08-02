@@ -1,12 +1,10 @@
 #main_container {
-    /*height: 100vh;*/
     padding-top: 135px;
     display: flex;
     justify-content: center;
     order: 1;
 }
 #main_container2 {
-    /*height: 100vh;*/
     padding-top: 135px;
     justify-content: center;
     order: 1;
@@ -20,19 +18,15 @@
 
     min-height: 70vh
 }
-
 .from_padding {
-
     padding-top: 15px;
-
 }
 
-/*-----로그인/회원가입*/
+/* 로그인 & 회원가입 */
 
 .form_container{
     width: 350px;
     margin: 0 auto
-
 }
 
 .form_container .form{
@@ -84,12 +78,9 @@
 
 .bottom_box{
     text-align: center;
-    /*height: 290px;*/
     background-color: #fff;
     border: 1px solid #e6e6e6;
     padding: 20px 40px 25px 40px;
-    /*display: flex;*/
-    /*align-items: center;*/
 }
 
 form .emailpass {
@@ -130,8 +121,7 @@ form .emailpass {
     cursor: pointer;
 }
 
-/*-----상점*/
-
+/* 상점 */
 .shop_container{
     width: 650px;
     margin: 0 auto
@@ -159,13 +149,11 @@ form .emailpass {
 
 .postmodal{
     background : rgba(0,0,0,0.25);
-  
     left:0;
     top:0;
     height:100%;
     width:30%;
 }
-
 
 .form p{
     padding-top: 5%;
@@ -178,7 +166,6 @@ form .emailpass {
 }
 
 /* 첫 메인 바디 */
-
 #main_container3 {
     height: 45vh;
     padding-top: 1px;
@@ -229,10 +216,8 @@ form .emailpass {
 }
 
 /* 업체 */
-
 .menu_list{
     margin-right: 1%;
-
 }
 
 #menu_container {
@@ -249,10 +234,8 @@ input[readOnly] {
 }
 
 /* 조회 */
-
 .big-column {
     width: 100%;
-
 }
 
 .item-card {
@@ -264,25 +247,21 @@ input[readOnly] {
     margin-left: 20px;
     display: flex;
     align-items: center;
-
-
-    
 }
 
 .item-image {
     position: relative;
-
 }
+
 .item-info{
     padding-left: 5px;
 }
+
 .item-info p {
-
-
     justify-content: center;
 }
+
 #shop_container {
-    /*height: 100vh;*/
     padding-top: 10px;
     display: flex;
     justify-content: center;
@@ -290,15 +269,13 @@ input[readOnly] {
 }
 
 #detail_container {
-    /*height: 100vh;*/
     padding-top: 10px;
     display: flex;
     justify-content: center;
     order: 1;
 }
 
-/* 업체 조회상세페이지 */
-
+/* 업체(조회) 상세 페이지 */
 .mv {
     margin: 0;
     padding: 0;
@@ -312,7 +289,6 @@ input[readOnly] {
     display: flex;
     width: 80%;
     height: 80%;
-    /* border: 1px solid black; */
 }
 
 .left-sections {
@@ -325,22 +301,20 @@ input[readOnly] {
     border: 1px solid black;
     padding: 20px;
     margin: 10px;
-    /* text-align: center; */
 }
+
 .basketto{
     text-align: center;
 }
 
 #c {
     flex: 1;
-
     align-items: center;
     justify-content: center;
 }
 
 .basket{
     padding: 5px;
-
 }
 
 .basket-data{

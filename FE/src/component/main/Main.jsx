@@ -20,17 +20,15 @@ const Main = () => {
     const userbutton=(e)=>{
         e.preventDefault()
          navigate("/UserMain")
-
     }
 
     //업체 페이지 이동
     const shopbutton=(e)=>{
         e.preventDefault()
        navigate("/ShopMain")
-
     }
-    //관리자 페이지 이동
 
+    //관리자 페이지 이동
     const managerbutton=(e)=>{
         e.preventDefault()
        navigate("/ManagerMain")

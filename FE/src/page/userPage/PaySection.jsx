@@ -4,10 +4,12 @@ import { Modal, Button } from 'react-bootstrap';
 import { AdminFlagContext } from "../../flag/Flag.jsx";
 
 const PaySection = ({ showModal, handleCloseModal, handleOrder, totalPrice }) => {
+
     const { setRole, user, setUserId, user_x, setX, user_y, setY } = useContext(AdminFlagContext);
     const [userInfo, setUserInfo] = useState(null);
     const [error, setError] = useState(null);
     const [address, setAddress] = useState("");
+
     useEffect(() => {
         const fetchUserInfo = async () => {
             const token = user;
@@ -54,12 +56,7 @@ const PaySection = ({ showModal, handleCloseModal, handleOrder, totalPrice }) =>
         if (user_x && user_y) {
             const fetchAddress = async () => {
                 try {
-                    // const apiKey = "d75de8ff5686d9730ec2b1a409f5b7a6"; 
-                    // const response = await axios.get(`/api/kakaov2/local/geo/coord2address.json?input_coord=WGS84&x=${user_x}&y=${user_y}`, {
-                    //     headers: {
-                    //         Authorization: `KakaoAK ${apiKey}`,
-                    //     },
-                    // });
+                  
                     const response = await axios.get(`/api/kakao/v2/local/geo/coord2address.json`, {
                         params: {
                           input_coord: 'WGS84',
@@ -85,8 +82,8 @@ const PaySection = ({ showModal, handleCloseModal, handleOrder, totalPrice }) =>
                 <Modal.Title>결제 정보 입력</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                {/* 모달 내용 */}
 
+                {/* 모달 내용 */}
                 <h5>배달정보</h5>
                 {userInfo ? (
                     <>
@@ -97,21 +94,7 @@ const PaySection = ({ showModal, handleCloseModal, handleOrder, totalPrice }) =>
                     <p>사용자 정보를 불러오는 중입니다...</p>
                 )}
 
-
                 {error && <p className="text-danger">{error}</p>}
-
-                {/* <div className="input-group input-group-sm mb-3">
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="inputGroup-sizing-sm">전화번호</span>
-                    </div>
-                    <input type="text" className="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"/>
-                </div>
-                <div className="input-group input-group-sm mb-3">
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="inputGroup-sizing-sm">배달시 요청사항</span>
-                    </div>
-                    <input type="text" className="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"/>
-                </div> */}
 
                 <h5>결제금액</h5>
                 <div className="alert alert-info" role="alert">

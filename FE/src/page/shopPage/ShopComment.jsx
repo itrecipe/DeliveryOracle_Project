@@ -17,15 +17,14 @@ const ShopComment = () => {
     const navigate = useNavigate();    
     const [comments,setComments]=useState([])
     const [check,setCheck]=useState(false)
-
-
-
     const {user,setUser,userId,setUserId,shopId,setShopid}=useContext(AdminFlagContext)
+
     useEffect(()=>{
         if(!userId){
             navigate("/")
         }
-        //댓글 목록조회 상점 아이디 기반으로 
+    
+        //댓글 목록 조회 (Store ID 기반)
         const commentList=async()=>{
             try{
                 const rs=await axios.get("http://localhost:8080/store/commentList", {
@@ -40,17 +39,12 @@ const ShopComment = () => {
             }catch(e){
                 console.log("댓글불로오기 실패",e)
             }
-
-
         }
         commentList();
     },[check])
 
-
-
     return (
         <div>
-                
             <Header />
             <Container fluid>
                 <Row>

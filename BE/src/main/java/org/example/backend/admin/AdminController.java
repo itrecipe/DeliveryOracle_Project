@@ -79,7 +79,6 @@ public class AdminController {
         else {
             return new ResponseEntity<>("FAIL", HttpStatus.BAD_REQUEST);
         }
-//
     }
 
     //유저쪽에서 업체 신고한 내용확인하기
@@ -105,24 +104,12 @@ public class AdminController {
         else {
             return new ResponseEntity<>("FAIL", HttpStatus.BAD_REQUEST);
         }
-//
     }
-
 
     //메인화면정보를 받아온다
     @GetMapping("Today")
     public TodayInfoVo today (){
-
         return adminService.today();
-
-
-
-
     }
-
-
-
-
-
 }
 

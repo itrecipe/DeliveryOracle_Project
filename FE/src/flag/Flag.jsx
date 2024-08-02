@@ -2,9 +2,7 @@ import { createContext,useState } from "react";
 
 export const AdminFlagContext = createContext({});
 
-//사용법
-    //플래그 만들기
-
+//플래그 만들기 및 사용법
 export const Flag =(props) => {
 
     const {children}=props
@@ -19,8 +17,7 @@ export const Flag =(props) => {
     const [approvalStatus, setapprovalStatus] = useState(null); // 승인상태
     const [role, setRole] = useState(null); // 유저권한
 
-
-    //AdminFlagContext 안에 provider 이 있으으로 감싸면 된다
+    //AdminFlagContext 안에 provider가 있으으로 감싸면 된다
     return (
         <AdminFlagContext.Provider value={{user,setUser,userDate,setUserDate,userId,setUserId,shopId,setShopId,riderId,setRiderId,user_x,setX,user_y,setY,userInfo,setUserInfo,approvalStatus,setapprovalStatus,role,setRole}}>
             {children}

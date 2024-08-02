@@ -4,10 +4,10 @@ import Header from '../../component/common/Header.jsx';
 import { AdminFlagContext } from "../../flag/Flag.jsx";
 import { Carousel } from 'react-bootstrap';
 import './UserMain.css';
-// import '../common/Slider.css'
 import '../../component/common/Slider.css'
 import axios from 'axios';
 import Footer from '../../component/common/Footer.jsx';
+import { v4 as uuidv4 } from 'uuid';
 
 const UserMain = () => {
     const { user_x, setRole, setX, user_y, setY, userId, setUserId, user, setUserDate } = useContext(AdminFlagContext);
@@ -16,10 +16,11 @@ const UserMain = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+
         const fetchUserInfo = async () => {
             const token = user;
             console.log(token);
-            console.log("jwt 불러오는 중");
+            console.log("jwt 호출");
             try {
                 const response = await axios.get('http://localhost:8080/api/api/userinfo', {
                     headers: {
@@ -37,6 +38,7 @@ const UserMain = () => {
         };
 
         fetchUserInfo();
+
     }, [user]);
 
     // 사용자 위치 정보 가져오기
@@ -67,8 +69,7 @@ const UserMain = () => {
         }
     }, [setX, setY]);
 
-    // 밑에 슬라이더 코드
-
+    // 아래는 슬라이더 코드
     const carouselRef = useRef(null);
     const [selectedIdx, setSelectedIdx] = useState(3);
 
@@ -181,8 +182,8 @@ const UserMain = () => {
                         { ca: 4, img: "/imgs/item05.png", text: "치킨" ,url:"/UserMenuCaList"},
                         { ca: 5, img: "/imgs/item06.png", text: "피자" ,url:"/UserMenuCaList"},
                         { ca: 6, img: "/imgs/chatbot.png", text: "AI추천",url:"/UserAiList"},
-                    ].map((item, index) => (
-                        <div className="col-md-4" key={index}>
+                    ].map((item) => (
+                        <div className="col-md-4" key={uuidv4()}>
                             <Link className="item-link" to={item.url} state={{ ca: item.ca, y: location.latitude, x: location.longitude }}>
                                 <div className="menuitem box">
                                     <img src={item.img} alt={item.text} style={item.style || {}} />
@@ -193,7 +194,6 @@ const UserMain = () => {
                     ))}
                 </div>
             </div>
-
 
             <div className="crossline"></div>
             <div className="item-recommend">
@@ -221,18 +221,6 @@ const UserMain = () => {
             <div className="crossline"></div>
             <div className="ft"></div>
             <Footer />
-            {/* 사용자 위치 정보 섹션
-            <div className="user-location">
-                <h1>User Location</h1>
-                {error ? (
-                    <p>Error: {error}</p>
-                ) : (
-                    <div>
-                        <p>Latitude Y: {location.latitude}</p>
-                        <p>Longitude X: {location.longitude}</p>
-                    </div>
-                )}
-            </div>*/}
 
         </div>
     );

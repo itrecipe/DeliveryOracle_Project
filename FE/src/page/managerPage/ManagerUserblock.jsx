@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom';
 //유저신고 처리 페이지
 const ManagerUserblock = () => {
     const [data,setData]=useState([])
-
     const [showModal, setShowModal] = useState(false); // 팝업 창 열고 닫기 상태
     const [comment,setcomment]=useState([])
     const navigate = useNavigate();
@@ -40,7 +39,9 @@ const ManagerUserblock = () => {
     const handleCloseModal = () => {
         setShowModal(false);
     }
+    
     useEffect(()=>{
+    
         const fetchData = async () => {
             
             try {
@@ -61,26 +62,17 @@ const ManagerUserblock = () => {
 
     const userblock = async (id) => {
         try {
-
-
             const response = await axios.post('http://localhost:8080/admin/block', {id :id});
 
-      
-            
             if (response.status === 200) {
                 console.log(response.data)
                 alert("유저 블락 성공")
-                // navigate("/ManagerMain")
                 setCheck(id)
-                
-
-
             }
         } catch (error) {
             console.error("승인 실패", error);
         }
     };
-
 
     return (
         <div>
@@ -134,7 +126,6 @@ const ManagerUserblock = () => {
                         <th>신고자</th>
                         <th>댓글 내용</th>
                         <th>신고내용</th>
-   
                     </tr>
                 </thead>
                 <tbody>
@@ -145,7 +136,6 @@ const ManagerUserblock = () => {
                             <td>{item.reporterEmail}</td>
                             <td>{item.content}</td>
                             <td>{item.reportText}</td>
-       
                         </tr>
                     ))}
                 </tbody>
@@ -163,10 +153,3 @@ const ManagerUserblock = () => {
 };
 
 export default ManagerUserblock;
-
-
-{/* <td>
-{item.approval_status === 0 ? (
-    <Button onClick={() => handleApprove(item.owner_id)}>승인</Button>
-) : "완료"}
-</td> */}

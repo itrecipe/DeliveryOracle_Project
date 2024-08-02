@@ -3,6 +3,7 @@ import { Navbar, Container, Nav, NavDropdown, Form, Button } from 'react-bootstr
 import { Link, useNavigate } from 'react-router-dom';
 import { AdminFlagContext } from "../../../flag/Flag.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Header = () => {
     const { user, setUser, userDate } = useContext(AdminFlagContext);
     const navigate = useNavigate();
@@ -22,12 +23,8 @@ const Header = () => {
         setUser(null);
         window.location.href = "/ManagerMain";
     };
+    
     return (
-        // <Navbar bg="dark" variant="dark">
-        //     <Container>
-        //         <Navbar.Brand><Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>Admin Dashboard</Link></Navbar.Brand>
-        //     </Container>
-        // </Navbar>
         <Navbar bg="dark" variant="dark" expand="lg" className="header-navbar">
              <Link to="/" className="navbar-brand">
                         <img src="/asset/logo.png" alt="Delivery Oracle" />

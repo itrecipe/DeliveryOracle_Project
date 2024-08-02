@@ -16,9 +16,9 @@ import PaySection from './PaySection.jsx';
 import Footer from '../../component/common/Footer.jsx';
 
 const UserShopDetail = () => {
+
     const navigate = useNavigate();
     const location = useLocation();
-    let datas = location.state.data || -1;
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -32,7 +32,8 @@ const UserShopDetail = () => {
     const { stompClient, messages, sendMessage, setMessages, connected } = useWebSocket();
     const [check,setCheck]=useState(false)
     const [showModal, setShowModal] = useState(false); // 추가: 모달 표시 여부를 관리하는 상태
-
+    
+    let datas = location.state.data || -1;
 
     useEffect(() => {
         const fetchData = async () => {
@@ -134,7 +135,6 @@ const UserShopDetail = () => {
                     console.error('Order error:', error);
                 }
             } else {
-                // alert("현재 음식점이 열려있지 않습니다");
                 console.log("주문 실패");
                 setMessages("");
             }
@@ -171,7 +171,6 @@ const UserShopDetail = () => {
             orderAccount();
         }
     }, [check]);
-
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
@@ -223,9 +222,7 @@ const UserShopDetail = () => {
     };
 
     const handleCloseModal = () => setShowModal(false);
-
     const handleShowModal = () => setShowModal(true);
-    
 
     return (
         <div>
@@ -289,7 +286,6 @@ const UserShopDetail = () => {
 
             {/* 결제 모달 */}
             <PaySection
-
                 showModal={showModal}
                 handleCloseModal={handleCloseModal}
                 handleOrder={handleOrder}
@@ -300,46 +296,3 @@ const UserShopDetail = () => {
 };
 
 export default UserShopDetail;
-
-
-// useEffect(() => {
-//     const handleMesUpdate = async () => {
-//         if (messages.content === "true" && totalPrice>0) {
-//             console.log(messages.content);
-//             const orderDetails = JSON.stringify(basket);
-//             console.log("주문클릭");
-
-//             const orderData = {
-//                 id:userId,
-//                 price:-totalPrice,
-//                 customerId: useid,
-//                 storeId: datas.store_id,
-//                 orderDetails: orderDetails,
-//                 totalPrice: totalPrice,
-//                 user_x: user_x,
-//                 user_y: user_y
-//             };
-
-//             try {
-//                 const response = await axios.post('http://localhost:8080/search/order', orderData);
-//                 console.log('Order response:', response.data);
-//                 if (response.data == 1) {
-//                     setMessages("");
-//                     setCheck(true)
-//                     // alert("주문 성공");
-//                     // navigate('/');
-//                 }
-//             } catch (error) {
-//                 console.error('Order error:', error);
-//             }
-//         } else {
-//             // alert("현재 음식점이 열려있지 않습니다");
-//             console.log("주문 실패");
-//             setMessages("");
-//         }
-//     };
-
-//     if (messages.content) {
-//         handleMesUpdate();
-//     }
-// }, [messages, basket, datas.store_id, totalPrice, useid]);

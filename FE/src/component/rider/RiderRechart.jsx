@@ -4,6 +4,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { AdminFlagContext } from "../../flag/Flag.jsx";
 
 const RiderRechart = () => {
+
   const { userId } = useContext(AdminFlagContext);
   const [data, setData] = useState([]);
 
@@ -52,15 +53,6 @@ const RiderRechart = () => {
       .sort((a, b) => new Date(a.orderDate) - new Date(b.orderDate));
   };
 
-  // 매출 데이터를 받아서 그래프에 맞게 가공하는 함수
-//   const processSalesData = (data) => {
-//     return data.map(item => ({
-//       order_date: item.delivery_id, 
-//       deliveryPrice: item.deliveryPrice
-    
-//     }));
-//   };
-
   return (
     <div style={{ width: '100%' }}>
       <h4>라이더 일 단위 매출내역 그래프</h4>
@@ -84,26 +76,3 @@ const RiderRechart = () => {
 };
 
 export default RiderRechart;
-
-
-// const processSalesData = (salesData) => {
-//     const salesByDate = salesData.reduce((acc, sale) => {
-      
-//       const koreanDate = new Date(new Date(sale.order_date).getTime() + (9 * 60 * 60 * 1000));
-//       console.log(koreanDate.toISOString())
-//       const date = koreanDate.toISOString().split('T')[0]; // 날짜만 추출
-//       if (!acc[date]) {
-//         acc[date] = 0;
-//       }
-//       acc[date] += sale.total_price;
-//       return acc;
-//     }, {});
-
-//     // 객체를 배열로 변환하고 날짜를 기준으로 정렬
-//     return Object.keys(salesByDate)
-//       .map(date => ({
-//         order_date: date,
-//         total_price: salesByDate[date]
-//       }))
-//       .sort((a, b) => new Date(a.order_date) - new Date(b.order_date));
-//   };

@@ -14,26 +14,18 @@ const ShopCommentText = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const data = location.state?.array || "[]";
-
-
     const {user,setUser,userInfo, setUserInfo,userIdm,userDate, setUserDate}=useContext(AdminFlagContext)
-
-
     const [comments,setComments]=useState("")
-    
-
-
 
     // 실제 서버로 별점을 전송하는 함수 (예시)
     const sendRatingToServer = async(e) => {
         e.preventDefault();
+
         // 여기서 서버로 rating 변수를 전송하는 로직을 추가할 수 있음
-      
         try {
             const rs = await axios.post("http://localhost:8080/comments");
             if (rs.status === 201) {
                 console.log(rs.data);
-
 
                 if (rs.data) {
                   navigate("/");
@@ -48,9 +40,7 @@ const ShopCommentText = () => {
         } catch (e) {
             console.log("연결실패", e);
         }
-
     };
-
 
     return (
         <div>

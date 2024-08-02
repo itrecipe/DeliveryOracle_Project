@@ -12,6 +12,7 @@ import './UserAiList.css';
 import Footer from '../../component/common/Footer.jsx';
 
 const UserAiList = () => {
+
     const location = useLocation();
     const caInfo = location.state?.ca || -1; // 카테고리 정보
     const y = location.state?.y;
@@ -26,13 +27,13 @@ const UserAiList = () => {
     const [currentCheck, setCurrentCheck] = useState(null);
     const { user, setUser, userId, setUserId, shopId, setShopid, userDate, setUserDate } = useContext(AdminFlagContext);
     const [count,setCount]=useState(0);
+    
     useEffect(() => {
 
         if (!user) {
             alert("AI 기능사용을 위해 로그인해주세요!");
             navigate('/UserMain');
         }
-
 
         console.log("x", x);
         let counts=0
@@ -72,7 +73,6 @@ const UserAiList = () => {
 
     }, [userId, x, y]);
 
-
     useEffect(() => {
         const checkAllShops = async () => {
             const updatedShopStates = {};
@@ -103,7 +103,7 @@ const UserAiList = () => {
     }, [data]);
 
     const check = async (array) => {
-        setCurrentCheck(array); // Store the current item being checked
+        setCurrentCheck(array);
 
         try {
             const rs = await axios.get("http://localhost:8080/search/emailTrue", {

@@ -7,7 +7,7 @@ import Sidebar from '../../component/manager/headside/Sidebar';
 
 const ManagerApprove = () => {
 
-    //요청 받아서 목록 받아오고 이걸전개 한다 
+    //요청을 받아서 목록을 가져와서 전개 한다 
     return (
         <div>
             <Header />

@@ -2,10 +2,13 @@ import React from "react";
 import axios from "axios";
 
 class App extends React.Component {
-  state = {
+
+    state = {
+
     // 응답에서 가져올 값들
     next_redirect_pc_url: "",
     tid: "",
+    
     // 요청에 넘겨줄 매개변수들
     params: {
       cid: "TC0ONETIME",
@@ -24,8 +27,9 @@ class App extends React.Component {
 
   componentDidMount() {
     const { params } = this.state;
+    
     axios({
-      // 프록시에 카카오 도메인을 설정했으므로 결제 준비 url만 주자
+      // 프록시에 카카오 도메인을 설정 했으므로 결제 준비 url만 넘겨준다.
       url: "/v1/payment/ready",
       // 결제 준비 API는 POST 메소드라고 한다.
       method: "POST",
@@ -50,13 +54,14 @@ class App extends React.Component {
   }
 
   render() {
+    
     const { next_redirect_pc_url } = this.state;
 
     return (<div>
       <h2>Pay page</h2>
-      <a href={ next_redirect_pc_url }>
-        { next_redirect_pc_url }
-      </a>
+        <a href={ next_redirect_pc_url }>
+          { next_redirect_pc_url }
+        </a>
       </div>);
   }
 }

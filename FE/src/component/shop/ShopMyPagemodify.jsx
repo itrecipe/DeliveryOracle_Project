@@ -72,6 +72,7 @@ const ShopMyPagemodify = () => {
         formData.append("newPassword", newPassword);
 
         const token = user;
+        
         try {
             await axios.post('http://localhost:8080/edit/change-password', formData, {
                 headers: {
