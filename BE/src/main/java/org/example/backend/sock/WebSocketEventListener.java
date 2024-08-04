@@ -36,7 +36,7 @@ public class WebSocketEventListener {
 
         if (authorizationHeaders != null && !authorizationHeaders.isEmpty()) {
             Authentication authentication = jwtTokenProvider.getAuthentication(authorizationHeaders.get(0));
-            String username = authentication.getName();0
+            String username = authentication.getName();
 
             System.out.println("접속된 사용자명 : " + username);
 
