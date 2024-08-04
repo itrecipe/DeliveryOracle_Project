@@ -1,7 +1,6 @@
 package org.example.backend.sock;
 
 import org.springframework.stereotype.Component;
-
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
@@ -19,6 +18,7 @@ public class SessionRegistry {
 
     public void unregisterSession(String sessionId) {
         String username = sessionUserMap.remove(sessionId);
+
         if (username != null) {
             Set<String> sessions = userSessionMap.get(username);
             if (sessions != null) {
@@ -33,9 +33,7 @@ public class SessionRegistry {
     public Set<String> getSessionIds(String username) {
         return userSessionMap.getOrDefault(username, Set.of());
     }
-
     public String getUsername(String sessionId) {
         return sessionUserMap.get(sessionId);
     }
-
 }

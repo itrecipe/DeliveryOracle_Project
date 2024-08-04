@@ -36,9 +36,7 @@ public class CommentsController {
         return commentsService.list(store_id);
     }
 
-     /* 댓글 목록 조회
-
-
+     /* - 댓글 목록 조회
         @param commentsVo
         @return
         @throws Exception
@@ -53,7 +51,6 @@ public class CommentsController {
         }
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
-
 
     //기존 댓글 등록
     @PostMapping("")
@@ -72,7 +69,6 @@ public class CommentsController {
     //댓글 수정
     @PutMapping("/Edit")
     public ResponseEntity<String> update(@RequestBody CommentsVo commentsVo) {
-
         try {
             int result = commentsService.update(commentsVo);
             log.info("댓글 업데이트 result 값 확인 : " + result);
@@ -103,6 +99,7 @@ public class CommentsController {
             return new ResponseEntity<>("FAIL", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
     //대댓글 등록
     @PostMapping("/reply")
     public ResponseEntity<String> insertReply(@RequestBody CommentsVo commentsVo) throws Exception {
@@ -110,7 +107,6 @@ public class CommentsController {
         commentsVo.setDepth(2);
 
         int result = commentsService.insertReply(commentsVo);
-
         if(result > 0) {
             return new ResponseEntity<>("SUCCESS", HttpStatus.CREATED);
         }
@@ -120,7 +116,6 @@ public class CommentsController {
     //대댓글 수정
     @PutMapping("/reply")
     public ResponseEntity<String> updateReply(@RequestBody CommentsVo commentsVo) {
-
         try {
             int result = commentsService.updateReply(commentsVo);
             log.info("대댓글 업데이트 result 값 확인 : " + result);

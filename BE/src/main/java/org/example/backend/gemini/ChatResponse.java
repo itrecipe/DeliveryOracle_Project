@@ -20,7 +20,6 @@
 //        private String finishReason;
 //        private int index;
 //        private List<SafetyRating> safetyRatings;
-//
 //    }
 //
 //    @Getter @Setter
@@ -28,14 +27,12 @@
 //    public static class Content {
 //        private List<Parts> parts;
 //        private String role;
-//
 //    }
 //
 //    @Getter @Setter
 //    @ToString
 //    public static class Parts {
 //        private String text;
-//
 //    }
 //
 //    @Getter @Setter
@@ -47,6 +44,5 @@
 //    @Getter @Setter
 //    public static class PromptFeedback {
 //        private List<SafetyRating> safetyRatings;
-//
 //    }
 //}

@@ -23,10 +23,11 @@
 //
 //        String orderList=geminiService.order(id);
 //        String menuList=geminiService.menuList();
+
 //        System.out.println(menuList);
 //        System.out.println(orderList);
+
 //        String weather=geminiService.weather();
-//
 //
 //        try {
 //            if (orderList==null){
@@ -44,13 +45,8 @@
 //
 //    @GetMapping("/chat2")
 //    public ResponseEntity<?> weather() throws JsonProcessingException {
-//
-//
 //        try {
-//
 //            return ResponseEntity.ok().body(geminiService.weather());
-//
-//
 //        }
 //        catch (HttpClientErrorException e) {
 //            return ResponseEntity.badRequest().body(e.getMessage());

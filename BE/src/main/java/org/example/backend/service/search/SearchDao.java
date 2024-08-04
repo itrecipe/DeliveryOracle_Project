@@ -10,7 +10,6 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,28 +20,26 @@ public class SearchDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
     
-    //음식점 조회 카테고리형식
-//    SELECT *
-//    FROM StoreRegistration
-//    WHERE store_ca = ?
-//    AND approval_status = 1
-//    AND store_x BETWEEN ? - 0.05 AND ? + 0.05
-//    AND store_y BETWEEN ? - 0.05 AND ? + 0.05;
+    /* - 음식점 조회 카테고리형식
+        SELECT *
+        FROM StoreRegistration
+        WHERE store_ca = ?
+        AND approval_status = 1
+        AND store_x BETWEEN ? - 0.05 AND ? + 0.05
+        AND store_y BETWEEN ? - 0.05 AND ? + 0.05;
+     */
+
     public List<StoreRegistrationVo> storeList(String num , BigDecimal x , BigDecimal y){
         String sql="select * from StoreRegistration where store_ca=? AND approval_status=1 AND store_x BETWEEN ? - 0.08 AND ? + 0.08 AND store_y BETWEEN ? - 0.08 AND ? + 0.08";
-
         List<StoreRegistrationVo> stoes = new ArrayList<StoreRegistrationVo>();
         RowMapper<StoreRegistrationVo> rowMapper = BeanPropertyRowMapper.newInstance(StoreRegistrationVo.class);
+
         try{
             stoes=jdbcTemplate.query(sql,rowMapper,num,x,x,y,y);
-
-
-        }catch (Exception e){
+        } catch (Exception e){
         e.printStackTrace();
-
         }
-                return stoes;
-
+            return stoes;
     }
 
 //메뉴 목록 불러오기
@@ -67,12 +64,9 @@ public class SearchDao {
         try{
             jdbcTemplate.update(sql,orderVo.getCustomerId(),orderVo.getStoreId(),orderVo.getOrderDetails(),orderVo.getTotalPrice(),orderVo.getUser_x(),orderVo.getUser_y());
             rs=1;
-
-        }catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
-
         }
-
         return rs;
     }
 
@@ -84,11 +78,8 @@ public class SearchDao {
 
         try{
             email= jdbcTemplate.queryForObject(sql,String.class,id);
-
-
-        }catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
-
         }
         return email;
     }
@@ -102,14 +93,13 @@ public class SearchDao {
             email= jdbcTemplate.queryForObject(sql,String.class,id);
 
 
-        }catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
-
         }
         return email;
     }
-    //주문내역 조회
 
+    //주문내역 조회
     public List<OrderListVo> getUserOrders(int userId) {
         String sql = "SELECT oi.order_id,\n" +
                 "       oi.customer_id,\n" +
@@ -182,8 +172,10 @@ public class SearchDao {
                 "    AND visibility_status IN (1, 2)\n" +
                 "ORDER BY \n" +
                 "    comment_id DESC;\n";
+
         List<CommentsVo> commentLists = new ArrayList<CommentsVo>();
         RowMapper<CommentsVo> rowMapper= BeanPropertyRowMapper.newInstance(CommentsVo.class);
+
         try {
             commentLists = jdbcTemplate.query(sql, rowMapper, id);
         }catch (Exception e) {
@@ -191,8 +183,5 @@ public class SearchDao {
             e.printStackTrace();
         }
         return commentLists;
-
     }
-
 }
-

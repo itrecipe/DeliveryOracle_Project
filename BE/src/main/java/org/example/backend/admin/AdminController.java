@@ -2,8 +2,6 @@ package org.example.backend.admin;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.backend.admin.dto.*;
-import org.example.backend.service.StoreReportVo;
-import org.example.backend.store.dto.ReportsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,10 +25,11 @@ public class AdminController {
         return adminService.postAllApprovals();
     }
 
-    // GET 요청을 통해 승인 처리하기
-    // GET 요청: axios를 사용하여 GET 요청을 보내고, URL에 쿼리 파라미터를 포함시킬 수 있습니다.
-    // const response = await axios.get(`http://localhost:8080/admin/approve?owner_id=${id}`);
-    // 이 경우, owner_id가 URL의 쿼리 스트링으로 전달되어 Spring Boot의 @RequestParam으로 받을 수 있습니다.
+    /* - GET 요청을 통해 승인 처리하기
+       GET 요청: axios를 사용하여 GET 요청을 보내고, URL에 쿼리 파라미터를 포함시킬 수 있습니다.
+       const response = await axios.get(`http://localhost:8080/admin/approve?owner_id=${id}`);
+      이 경우, owner_id가 URL의 쿼리 스트링으로 전달되어 Spring Boot의 @RequestParam으로 받을 수 있습니다.
+    */
 
     @GetMapping("/approve")
     public String setAdminApproval(@RequestParam("store_id") int store_id) {

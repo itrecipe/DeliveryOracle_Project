@@ -1,13 +1,7 @@
 package org.example.backend.rider;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +9,6 @@ import java.util.List;
 public class RiderService {
     @Autowired
     private RiderDao riderDao;
-
 
     //배달전체 목록 불러오기
     public List<RiderVo> orderlist(BigDecimal x, BigDecimal y) {
@@ -40,7 +33,6 @@ public class RiderService {
             double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
             i.setDistanceToUser(Math.round((EARTH_RADIUS_KM * c)* 1000.0)/1000.0);
 
-
             // 상점과 라이더 사이의 거리 계산
             double dLat2 = Math.toRadians(storey - myy);
             double dLon2 = Math.toRadians(storex - myx);
@@ -49,8 +41,8 @@ public class RiderService {
                             Math.sin(dLon2 / 2) * Math.sin(dLon2 / 2);
             double c2 = 2 * Math.atan2(Math.sqrt(a2), Math.sqrt(1 - a2));
             i.setDistanceToStore(Math.round((EARTH_RADIUS_KM * c2)* 1000.0)/1000.0);
-//
-//            //배달가격 계산
+
+            //배달가격 계산
             double dStore=i.getDistanceToStore();
             double dUser=i.getDistanceToUser();
             int price=0;
@@ -82,19 +74,15 @@ public class RiderService {
             return 1;
         else
             return -1;
-
     }
 
-    //콜수락한거 목록조회
+    //수락된 콜 목록 조회
     public List<RiderVo> orderCall(int id){
-
         return riderDao.orderCall(id);
-
     }
 
     //주문완료
     public int finish( RiderVo riderVo){
-
         //라이더 db에 상태 1로 수정
         int callrs=riderDao.finish(riderVo);
         //주문 db 상태 수정 배달 완료 4로 수정하기
@@ -109,9 +97,7 @@ public class RiderService {
     public List<RiderVo> Receipt(int riderId){
         return riderDao.riderReceipt(riderId);
     }
-
     public List<RiderVo> Revenue(int riderId){
         return riderDao.riderRevenue(riderId);
     }
-
 }

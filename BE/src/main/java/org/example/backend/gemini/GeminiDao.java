@@ -6,7 +6,6 @@
 //import org.springframework.jdbc.core.JdbcTemplate;
 //import org.springframework.jdbc.core.RowMapper;
 //import org.springframework.stereotype.Repository;
-//
 //import java.sql.ResultSet;
 //import java.sql.SQLException;
 //import java.util.ArrayList;
@@ -38,7 +37,6 @@
 //            e.printStackTrace();
 //        }
 //        return order_info;
-//
 //    }
 //
 //    public List<String> menuList() {
@@ -56,9 +54,6 @@
 //            // TODO: handle exception
 //            e.printStackTrace();
 //        }
-//
 //        return menus;
-//
 //    }
-//
 //}

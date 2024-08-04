@@ -1,7 +1,6 @@
 package org.example.backend.service.storeReport;
 
 import org.example.backend.service.StoreReportVo;
-import org.example.backend.store.dto.StoreRegistrationVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -15,8 +14,8 @@ public class ReportDao {
     //신고했는지 아닌지확인하는 절차
     public int reportCheck(StoreReportVo storeReportVo){
         String sql = "SELECT store_id FROM StoreReports WHERE order_id = ? ;";
-        //0을 리턴하면 아무것도 없다는거다.
 
+        //0을 리턴하면 데이터가 아무것도 없다는 뜻으로 해석할것
         try{
             return jdbcTemplate.queryForObject(sql,Integer.class,storeReportVo.getOrderId());
         }
@@ -35,6 +34,7 @@ public class ReportDao {
                 "VALUES (?,?,?,?)";
 
         int rs = 0;
+
         try {
             jdbcTemplate.update(sql,storeReportVo.getOrderId(),storeReportVo.getStoreId(),storeReportVo.getReporterId(),storeReportVo.getReportText());
             rs = 1;
@@ -42,10 +42,6 @@ public class ReportDao {
             e.printStackTrace();
             rs = -1;
         }
-
         return rs;
     }
-
-
-
 }

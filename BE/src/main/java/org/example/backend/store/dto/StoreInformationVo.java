@@ -6,7 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class StoreInformationVo {
-
     private int storeId;
     private String menuName;
     private int menuPrice;

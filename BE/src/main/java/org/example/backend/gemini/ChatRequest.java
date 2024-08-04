@@ -23,7 +23,6 @@
 //    @Getter @Setter
 //    public static class Parts {
 //        private String text;
-//
 //    }
 //
 //    @Getter @Setter
@@ -38,10 +37,8 @@
 //        this.contents = new ArrayList<>();
 //        Content content = new Content();
 //        Parts parts = new Parts();
-//
 //        parts.setText(prompt);
 //        content.setParts(parts);
-//
 //        this.contents.add(content);
 //        this.generationConfig = new GenerationConfig();
 //        this.generationConfig.setCandidate_count(1);
@@ -49,7 +46,6 @@
 //        this.generationConfig.setTemperature(0.7);
 //    }
 //}
-//
 //
 ////@Builder
 ////public class User {

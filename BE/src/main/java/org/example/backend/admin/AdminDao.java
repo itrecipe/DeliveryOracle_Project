@@ -1,7 +1,6 @@
 package org.example.backend.admin;
 
 import org.example.backend.admin.dto.*;
-import org.example.backend.service.StoreReportVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -82,8 +81,6 @@ public class AdminDao {
     }
 
     //유저 신고 내역 조회
-
-
     public List<ReportsUserVo> userReport(){
         String sql = "SELECT \n" +
                 "    r.comment_author_id,\n" +
@@ -147,7 +144,6 @@ public class AdminDao {
                 "JOIN UserInformation ui ON ua.user_id = ui.Email\n" +
                 "SET ua.auth = 'USER_BLOCK'\n" +
                 "WHERE ui.user_id = ?;";
-
         try {
             jdbcTemplate.update(sql,id);
             return 1;
@@ -222,7 +218,6 @@ public class AdminDao {
 
         String sql = "    UPDATE storeregistration set approval_status=2\n" +
                 "\tWHERE store_id = ? ;\n";
-
         try {
             jdbcTemplate.update(sql,id);
             return 1;
@@ -231,10 +226,7 @@ public class AdminDao {
             e.printStackTrace();
             return -1;
         }
-    }
-
-    //업체 신고 리포터 1로 변경
-
+    } //업체 신고 리포터 1로 변경
 
     //오늘자 메인 메뉴정보 확인
     public TodayInfoVo today(){
@@ -254,15 +246,5 @@ public class AdminDao {
             e.printStackTrace();
             return null;
         }
-
-
     }
-
-
-
-
-
-
-
-
 }

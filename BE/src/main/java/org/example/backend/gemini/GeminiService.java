@@ -73,26 +73,22 @@
 //                    uniqueStores.add(store);
 //                }
 //            }
-//
 //            if (!uniqueStores.isEmpty()) {
 //                menuList.put(menuNames, uniqueStores);
 //                System.out.println(uniqueStores);
 //            }
 //        }
-//
 //        return menuList;
 //    }
 //
-//
-//
 //    public String order(int id) throws JsonProcessingException {
 //        List<String> orders= geminiDao.order(id);
-//
 //        String names=" ";
 //        ObjectMapper objectMapper = new ObjectMapper();
 //        List<String> menuNames = new ArrayList<>();
+//
 //        for (String orderDetail : orders) {
-//            //제인스 데이터로 받아온 거 변환.
+//            //제이슨으로 받아온 데이터 변환.
 //            List<Map<String, Object>> orderList = objectMapper.readValue(orderDetail, new TypeReference<List<Map<String, Object>>>() {});
 //
 //            for (Map<String, Object> menuItem : orderList) {
@@ -102,7 +98,6 @@
 //            }
 //        }
 //        return names;
-//
 //    }
 //
 //    public String menuList() throws JsonProcessingException {
@@ -113,12 +108,9 @@
 //
 //        for (String menu : menus) {
 //            //제인스 데이터로 받아온 거 변환.
-//
 //            menuName+=" "+menu+",";
 //        }
-//
 //        return menuName;
-//
 //    }
 //
 //    @Value("${WEATHER_API}")
@@ -128,6 +120,7 @@
 //    public String weather(){
 //        //현재 날짜
 //        LocalDate currentDate = LocalDate.now();
+
 //        //몇월인지 확인
 //         int monthValue=currentDate.getMonthValue();
 //         String seasonMenu;
@@ -158,17 +151,16 @@
 //                break;
 //        }
 //
-//
-//
 //        String url = "https://api.openweathermap.org/data/2.5/weather?lat=37.472737&lon=126.885673&appid=" + apiKey + "&units=metric";
 //        WeatherResponse response = restTemplate.getForObject(url, WeatherResponse.class);
+
 //        //날씨
 //        System.out.println(response.getWeather().get(0).getDescription());
+
 //        //기온
 //        System.out.println(response.getMain().getTemp());
 //
 //        String weather="날씨는 "+response.getWeather().get(0).getDescription()+"이고 현재기온은 "+response.getMain().getTemp()+"그리고 현재 "+seasonMenu;
 //        return weather;
-//
 //    }
 //}

@@ -4,7 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="org.example.backend.comments.mapper.CommentsMapper">
-
     <!-- 댓글 목록 -->
     <select id="list" resultType="org.example.backend.comments.dto.CommentsVo">
         SELECT *
@@ -85,6 +84,4 @@
         SET visibility_status = 0
         WHERE comment_id = #{commentId} AND depth = 2
     </update>
-
-
 </mapper>

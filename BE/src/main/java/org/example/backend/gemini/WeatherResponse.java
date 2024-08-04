@@ -1,8 +1,6 @@
 //package org.example.backend.gemini;
-//
 //import com.fasterxml.jackson.annotation.JsonProperty;
 //import lombok.*;
-//
 //import java.util.List;
 //
 //@Data
@@ -10,7 +8,6 @@
 //@AllArgsConstructor
 //@NoArgsConstructor
 //public class WeatherResponse {
-//
 //
 //    private Coord coord;
 //    private List<Weather> weather;
@@ -48,9 +45,5 @@
 //        private int seaLevel;
 //        @JsonProperty("grnd_level")
 //        private int grndLevel;
-//
 //    }
-//
-//
-//
 //}

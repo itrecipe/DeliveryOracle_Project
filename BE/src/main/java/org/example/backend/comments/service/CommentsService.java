@@ -1,7 +1,6 @@
 package org.example.backend.comments.service;
 
 import org.example.backend.comments.dto.CommentsVo;
-
 import java.util.List;
 
 public interface CommentsService {

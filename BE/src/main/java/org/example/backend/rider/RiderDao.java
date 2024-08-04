@@ -1,14 +1,9 @@
 package org.example.backend.rider;
-
-
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -63,8 +58,7 @@ public class RiderDao {
                 e.printStackTrace();
                 return -1;
             }
-
-        return rs;
+            return rs;
         }
 
 
@@ -80,14 +74,10 @@ public class RiderDao {
             e.printStackTrace();
             return -1;
         }
-
-
     }
 
     //콜수락한거 목록조회
     public List<RiderVo> orderCall(int id){
-
-
         String sql = "select * from RiderDelivery where rider_id=? and delivery_status=0";
         List<RiderVo> riderVos=new ArrayList<RiderVo>();
         RowMapper<RiderVo> rowMapper= BeanPropertyRowMapper.newInstance(RiderVo.class);
@@ -97,7 +87,6 @@ public class RiderDao {
             // TODO: handle exception
             e.printStackTrace();
         }
-
         return riderVos;
     }
 
@@ -108,13 +97,11 @@ public class RiderDao {
         try {
             jdbcTemplate.update(sql,riderVo.getDeliveryId());
             rs=1;
-
         } catch (Exception e) {
             // 예외 처리 로직 (예: 로깅)
             e.printStackTrace();
             return -1;
         }
-
         return rs;
     }
 
@@ -129,7 +116,6 @@ public class RiderDao {
             e.printStackTrace();
             return -1;
         }
-
     }
 
     public List<RiderVo> riderReceipt( int riderId) {
@@ -142,7 +128,6 @@ public class RiderDao {
             // TODO: handle exception
             e.printStackTrace();
         }
-
         return riderVos;
     }
 
@@ -150,7 +135,6 @@ public class RiderDao {
         String sql = "SELECT rider_id, delivery_price, delivery_id, order_date  " +
                 "FROM RiderDelivery " +
                 "WHERE rider_id = ? and delivery_status=1";
-
         List<RiderVo> Revenue = new ArrayList<RiderVo>();
         RowMapper<RiderVo> rowMapper= BeanPropertyRowMapper.newInstance(RiderVo.class);
         try {
@@ -161,5 +145,4 @@ public class RiderDao {
         }
         return Revenue;
     }
-
 }

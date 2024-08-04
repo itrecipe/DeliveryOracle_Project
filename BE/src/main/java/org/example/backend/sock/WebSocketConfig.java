@@ -16,27 +16,21 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Autowired
     private JwtTokenProvider jwtTokenProvider;
 
-    //    @Autowired
-//    private SessionRegistry sessionRegistry; // SessionRegistry 주입
     @Bean
     public CustomHandshakeHandler customHandshakeHandler(JwtTokenProvider jwtTokenProvider) {
         return new CustomHandshakeHandler(jwtTokenProvider);
     }
-
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {
         config.enableSimpleBroker("/topic", "/queue");
         config.setApplicationDestinationPrefixes("/app");
         config.setUserDestinationPrefix("/user");
-
     }
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-
         registry.addEndpoint("/ws").setAllowedOrigins("http://localhost:3000/").setHandshakeHandler(customHandshakeHandler(jwtTokenProvider)).addInterceptors(new HttpSessionHandshakeInterceptor()).withSockJS();;
-
         registry.addEndpoint("/wb").setAllowedOrigins("http://localhost:3000/").withSockJS();
     }
 }

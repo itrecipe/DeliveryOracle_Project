@@ -2,8 +2,6 @@ package org.example.backend.service;
 
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 @Getter
@@ -28,7 +26,4 @@ public class OrderListVo {
     private String storeImage;
     //상태
     private int orderApprovalStatus;
-
-
-
 }

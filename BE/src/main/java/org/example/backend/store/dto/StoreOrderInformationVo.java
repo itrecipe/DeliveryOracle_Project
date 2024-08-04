@@ -2,7 +2,6 @@ package org.example.backend.store.dto;
 
 import lombok.Getter;
 import lombok.Setter;
-
 import java.sql.Timestamp;
 
 @Getter

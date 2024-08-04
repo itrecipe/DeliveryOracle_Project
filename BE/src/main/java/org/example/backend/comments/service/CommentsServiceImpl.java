@@ -6,7 +6,6 @@ import org.example.backend.comments.mapper.CommentsMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 
 @Slf4j
@@ -43,10 +42,12 @@ public class CommentsServiceImpl implements CommentsService {
         int result = commentsMapper.insert(commentsVo);
         //주문 테이블 상태 6으로 바꿈 
         int rs=commentsMapper.orderup(id);
-        // 강제로 예외 발생시키기
-//        if (true) {
-//            throw new RuntimeException("강제로 발생시킨 예외로 인해 트랜잭션 롤백됩니다.");
-//        }
+
+        /* 강제로 예외 발생시키기
+            if (true) {
+                throw new RuntimeException("강제로 발생시킨 예외로 인해 트랜잭션 롤백됩니다.");
+            }
+        */
         return result;
     }
 
@@ -58,7 +59,7 @@ public class CommentsServiceImpl implements CommentsService {
         return result;
     }
 
-    //댓글 삭제시 가시성 상태 변경 : "존재하지 않는 댓글입니다"를 표시해줄놈
+    //댓글 삭제시 가시성 상태 변경 : "존재하지 않는 댓글입니다"를 표시할 메서드
     @Override
     public int updateCommentVisibility(int comment_id) throws Exception {
         int result = commentsMapper.updateCommentVisibility(comment_id);
@@ -69,7 +70,6 @@ public class CommentsServiceImpl implements CommentsService {
     @Override
     public int insertReply(CommentsVo commentsVo) throws Exception {
         int result = commentsMapper.insertReply(commentsVo);
-
         return result;
     }
 
@@ -81,12 +81,11 @@ public class CommentsServiceImpl implements CommentsService {
         return result;
     }
 
-    //댓글 삭제시 가시성 상태 변경 : "존재하지 않는 댓글입니다"를 표시해줄놈
+    //대댓글 삭제시 가시성 상태 변경 : "존재하지 않는 대댓글입니다"를 표시할 메서드
     @Override
     public int updateReplyVisibility(int comment_id) throws Exception {
         int result = commentsMapper.updateReplyVisibility(comment_id);
         log.info("대댓글 가시성 상태 변경 확인 : " + result);
         return result;
     }
-
 }

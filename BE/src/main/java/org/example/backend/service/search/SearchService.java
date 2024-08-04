@@ -8,8 +8,6 @@ import org.example.backend.store.dto.StoreInformationVo;
 import org.example.backend.store.dto.StoreRegistrationVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
-
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Set;
@@ -22,6 +20,7 @@ public class SearchService {
 
     @Autowired
     private  SessionRegistry sessionRegistry;
+
     //음식점 조회 카테고리 형식
     public List<StoreRegistrationVo> storeList(String num, BigDecimal x ,BigDecimal y){
         return searchDao.storeList(num,x,y);
@@ -37,22 +36,24 @@ public class SearchService {
         return searchDao.order(orderVo);
     }
 
-    //이메일탐색
+    //이메일 탐색
     public  String email(int id){
         return  searchDao.email(id);
     }
+
     //이메일 탐색하여 현재 그 유저가 로그인했는지 확인
     public  String emailTrue(int id){
         String email=searchDao.emailTrue(id);
         Set<String> sessionIds=sessionRegistry.getSessionIds(email);
+
         if(sessionIds.isEmpty()){
             return "f";
         }
         else{
             return "t";
         }
-
     }
+
     //주문내역조회
     public List<OrderListVo> getUserOrders(int userId) {
         return searchDao.getUserOrders(userId);

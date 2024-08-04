@@ -51,7 +51,6 @@ public class StoreService {
         else{
             return storeDao.menuedit(storeInformationVo);
         }
-
     }
 
     //메뉴 삭제
@@ -94,7 +93,7 @@ public class StoreService {
         try {
             return storeDao.store_info(id);
         } catch (EmptyResultDataAccessException e) {
-            //내가 지정한 오류다 이름이다.
+            //내가 지정한 오류 및 오류명
             throw new StoreNotFoundException("Store not found for owner ID: " + id);
         } catch (Exception e) {
             throw new StoreServiceException("An error occurred while fetching store information", e);
@@ -107,18 +106,15 @@ public class StoreService {
         if(storeRegistrationVo.getStore_image()!=null){
             //이미지가 존재할경우
             return storeDao.store_edit_img(storeRegistrationVo);
-
         }else{
             //이미지가 존재하지 않을 경우
             return storeDao.store_edit(storeRegistrationVo);
         }
-
     }
 
     //업체 삭제 승인
     public int store_delete(int id){
         return storeDao.store_delete(id);
-
     }
 
     //댓글 목록불러오기
@@ -131,20 +127,15 @@ public class StoreService {
     public int report(ReportsVo reportsVo){
         //댓글신고테이블에 기입
         int data1=storeDao.report(reportsVo);
+
         //댓글 테이블 상태 수정 2로
         int data2=storeDao.reportOrder(reportsVo.getCommentId());
 
-
       return 1;
-
-
     }
+
     //업체가 존재하는 확인
     public int exist(int id){
-
         return storeDao.exist(id);
-
     }
-
-
 }

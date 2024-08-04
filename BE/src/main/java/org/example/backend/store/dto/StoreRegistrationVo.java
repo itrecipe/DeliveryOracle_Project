@@ -2,7 +2,6 @@ package org.example.backend.store.dto;
 
 import lombok.Getter;
 import lombok.Setter;
-
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Date;
@@ -10,7 +9,6 @@ import java.util.Date;
 @Getter
 @Setter
 public class StoreRegistrationVo {
-
     private int store_id;
     private int owner_id;
     private String store_name;

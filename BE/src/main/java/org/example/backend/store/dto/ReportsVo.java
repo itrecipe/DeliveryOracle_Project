@@ -2,8 +2,8 @@ package org.example.backend.store.dto;
 
 import lombok.Getter;
 import lombok.Setter;
-
 import java.sql.Timestamp;
+
 @Getter
 @Setter
 public class ReportsVo {
@@ -14,6 +14,4 @@ public class ReportsVo {
     private String reportText;
     private int reporterId;
     private Timestamp reportDate;
-
-
 }

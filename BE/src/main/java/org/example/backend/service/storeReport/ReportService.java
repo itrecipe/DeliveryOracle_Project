@@ -6,16 +6,18 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ReportService {
+
     @Autowired
     private ReportDao reportDao;
 
-
     //업체신고 서비스
     public int report(StoreReportVo storeReportVo){
-        //그 주문번호로 신고한 적 이 있는지 확인
+
+        //해당하는 주문번호로 신고된적이 있는지 확인하기
         int check=reportDao.reportCheck(storeReportVo);
         System.out.println(check);
-        //신고한적없다면 신고가능
+
+        //신고한적이 없다면 신고가능
         if (check==0){
             int a=reportDao.report(storeReportVo);
             System.out.println(a);
@@ -23,17 +25,14 @@ public class ReportService {
         }
         //10 이미 존재할때
         return 10;
-
     }
 
     public int check(StoreReportVo storeReportVo){
-        //그 주문번호로 신고한 적 이 있는지 확인
+        //해당 주문번호로 신고한적이 있는지 확인
         int check=reportDao.reportCheck(storeReportVo);
         System.out.println(check);
-        //신고한적없다면 신고가능
-        //10 이미 존재할때
+
+        // 신고한적이 없다면 신고가능(10 이미 존재할때 가능하다.)
         return check;
-
     }
-
 }
