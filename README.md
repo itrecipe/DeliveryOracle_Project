@@ -1,1 +1,7 @@
-# DeliveryOracle_Project
+# 프로젝트명 :  DeliveryOracle
+# 프로젝트 소개 :
+# 개발기간 : 
+# 팀 구성 :
+# 개발환경 :
+# 설계의 주안점 :
+# 주요기능 : 
