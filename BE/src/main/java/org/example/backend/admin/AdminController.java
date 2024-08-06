@@ -28,7 +28,7 @@ public class AdminController {
     /* - GET 요청을 통해 승인 처리하기
        GET 요청: axios를 사용하여 GET 요청을 보내고, URL에 쿼리 파라미터를 포함시킬 수 있습니다.
        const response = await axios.get(`http://localhost:8080/admin/approve?owner_id=${id}`);
-      이 경우, owner_id가 URL의 쿼리 스트링으로 전달되어 Spring Boot의 @RequestParam으로 받을 수 있습니다.
+      이 경우, owner_id가 URL의 쿼리 스트링으로 전달되어 SpringBoot의 @RequestParam으로 받을 수 있습니다.
     */
 
     @GetMapping("/approve")
