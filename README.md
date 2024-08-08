@@ -239,7 +239,3 @@ BEGIN
 
 # UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
-
-# 주요기능 :
-
-# 설계의 주안점 :
