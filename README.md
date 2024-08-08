@@ -239,3 +239,15 @@ BEGIN
 
 # UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
+
+# API 명세서
+![사용자신고, 유저등록, Login - API](https://github.com/user-attachments/assets/28789e1b-a1d0-44c8-a552-5d772fb6ddce)
+![라이더 페이지, 계좌정보 - API](https://github.com/user-attachments/assets/677b5eac-b488-43eb-8b20-c38a96eee4de)
+![제미나이(구글 API), 댓글 컨트롤러 - API](https://github.com/user-attachments/assets/03eaf44b-d3bd-435b-be7b-a8282abee98b)
+![업체 페이지 - API](https://github.com/user-attachments/assets/6158157f-6afe-4c4d-aeb6-d3b8881ad6b8)
+![업체 페이지 (1) - API](https://github.com/user-attachments/assets/c7455b7f-4092-4d55-8f84-0b60d266bbc9)
+![관리자 페이지, 유저 정보 수정 - API](https://github.com/user-attachments/assets/41444257-5a3e-49da-bd0e-85f92302a925)
+![조회 - API](https://github.com/user-attachments/assets/0c1b6f5c-1ea7-4c35-a373-fa75b60d24d0)
+![카카오 로그인 - API](https://github.com/user-attachments/assets/d59a23ed-dafc-44a9-8c01-256bfa788ec9)
+
+
