@@ -1,15 +1,37 @@
 # 프로젝트명 :  DeliveryOracle
 ![image](https://github.com/user-attachments/assets/a4dd9696-fd30-4620-8759-0647a448d89c)
 
-# 개발기간 : 24.06.18 ~ 24.07.18
+# 팀구성 & 담당업무
 
-# 팀 구성
-- 황근호 (팀장) : Back-End / 유저 페이지 제작
-- 손동민 (부팀장) : Front-End / 업체 페이지 제작
-- 김민준 (팀원) : Full-Stack / 관리자 & 라이더 페이지 제작
+★ 황근호 (Back-End) : 유저 페이지 제작
+- SpringSecurity & JWT를 활용하여 전체 페이지<br/>
+  로그인 & 회원가입 기능, 보안(인증, 인가) 처리 작업
+- 유저 페이지 Create, Read, Update, Delete 기능 Rest API 작업
+- 댓글 & 대댓글 기능 Rest API 작업
+- 업체 & 라이더 메인 페이지 HTML & CSS 작업
+- 메인 페이지 로고 동적 JS 이벤트 처리 작업
+- Footer 작업
+ 
+◆ 손동민 (Front-End) : 업체 페이지 제작
+- 업체 페이지 Create, Read, Update, Delete 기능 작업
+- 관리자 페이지 업체 승인 기능 작업
+- 전 페이지 HTML & CSS, JS 작업 (Header 작업 포함)
+- KaKao Map API를 활용하여 지도 & 마커 띄우는 기능 작업
+- Chart.JS 라이브러리를 활용하여 각 페이지별 매출현황 그래프 작업
+  
+♥ 김민준 (Full-Stack) : 관리자 & 라이더 페이지 제작 
+- SpringSecurity & JWT (각 사용자별 로그인 권한 분리) 
+- SpringBoot & React 연동 작업
+- 관리자 & 라이더 페이지  Create, Read, Update, Delete 기능 작업
+- Gemini AI와 OpenWeather API를 활용하여 사용자의 주문내역을<br/>
+  기반으로 날씨 및 기온 데이터를 활용하여 메뉴를 추천 해주는 기능 작업
+- WebSoket을 이용한 주문관련 및 배달 관련 기능 작업
+- KaKao SSO Login 기능 작업
 
 # 프로젝트 소개
 ![image](https://github.com/user-attachments/assets/a0fae65e-9acd-42d7-be70-4d988d597ef4)
+
+# 개발기간 : 24.06.18 ~ 24.07.18
 
 # 개발환경
 ![image](https://github.com/user-attachments/assets/821fc289-bb25-4fb6-8d6a-20dd5a8b7a8f)
@@ -18,6 +40,7 @@
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)
 총 14개의 테이블을 제작 하였습니다.
 
+## 테이블 구조
 1. UserInformation (유저 정보 테이블)
 
 - 유저 아이디 : user_id
