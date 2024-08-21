@@ -19,7 +19,7 @@
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)
 총 14개의 테이블을 제작 하였습니다.
 
-## 테이블 구조
+## 테이블 구조 설명
 1. UserInformation (유저 정보 테이블)
 
 - 유저 아이디 : user_id
@@ -196,7 +196,6 @@ BEGIN
         OLD.store_x, OLD.store_y, OLD.store_ca, 'UPDATE', NOW()
     );
 ```
-
 - 업체 삭제시 적용되는 트리거
 ```sql
 CREATE TRIGGER before_store_delete
@@ -238,11 +237,11 @@ BEGIN
         change_date = NOW()
     WHERE account_id = NEW.account_id;
 ```
-
 # UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
 
 # API 명세서
+
 ![사용자신고, 유저등록, Login - API](https://github.com/user-attachments/assets/28789e1b-a1d0-44c8-a552-5d772fb6ddce)
 ![라이더 페이지, 계좌정보 - API](https://github.com/user-attachments/assets/677b5eac-b488-43eb-8b20-c38a96eee4de)
 ![제미나이(구글 API), 댓글 컨트롤러 - API](https://github.com/user-attachments/assets/03eaf44b-d3bd-435b-be7b-a8282abee98b)
