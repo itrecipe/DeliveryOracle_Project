@@ -19,7 +19,7 @@
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)
 총 14개의 테이블을 제작 하였습니다.
 
-## 테이블 구조 설명
+## 테이블 Entity 상세설명
 1. UserInformation (유저 정보 테이블)
 
 - 유저 아이디 : user_id
