@@ -248,7 +248,8 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)
 
 # API 명세서
-
+<a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
+<!--
 ![사용자신고, 유저등록, Login - API](https://github.com/user-attachments/assets/28789e1b-a1d0-44c8-a552-5d772fb6ddce)
 ![라이더 페이지, 계좌정보 - API](https://github.com/user-attachments/assets/677b5eac-b488-43eb-8b20-c38a96eee4de)
 ![제미나이(구글 API), 댓글 컨트롤러 - API](https://github.com/user-attachments/assets/03eaf44b-d3bd-435b-be7b-a8282abee98b)
@@ -257,6 +258,5 @@ BEGIN
 ![관리자 페이지, 유저 정보 수정 - API](https://github.com/user-attachments/assets/41444257-5a3e-49da-bd0e-85f92302a925)
 ![조회 - API](https://github.com/user-attachments/assets/0c1b6f5c-1ea7-4c35-a373-fa75b60d24d0)
 ![카카오 로그인 - API](https://github.com/user-attachments/assets/d59a23ed-dafc-44a9-8c01-256bfa788ec9)
-
-# 프로그램 실행흐름
+-->
 
