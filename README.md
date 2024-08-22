@@ -4,10 +4,9 @@
 ![image](https://github.com/user-attachments/assets/a4dd9696-fd30-4620-8759-0647a448d89c)
 
 # 팀구성 & 담당업무
-
-![image](https://github.com/user-attachments/assets/77742ae4-4914-46a1-bcc3-f2c129bb7010)<br/><br/>
-![image](https://github.com/user-attachments/assets/0cc8efc6-7e67-4e83-b5ff-f1fef1f99231)<br/><br/>
-![image](https://github.com/user-attachments/assets/24dd1ced-f33b-4ebc-b7ca-094473a32d14)<br/><br/>
+![image](https://github.com/user-attachments/assets/a62edc30-bf91-4e27-80da-ccbc74ad5d50)<br/><br/>
+![image](https://github.com/user-attachments/assets/8941ea07-81f0-4132-8beb-ec719cbcd2bb)<br/><br/>
+![image](https://github.com/user-attachments/assets/272530e4-3e06-46b8-a3a5-db3d1c4fb19d)<br/><br/>
 
 # 프로젝트 소개
 ![image](https://github.com/user-attachments/assets/a0fae65e-9acd-42d7-be70-4d988d597ef4)
@@ -19,7 +18,9 @@
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)
 총 14개의 테이블을 제작 하였습니다.
 
-## 테이블 Entity 상세설명
+<details>
+  <summary>Click Here!! ☞ 테이블 Entity 상세 설명</summary>
+<br/>
 1. UserInformation (유저 정보 테이블)
 
 - 유저 아이디 : user_id
@@ -196,6 +197,7 @@ BEGIN
         OLD.store_x, OLD.store_y, OLD.store_ca, 'UPDATE', NOW()
     );
 ```
+
 - 업체 삭제시 적용되는 트리거
 ```sql
 CREATE TRIGGER before_store_delete
@@ -237,8 +239,13 @@ BEGIN
         change_date = NOW()
     WHERE account_id = NEW.account_id;
 ```
+</details>
+
 # UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
+
+# Jira를 활용한 일정관리
+![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)
 
 # API 명세서
 
