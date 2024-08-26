@@ -11,8 +11,8 @@
 # 프로젝트 소개
 ![image](https://github.com/user-attachments/assets/a0fae65e-9acd-42d7-be70-4d988d597ef4)
 
-# 개발환경
-![image](https://github.com/user-attachments/assets/e7505e08-bf2c-4d95-a34f-1610f93fdea4)
+# 개발환경 (기술스택)
+![image](https://github.com/user-attachments/assets/ecc1072d-6ee9-4f46-b686-919eea7e0da6)
 
 # ERD
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)
@@ -260,4 +260,27 @@ BEGIN
 ![조회 - API](https://github.com/user-attachments/assets/0c1b6f5c-1ea7-4c35-a373-fa75b60d24d0)
 ![카카오 로그인 - API](https://github.com/user-attachments/assets/d59a23ed-dafc-44a9-8c01-256bfa788ec9)
 -->
+
+# 소감 및 느낀점
+우리는 “문제를 해결하는 사람들” 답게 의사소통과 의사결정에 있어서<br/>
+단, 하나의 소중한 의견들도 놓치지 않고 적극 반영할 수 있도록 노력을 하였고,<br/>
+모두가 원했던 방향으로 100% 완벽하게 이룰순 없었으나 함께 노력하고 달려온 결과<br/>
+성공적으로 프로젝트를 완수할 수 있었습니다.
+<br/><br/>
+-DeliveryOracle 일동-
+<br/><br/>
+처음 팀장이라는 중책을 맡게 되어 과연 잘 해낼 수 있을지에 대한 걱정들과<br/>
+어떻게하면 팀 프로젝트를 성공적으로 이끌어갈 수 있을것인지에 대한 수 없이 많은<br/>
+생각들로 가득찬 한달을 보냈던것 같습니다.<br/><br/>
+파이널 프로젝트를 진행하며 우여곡절도 많았고,<br/>
+매번 어려운 순간들이 찾아와 힘들떄도 있었지만,<br/>
+혼자가 아닌 팀원들과 함께 최선을 다해볼 수 있는 시간들이 있었고,<br/>
+그 과정에서 서로가 서로를 믿고 따라주었기에 같이 성장할 수 있게 된<br/>
+프로젝트였던것 같습니다.<br/><br/>
+처음이라 서투르고 많이 부족헀을텐대 그래도 군말 없이<br/>
+열심히 프로젝트에 임하여 성공적으로 완수 할 수 있도록<br/>
+도움을 준 팀원 여러분께 감사 드립니다.<br/><br/>
+-황근호-
+
+
 
