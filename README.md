@@ -19,7 +19,7 @@
 총 14개의 테이블을 제작 하였습니다.
 
 <details>
-  <summary>Click Here!! ☞ 테이블 Entity 상세 설명</summary>
+  <summary>테이블 Entity 상세보기 & 간단한 설명 ☞ Click Here!!</summary>
 <br/>
 1. UserInformation (유저 정보 테이블)
 
