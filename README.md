@@ -9,13 +9,13 @@
 ![image](https://github.com/user-attachments/assets/272530e4-3e06-46b8-a3a5-db3d1c4fb19d)<br/><br/>
 
 # 프로젝트 소개
-![image](https://github.com/user-attachments/assets/a0fae65e-9acd-42d7-be70-4d988d597ef4)
+![image](https://github.com/user-attachments/assets/a0fae65e-9acd-42d7-be70-4d988d597ef4)<br/><br/>
 
 # 개발환경 (기술스택)
-![image](https://github.com/user-attachments/assets/ecc1072d-6ee9-4f46-b686-919eea7e0da6)
+![image](https://github.com/user-attachments/assets/ecc1072d-6ee9-4f46-b686-919eea7e0da6)<br/><br/>
 
 # ERD
-![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)
+![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)<br/><br/>
 총 14개의 테이블을 제작 하였습니다.
 
 <details>
@@ -244,7 +244,7 @@ BEGIN
 
 # UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
-- User, Store, Admin, Rider 순으로 4가지 회원 유형의 UseCase를 작성 하였습니다.
+- **User, Store, Admin, Rider** 순으로 **4가지** 회원 유형의 **UseCase** 를 작성 하였습니다.
 <br/><br/>
 
 # Jira를 활용한 일정관리
@@ -269,7 +269,7 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/8bc1bc42-6301-45eb-9fae-f9fdf9e397c9)
 <br/><br/>
 
-**공통기능**
+**< 공통기능 >**
 
 1. 회원가입 <br/>
 - 메인 페이지에서 해당되는 회원 유형의 페이지로 접속하여 회원가입을 진행 합니다.<br/><br/>
@@ -277,36 +277,63 @@ BEGIN
 <br/><br/>
 
 2. 로그인 <br/>
-- 회원가입 후 해당되는 회원 유형의 페이지에서 접속을 진행합니다.<br/><br/>
+- 회원가입 후 해당되는 회원 유형의 페이지에서 접속할 수 있도록 구현되었습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
 
-3. User 메인 페이지 <br/>
-- 먹고 싶은 메뉴를 선택하여 접속 가능 하도록 구현 하였습니다.<br/><br/>
+3. 업체 등록 <br/>
+- 메뉴 주문을 하기 전 **"업체등록"** 을 먼저 진행 해야 합니다.<br/>
+  업체 등록을 먼저 해보도록 하곘습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/e05ca278-bc07-494e-a9c3-456174287227)
+
+- 업체 등록이 완료되면 alert 창으로 **"등록이 요청 되었습니다"** 라는 문구가 출력 됩니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/399a0fe6-f328-436f-a825-fe276abce8e0)
+
+4. 업체 승인 <br/>
+- 이제 업체 등록이 되었다면 **"관리자"** 페이지에서 **"업체승인"** 을 받아야 합니다.<br/>
+  관리자 페이지에서 **"업체 승인"** 을 해보도록 하겠습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/e0a946fa-5c1d-4bef-bd45-6fb0afe3b94d)
+
+- 업체 페이지 좌측 메뉴에 있는 **"업체 승인하기"** 페이지에서 **"승인"** 버튼을 누르면<br/>
+  **"Approval Status"** 값은 1로	**"Action"** 값은 **"완료"** 로 변경되는 모습을 보실 수 있습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/19e24a8b-8a62-4eb0-820d-8576a70fd66a)
+
+5. 메뉴 추가 <br/>
+- 다음은 메뉴를 추가 해야 합니다.<br/>
+**"꿔바로우, 마라탕, 탕후루"** 주문할 메뉴 3가지를 등록 해두겠습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/aaebf40f-8ec5-4a6f-b4c4-170151113acf)
+
+6. User 메인 페이지 <br/>
+- User 메인 페이지로 이동하여 먹고 싶은 메뉴를 선택해서 접속 가능 하도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/9020a43d-d8d4-419a-8788-d90963a5ca67)
 
 - 저는 마라탕과 탕후루를 먹고 싶어서 "중식" 메뉴 페이지에 접속 해보도록 하겠습니다.<br/>
-- 현재 보이는 **"마라탕후루"** 라는 음식점에 있는 메뉴를 주문하기 위해 주문 가능한 페이지로 이동하겠습니다.<br/><br/>
+  현재 보이는 **"마라탕후루"** 라는 음식점에 있는 메뉴를 주문하기 위해 주문 가능한 페이지로 이동하겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/2a48e4aa-d2b4-4db6-b4af-f64672cd7d16)
 
 - 현재 보이는 모습은 **"마라탕후루"** 라는 음식점에서 음식을 주문하는 화면 입니다.<br/>
-- **마라탕, 탕후루, 꿔바로우** 3가지 음식을 주문 해보도록 하겠습니다.<br/>
+  **마라탕, 탕후루, 꿔바로우** 3가지 음식을 주문 해보도록 하겠습니다.<br/>
+  **"결제하기"** 버튼을 누르면 다음 결제창으로 이동하게 됩니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/0f6a7b6d-905a-426e-8e11-0088de276768)
 
+- 다음으로, 결제창이 활성화가 되며, **"배달 정보"** 와 **"결제금액"** 이 표시됩니다.<br/>
+  **"결제수단"** 을 선택하여 결제 하도록 구현 되었습니다.<br/><br/>
+  
+- 현재 결제 수단은 **"포인트 결제 방식"** 으로 구현되어 있으며,<br/>
+  추후에 PG사 결제 모듈을 연결해 볼 예정 입니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/c8f3f7fa-bfe6-4520-b2a6-47fb25f8cc14)
 
+=================================================
+현재 여기까지 작성... 다음날 이어서 다시 작성하기
+=================================================
 
-
-
-4. Store 메인 페이지 <br/><br/>
+. Store 메인 페이지 <br/><br/>
 ![image](https://github.com/user-attachments/assets/4c66275d-141c-4a20-8aeb-9673f1c5311f)
 
-5. Admin 메인 페이지 <br/><br/>
+. Admin 메인 페이지 <br/><br/>
 ![image](https://github.com/user-attachments/assets/88bb835e-d355-4a28-89ca-940eaaf2b4ce)
 
-6. Rider 메인 페이지 <br/><br/>
+. Rider 메인 페이지 <br/><br/>
 ![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
-
-
-
 
 # 소감 및 느낀점
 우리는 “문제를 해결하는 사람들” 답게 의사소통과 의사결정에 있어서<br/>
