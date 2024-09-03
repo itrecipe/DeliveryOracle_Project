@@ -281,12 +281,13 @@ BEGIN
 4. Rider 메인 페이지 <br/><br/>
 ![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
 
- 공통기능 
-- 로그인
+☆ 공통기능
+- 로그인 <br/><br/>
 ![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
 
-- 회원가입
-![image](https://github.com/user-attachments/assets/6fd88a1b-2978-43b4-87f5-37f056e95638)
+- 회원가입 <br/><br/>
+![image](https://github.com/user-attachments/assets/0ffc9e4e-4711-45c6-baf4-5be373d72906)
+
 
 
 # 소감 및 느낀점
