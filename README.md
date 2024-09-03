@@ -243,6 +243,7 @@ BEGIN
 
 # UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
+- User, Store, Admin, Rider 순으로 4가지 회원 유형의 UseCase를 작성 하였습니다.
 
 # Jira를 활용한 일정관리
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)
@@ -252,10 +253,8 @@ BEGIN
 - 기능 구현을 해야하는 일정이 되었음에도 불구하고 상태값이 아무것도 없다면 아직 작업이 시작되지 않은 것으로 간주하고<br/>
   시간적 여유가 있는 사람이 도와주는 식으로 작업을 진행 하였습니다.
   
-
-
 # API 명세서
-- POSTMAN을 활용하여 작성한 API 명세서 바로가기  Click Here!! ↓↓↓<br/>
+- POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <!--
 ![사용자신고, 유저등록, Login - API](https://github.com/user-attachments/assets/28789e1b-a1d0-44c8-a552-5d772fb6ddce)
@@ -280,8 +279,8 @@ BEGIN
 어떻게하면 팀 프로젝트를 성공적으로 이끌어갈 수 있을것인지에 대한 수 없이 많은<br/>
 생각들로 가득찬 한달을 보냈던것 같습니다.<br/><br/>
 파이널 프로젝트를 진행하며 우여곡절도 많았고,<br/>
-매번 어려운 순간들이 찾아와 쉽지 않은 순간들이 많았지만,<br/>
-혼자가 아닌 팀원들과 함께 최선을 다해 볼 수 있는 기회와 시간들이 있었고,<br/>
+원할하지 못했던 의사소통 문제와 뜻이 맞지 않을때도 있었지만,<br/>
+혼자가 아닌 팀원들과 함께 소통하며 최선을 다해 볼 수 있는 기회와 시간들이 있었고<br/>
 그 과정에서 서로가 서로를 믿고 따라 주었기에 같이 성장할 수 있게 된<br/>
 프로젝트였다고 생각 합니다.<br/><br/>
 처음이라 서투르고 많이 부족헀을텐대 그래도 군말 없이<br/>
