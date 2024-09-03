@@ -248,7 +248,7 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)
 
 # API 명세서
-- POSTMAN API 명세서 페이지 바로가기  Click Here!! ↓↓↓<br/>
+- POSTMAN을 활용하여 작성한 API 명세서 바로가기  Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <!--
 ![사용자신고, 유저등록, Login - API](https://github.com/user-attachments/assets/28789e1b-a1d0-44c8-a552-5d772fb6ddce)
