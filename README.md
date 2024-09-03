@@ -262,31 +262,49 @@ BEGIN
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <br/><br/>
 
-# 실행화면 & 주요기능 소개
-0. DeliveryOracle 메인 페이지.<br/>
+# 프로젝트 실행화면 (실행 흐름) & 주요기능 소개
+
+**DeliveryOracle 메인 페이지**<br/> 
 - 4가지 회원 유형별로 접속할 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/8bc1bc42-6301-45eb-9fae-f9fdf9e397c9)
 <br/><br/>
 
-1. User 메인 페이지 <br/>
+**공통기능**
+
+1. 회원가입 <br/>
+- 메인 페이지에서 해당되는 회원 유형의 페이지로 접속하여 회원가입을 진행 합니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/0ffc9e4e-4711-45c6-baf4-5be373d72906)
+<br/><br/>
+
+2. 로그인 <br/>
+- 회원가입 후 해당되는 회원 유형의 페이지에서 접속을 진행합니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
+
+3. User 메인 페이지 <br/>
 - 먹고 싶은 메뉴를 선택하여 접속 가능 하도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/9020a43d-d8d4-419a-8788-d90963a5ca67)
 
-2. Store 메인 페이지 <br/><br/>
+- 저는 마라탕과 탕후루를 먹고 싶어서 "중식" 메뉴 페이지에 접속 해보도록 하겠습니다.<br/>
+- 현재 보이는 **"마라탕후루"** 라는 음식점에 있는 메뉴를 주문하기 위해 주문 가능한 페이지로 이동하겠습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/2a48e4aa-d2b4-4db6-b4af-f64672cd7d16)
+
+- 현재 보이는 모습은 **"마라탕후루"** 라는 음식점에서 음식을 주문하는 화면 입니다.<br/>
+- **마라탕, 탕후루, 꿔바로우** 3가지 음식을 주문 해보도록 하겠습니다.<br/>
+![image](https://github.com/user-attachments/assets/0f6a7b6d-905a-426e-8e11-0088de276768)
+
+
+
+
+
+4. Store 메인 페이지 <br/><br/>
 ![image](https://github.com/user-attachments/assets/4c66275d-141c-4a20-8aeb-9673f1c5311f)
 
-3. Admin 메인 페이지 <br/><br/>
+5. Admin 메인 페이지 <br/><br/>
 ![image](https://github.com/user-attachments/assets/88bb835e-d355-4a28-89ca-940eaaf2b4ce)
 
-4. Rider 메인 페이지 <br/><br/>
+6. Rider 메인 페이지 <br/><br/>
 ![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
 
-☆ 공통기능
-- 로그인 <br/><br/>
-![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
-
-- 회원가입 <br/><br/>
-![image](https://github.com/user-attachments/assets/0ffc9e4e-4711-45c6-baf4-5be373d72906)
 
 
 
