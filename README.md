@@ -19,7 +19,7 @@
 총 14개의 테이블을 제작 하였습니다.
 
 <details>
-  <summary>테이블 Entity 상세보기 (간단한 설명) ☞ Click Here!!</summary>
+  <summary>테이블 Entity 상세보기 ☞ Click Here!!</summary>
 <br/>
 1. UserInformation (유저 정보 테이블)
 
@@ -240,10 +240,12 @@ BEGIN
     WHERE account_id = NEW.account_id;
 ```
 </details>
+<br/><br/>
 
 # UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
 - User, Store, Admin, Rider 순으로 4가지 회원 유형의 UseCase를 작성 하였습니다.
+<br/><br/>
 
 # Jira를 활용한 일정관리
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)
@@ -252,25 +254,17 @@ BEGIN
   사전에 미리 약속하여 진행중이면 "진행중" 완료 되었으면 "완료" 상태 값을 찍어 놓기로 약속한 후 진행 하였습니다.<br/><br/>
 - 기능 구현을 해야하는 일정이 되었음에도 불구하고 상태값이 아무것도 없다면 아직 작업이 시작되지 않은 것으로 간주하고<br/>
   시간적 여유가 있는 사람이 도와주는 식으로 작업을 진행 하였습니다.
-  
+<br/><br/>
+
 # API 명세서
 - POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
-<!--
-![사용자신고, 유저등록, Login - API](https://github.com/user-attachments/assets/28789e1b-a1d0-44c8-a552-5d772fb6ddce)
-![라이더 페이지, 계좌정보 - API](https://github.com/user-attachments/assets/677b5eac-b488-43eb-8b20-c38a96eee4de)
-![제미나이(구글 API), 댓글 컨트롤러 - API](https://github.com/user-attachments/assets/03eaf44b-d3bd-435b-be7b-a8282abee98b)
-![업체 페이지 - API](https://github.com/user-attachments/assets/6158157f-6afe-4c4d-aeb6-d3b8881ad6b8)
-![업체 페이지 (1) - API](https://github.com/user-attachments/assets/c7455b7f-4092-4d55-8f84-0b60d266bbc9)
-![관리자 페이지, 유저 정보 수정 - API](https://github.com/user-attachments/assets/41444257-5a3e-49da-bd0e-85f92302a925)
-![조회 - API](https://github.com/user-attachments/assets/0c1b6f5c-1ea7-4c35-a373-fa75b60d24d0)
-![카카오 로그인 - API](https://github.com/user-attachments/assets/d59a23ed-dafc-44a9-8c01-256bfa788ec9)
--->
+<br/><br/>
 
 # 소감 및 느낀점
 우리는 “문제를 해결하는 사람들” 답게 의사소통과 의사결정에 있어서<br/>
 단, 하나의 소중한 의견들도 놓치지 않고 적극 반영할 수 있도록 노력을 하였고,<br/>
-모두가 원했던 방향으로 100% 완벽하게 이룰순 없었으나 함께 노력하고 달려온 결과<br/>
+모두가 원했던 방향으로 100% 완벽하게 제작할 수는 없었으나 함께 노력하고 달려온 결과<br/>
 성공적으로 프로젝트를 완수할 수 있었습니다.
 <br/><br/>
 -DeliveryOracle 일동-
