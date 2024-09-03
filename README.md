@@ -252,14 +252,42 @@ BEGIN
 - 색상별로 담당자를 배정하였고, 각자가 맡은 파트별로 나누었습니다.<br/><br/>
 - 각자가 맡은 기능이 구현이 되었는지 진행중인지 아직 시작 전인지를 진행 상황을 파악하기 위해 팀원들과<br/>
   사전에 미리 약속하여 진행중이면 "진행중" 완료 되었으면 "완료" 상태 값을 찍어 놓기로 약속한 후 진행 하였습니다.<br/><br/>
-- 기능 구현을 해야하는 일정이 되었음에도 불구하고 상태값이 아무것도 없다면 아직 작업이 시작되지 않은 것으로 간주하고<br/>
-  시간적 여유가 있는 사람이 도와주는 식으로 작업을 진행 하였습니다.
+- 기능 구현을 해야하는 일정이 되었음에도 불구하고 상태값이 아무것도 없다면 아직 작업이<br/>
+  시작되지 않은 것으로 판단되며, 자신이 담당하고 있는 파트가 아니더라도<br/>
+  소통을 통하여 시간적 여유가 있는 사람이 도와주는 방식으로 작업을 진행 하였습니다.
 <br/><br/>
 
 # API 명세서
 - POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <br/><br/>
+
+# 실행화면 & 주요기능 소개
+0. DeliveryOracle 메인 페이지.<br/>
+- 4가지 회원 유형별로 접속할 수 있도록 구현 하였습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/8bc1bc42-6301-45eb-9fae-f9fdf9e397c9)
+<br/><br/>
+
+1. User 메인 페이지 <br/>
+- 먹고 싶은 메뉴를 선택하여 접속 가능 하도록 구현 하였습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/9020a43d-d8d4-419a-8788-d90963a5ca67)
+
+2. Store 메인 페이지 <br/><br/>
+![image](https://github.com/user-attachments/assets/4c66275d-141c-4a20-8aeb-9673f1c5311f)
+
+3. Admin 메인 페이지 <br/><br/>
+![image](https://github.com/user-attachments/assets/88bb835e-d355-4a28-89ca-940eaaf2b4ce)
+
+4. Rider 메인 페이지 <br/><br/>
+![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
+
+ 공통기능 
+- 로그인
+![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
+
+- 회원가입
+![image](https://github.com/user-attachments/assets/6fd88a1b-2978-43b4-87f5-37f056e95638)
+
 
 # 소감 및 느낀점
 우리는 “문제를 해결하는 사람들” 답게 의사소통과 의사결정에 있어서<br/>
@@ -281,6 +309,3 @@ BEGIN
 열심히 프로젝트에 임하며 성공적으로 완수 할 수 있도록<br/>
 도움을 준 팀원 여러분께 감사 드립니다.<br/><br/>
 -팀장 황근호-
-
-
-
