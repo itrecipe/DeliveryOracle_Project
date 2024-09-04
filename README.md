@@ -11,8 +11,8 @@
 # 프로젝트 소개
 ![image](https://github.com/user-attachments/assets/a0fae65e-9acd-42d7-be70-4d988d597ef4)<br/><br/>
 
-# 개발환경 (기술스택)
-![image](https://github.com/user-attachments/assets/ecc1072d-6ee9-4f46-b686-919eea7e0da6)<br/><br/>
+# 개발환경 (기술 스택)
+![image](https://github.com/user-attachments/assets/b2b1c8ad-9c55-4ddf-bf11-7ee97ae9c622)<br/><br/>
 
 # ERD
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)<br/><br/>
