@@ -19,8 +19,7 @@
 총 14개의 테이블을 제작 하였습니다.
 
 <details>
-  <summary>테이블 Entity 상세보기 ☞ Click Here!!</summary>
-<br/>
+  <summary>테이블 Entity 상세보기 ☞ Click Here!!</summary> <br/>
 1. UserInformation (유저 정보 테이블)
 
 - 유저 아이디 : user_id
@@ -262,25 +261,43 @@ BEGIN
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <br/><br/>
 
-# 프로젝트 실행화면 (실행 흐름) & 주요기능 소개
+# 페이지 소개
 
 **DeliveryOracle 메인 페이지**<br/> 
 - 4가지 회원 유형별로 접속할 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/8bc1bc42-6301-45eb-9fae-f9fdf9e397c9)
 <br/><br/>
 
-**< 공통기능 >**
+## 1. USER PART
+**User 메인 페이지** <br/><br/>
+![image](https://github.com/user-attachments/assets/9020a43d-d8d4-419a-8788-d90963a5ca67)
 
-1. 회원가입 <br/>
+## 2. STORE PART
+**Store 메인 페이지** <br/><br/>
+![image](https://github.com/user-attachments/assets/4c66275d-141c-4a20-8aeb-9673f1c5311f)
+
+## 3. ADMIN PART
+**Admin 메인 페이지** <br/><br/>
+![image](https://github.com/user-attachments/assets/88bb835e-d355-4a28-89ca-940eaaf2b4ce)
+
+## 4. RIDER PART
+**Rider 메인 페이지** <br/><br/>
+![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
+
+# 프로젝트 동작 시나리오 & 기능 소개
+
+### 공통기능 (로그인, 회원가입)
+
+☞ 회원가입 <br/>
 - 메인 페이지에서 해당되는 회원 유형의 페이지로 접속하여 회원가입을 진행 합니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/0ffc9e4e-4711-45c6-baf4-5be373d72906)
 <br/><br/>
 
-2. 로그인 <br/>
-- 회원가입 후 해당되는 회원 유형의 페이지에서 접속할 수 있도록 구현되었습니다.<br/><br/>
+☞ 로그인 <br/>
+- 회원가입 후 해당되는 회원 유형의 페이지에서 접속할 수 있도록 구현 되었습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
 
-3. 업체 등록 <br/>
+☞ 업체 등록 <br/>
 - 메뉴 주문을 하기 전 **"업체등록"** 을 먼저 진행 해야 합니다.<br/>
   업체 등록을 먼저 해보도록 하곘습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e05ca278-bc07-494e-a9c3-456174287227)
@@ -288,7 +305,7 @@ BEGIN
 - 업체 등록이 완료되면 alert 창으로 **"등록이 요청 되었습니다"** 라는 문구가 출력 됩니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/399a0fe6-f328-436f-a825-fe276abce8e0)
 
-4. 업체 승인 <br/>
+☞ 업체 승인 <br/>
 - 이제 업체 등록이 되었다면 **"관리자"** 페이지에서 **"업체승인"** 을 받아야 합니다.<br/>
   관리자 페이지에서 **"업체 승인"** 을 해보도록 하겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e0a946fa-5c1d-4bef-bd45-6fb0afe3b94d)
@@ -297,19 +314,19 @@ BEGIN
   **"Approval Status"** 값은 1로	**"Action"** 값은 **"완료"** 로 변경되는 모습을 보실 수 있습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/19e24a8b-8a62-4eb0-820d-8576a70fd66a)
 
-5. 메뉴 추가 <br/>
+☞ 메뉴 추가 <br/>
 - 다음은 메뉴를 추가 해야 합니다.<br/>
 **"꿔바로우, 마라탕, 탕후루"** 주문할 메뉴 3가지를 등록 해두겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/aaebf40f-8ec5-4a6f-b4c4-170151113acf)
 
-6. User 메인 페이지 <br/>
-- User 메인 페이지로 이동하여 먹고 싶은 메뉴를 선택해서 접속 가능 하도록 구현 하였습니다.<br/><br/>
+- 다음은 User 메인 페이지로 이동하여 먹고 싶은 메뉴를 선택해서 접속 합니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/9020a43d-d8d4-419a-8788-d90963a5ca67)
 
 - 저는 마라탕과 탕후루를 먹고 싶어서 "중식" 메뉴 페이지에 접속 해보도록 하겠습니다.<br/>
   현재 보이는 **"마라탕후루"** 라는 음식점에 있는 메뉴를 주문하기 위해 주문 가능한 페이지로 이동하겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/2a48e4aa-d2b4-4db6-b4af-f64672cd7d16)
 
+☞ 주문하기 & 결제하기 <br/>
 - 현재 보이는 모습은 **"마라탕후루"** 라는 음식점에서 음식을 주문하는 화면 입니다.<br/>
   **마라탕, 탕후루, 꿔바로우** 3가지 음식을 주문 해보도록 하겠습니다.<br/>
   **"결제하기"** 버튼을 누르면 다음 결제창으로 이동하게 됩니다.<br/><br/>
@@ -321,27 +338,51 @@ BEGIN
   추후에 PG사 결제 모듈을 연결해 볼 예정 입니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/c8f3f7fa-bfe6-4520-b2a6-47fb25f8cc14)
 
+☞ 충전하기 <br/>
+- 음식을 주문하기전, 먼저 저희 사이트 내에서 이용할 수 있는 **"충전금"** 을 먼저 충전 해줘야 합니다.<br/>
+  충전하기 버튼을 눌러서 금액 충전을 먼저 진행해 보겠습니다.<br/>
+  (금액은 최대 10억까지 충전 가능 합니다.)<br/><br/>
+  
+  **충전하기 전**
+![image](https://github.com/user-attachments/assets/89a03ce9-5491-4f8e-95a7-be13b0b315fe)<br/><br/>
+
+  **금액 충전 모달 창 활성화** <br/>
+![image](https://github.com/user-attachments/assets/c2eab172-6c17-46e2-8e1d-e9965d111b76)<br/><br/>
+
+  **충전 후**
+![image](https://github.com/user-attachments/assets/3608f17e-9c98-4b10-821f-571b2b20be56)
+
+- 그럼 이제 본격적으로 **"주문하기"** 버튼을 눌러 다시 주문을 해보도록 하겠습니다.<br/>
+  버튼을 누르고 결제방식을 **"포인트 결제 방식"** 으로 선택하여 먹고 싶은 음식을 주문 합니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/c28d1a90-051d-4298-9dbc-65c58811e24b)
+
+- 주문 성공이 되었다면, 이번엔 업체 페이지로 이동하여 **"현재 주문 상태"** 페이지에 나타나는 주문내역을 확인해보겠습니다.<br/>
+  **"현재 주문 상태"** 페이지에서 확인할 수 있는 내용은 **메뉴명, 가격, 수량** 등을 확인할 수 있으며, 업체 사장님들께서는 <br/>
+조리하기 또는 거절 버튼을 눌러 주문을 수락하고. 조리를 시작할껀지 거절할껀지 선택할 수 있도록 구현 되었습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/e5f14a66-cedb-49d1-a30b-5bbf2583ec80)
+
+**조리하기 버튼을 누른 경우**
+- **라이더 배정하기** 라는 버튼이 활성화 됩니다.<br/>
+  해당 버튼을 누르면 웹소켓으로 연결되어 있어 라이더 페이지에<br/>
+  콜을 받는 페이지에서 들어오는 콜을 잡을 수가 있도록 구현되어 있습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/4fbf1606-757a-40ef-9981-01b316982bd9)
+
+
 =================================================
 현재 여기까지 작성... 다음날 이어서 다시 작성하기
 =================================================
 
-. Store 메인 페이지 <br/><br/>
-![image](https://github.com/user-attachments/assets/4c66275d-141c-4a20-8aeb-9673f1c5311f)
-
-. Admin 메인 페이지 <br/><br/>
-![image](https://github.com/user-attachments/assets/88bb835e-d355-4a28-89ca-940eaaf2b4ce)
-
-. Rider 메인 페이지 <br/><br/>
-![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
-
-# 소감 및 느낀점
+# 프로젝트 회고 (소감, 느낀점, 아쉬운점)
+- **소감** <br/><br/>
 우리는 “문제를 해결하는 사람들” 답게 의사소통과 의사결정에 있어서<br/>
 단, 하나의 소중한 의견들도 놓치지 않고 적극 반영할 수 있도록 노력을 하였고,<br/>
-모두가 원했던 방향으로 100% 완벽하게 제작할 수는 없었으나 함께 노력하고 달려온 결과<br/>
+모두가 원했던 방향으로 100% 완벽하게 제작 하기는 어려웠지만, 함께 노력하고 달려온 결과<br/>
 성공적으로 프로젝트를 완수할 수 있었습니다.
 <br/><br/>
 -DeliveryOracle 일동-
 <br/><br/>
+
+- **느낀점** <br/><br/>
 처음 팀장이라는 중책을 맡게 되어 과연 잘 해낼 수 있을지에 대한 걱정들과<br/>
 어떻게하면 팀 프로젝트를 성공적으로 이끌어갈 수 있을것인지에 대한 수 없이 많은<br/>
 생각들로 가득찬 한달을 보냈던것 같습니다.<br/><br/>
@@ -354,3 +395,6 @@ BEGIN
 열심히 프로젝트에 임하며 성공적으로 완수 할 수 있도록<br/>
 도움을 준 팀원 여러분께 감사 드립니다.<br/><br/>
 -팀장 황근호-
+
+- **아쉬운점** <br/><br/>
+
