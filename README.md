@@ -424,7 +424,7 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/7f57780d-9e0d-4052-a9c6-0395df79a763)<br/>
 ![image](https://github.com/user-attachments/assets/9d6616fe-0480-4dc5-9e03-b3614000ecf9)
 
-☞ 업체 : 댓글관리 <br/>
+☞ 업체 페이지 → 댓글관리 <br/>
 - 유저가 작성한 댓글을 업체도 볼 수 있어야 답글을<br/>
   작성해 줄 수 있기 때문에 해당 부분을 생각하며 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/bd02f8a7-18fc-47b8-a439-948604fadae1)
@@ -437,7 +437,7 @@ BEGIN
 - 이번엔 업체 입장에서 악성 유저를 신고해 보겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/b1bae858-7c5b-4671-a30f-db19c9bc7dbf)
 
-☞ 관리자 : 악성 (유저 & 업체) 차단하기 <br/>
+☞ 관리자 페이지 → 악성 (유저 & 업체) 차단하기 <br/>
 - 악성 업체와 유저는 서로 각각 2회씩 신고를 받으면 관리자 페이지에서<br/>
   사이트 관리자가 차단을 할 수 있는 기능이 활성화 됩니다.<br/><br/>
   그 다음, 신고 횟수와 신고 내용을 볼 수 있도록 구현 되었으며,<br/>
@@ -461,7 +461,7 @@ BEGIN
   정상적으로 악성 유저의 계정도 차단된 모습 입니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/6f91c96b-e7eb-499e-a11e-54762d0bcc62)
 
-☞ 관리자 & 업체 & 라이더 페이지 매출 내역 보기 <br/>
+☞ (관리자 & 업체 & 라이더) 페이지 매출 내역 보기 <br/>
 - 다음은, 업체 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현되었습니다. <br/><br/>
   ![image](https://github.com/user-attachments/assets/3b9f6658-ec6e-4a14-9c76-47f58edcb282)
 
