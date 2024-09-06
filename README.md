@@ -3,7 +3,7 @@
 # 프로젝트명 :  DeliveryOracle
 ![image](https://github.com/user-attachments/assets/a4dd9696-fd30-4620-8759-0647a448d89c)
 
-# 팀구성 & 담당업무
+# 팀구성 (담당업무)
 ![image](https://github.com/user-attachments/assets/a2ad0375-d1d8-4d2f-bb7b-4e333c41fa88)<br/><br/>
 ![image](https://github.com/user-attachments/assets/8941ea07-81f0-4132-8beb-ec719cbcd2bb)<br/><br/>
 ![image](https://github.com/user-attachments/assets/272530e4-3e06-46b8-a3a5-db3d1c4fb19d)<br/><br/>
