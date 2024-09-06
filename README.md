@@ -294,7 +294,7 @@ BEGIN
 <br/><br/>
 
 ☞ 로그인 <br/>
-- 회원가입 후 해당되는 회원 유형의 페이지에서 접속할 수 있도록 구현 되었습니다.<br/><br/>
+- 회원가입 후 해당되는 회원 유형의 페이지에서 접속할 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
 
 ☞ 업체 등록 <br/>
@@ -326,6 +326,25 @@ BEGIN
   현재 보이는 **"마라탕후루"** 라는 음식점에 있는 메뉴를 주문하기 위해 주문 가능한 페이지로 이동하겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/2a48e4aa-d2b4-4db6-b4af-f64672cd7d16)
 
+☞ 유저 페이지 (상세보기) : 메뉴 선택, 결제 페이지 <br/>
+- 그 전에 먼저 간단히 소개를 드리자면 **"유저 페이지"** 상세보기 페이지에 접속한 화면 입니다.<br/>
+  현재 페이지에서는 메뉴 선택 및 주문을 할 수 있도록 구현 하였습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/818d235f-de0c-4128-99bf-674b27be1d9a)
+
+☞ 유저 페이지 (댓글 상세보기) : 유저의 입장에서 유저와 업체가 달아둔 **댓글, 대댓글** 을 확인할 수 있는 페이지  <br/>
+- 현재 페이지는 유저 입장에서 업체 회원과 주고 받은 댓글과 대댓글 목록이 조회되어 출력 되는 페이지 입니다.<br/>
+  유저는 해당 탭에서 자신과 업체 회원이 대화를 나눈 기록을 언제든지 볼 수 있도록 구현 하였습니다.<br/><br/>
+![image](https://github.com/user-attachments/assets/01e4e0c3-f51f-46a0-b8b3-f3fe7b82b7c3)
+
+☞ 유저 페이지 (매장 소개) : 매장 위치 소개 페이지 <br/>
+- 현재 페이지에서는 유저가 음식을 주문하고자 하는 매장의 위치를 카카오맵 API를 활용하여 개발한,<br/>
+  지도와 마커로 확인할 수 있도록 구현 하였습니다. <br/><br/>
+![image](https://github.com/user-attachments/assets/2957d156-a2c8-4a15-921c-5ea112523252)
+
+☞ 유저 페이지 (검색 기능) : 현재 **운영중 or 운영종료** 된 음식점을 검색을 통해 확인할 수 있는 기능 <br/>
+- 유저가 찾고자 하는 매장(음식점)을 검색을 통하여 찾을 수 있도록 구현 하였습니다. 
+![image](https://github.com/user-attachments/assets/d1b8e2b0-68d2-4192-bbae-dce573d75266)
+
 ☞ 주문하기 & 결제하기 <br/>
 - 현재 보이는 모습은 **"마라탕후루"** 라는 음식점에서 음식을 주문하는 화면 입니다.<br/>
   **마라탕, 탕후루, 꿔바로우** 3가지 음식을 주문 해보도록 하겠습니다.<br/>
@@ -333,7 +352,7 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/0f6a7b6d-905a-426e-8e11-0088de276768)
 
 - 다음으로, 결제창이 활성화가 되며, **"배달 정보"** 와 **"결제금액"** 이 표시됩니다.<br/>
-  **"결제수단"** 을 선택하여 결제 하도록 구현 되었습니다.<br/><br/>
+  **"결제수단"** 을 선택하여 결제 하도록 구현 하였습니다.<br/><br/>
   현재 결제 수단은 **"포인트 결제 방식"** 으로 구현되어 있으며,<br/>
   추후에 PG사 결제 모듈을 연결해 볼 예정 입니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/c8f3f7fa-bfe6-4520-b2a6-47fb25f8cc14)
@@ -362,7 +381,7 @@ BEGIN
   **"현재 주문 상태"** 페이지에서 확인할 수 있는 내용은<br/>
   **메뉴명, 가격, 수량** 등을 확인하실 수 있으며, 업체 사장님들께서는<br/>
   **조리하기 또는 거절 버튼**을 눌러 주문을 수락하고 조리를 시작할껀지<br/>
-  거절할껀지 선택하실 수 있도록 구현 되었습니다.<br/><br/>
+  거절할껀지 선택하실 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e5f14a66-cedb-49d1-a30b-5bbf2583ec80)
 
 ☞ 라이더 배정하기 <br/>
@@ -377,7 +396,7 @@ BEGIN
 
 - 반대로, 거절하기를 누르면 유저 페이지<br/>
   주문내역에 **"주문이 거절되었습니다"** <br/>
-  라는 상태값이 반영 되도록 구현 되었습니다.<br/><br/>
+  라는 상태값이 반영 되도록 구현 하였습니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/71d1d5db-3bc1-4471-abb6-6d9326d89f1c)
 
 ☞ 콜 받기 <br/>
@@ -392,11 +411,11 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/76a9047c-88f2-4b8f-b431-0a4e71e98f5e)
 
 - 마찬가지로 업체 페이지에서도 **"주문 내역 확인"** <br/>
-  페이지에서 주문 내역을 확인 할 수 있도록 구현 되었습니다.<br/><br/>
+  페이지에서 주문 내역을 확인 할 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/d9c15f01-b524-4800-8c30-99a2f22c86bf)
 
 - 관리자 페이지에서도 업체 페이지와 동일하게 **"주문 내역 확인"** <br/>
-  이 가능 하도록 구현 되었습니다.<br/><br/>
+  이 가능 하도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e51e5b49-34ab-4f4a-b57a-dcc8a5b371e8)
 
 ☞ Gemini AI & Weather API를 활용한 메뉴 추천 기능 (주문내역 데이터 기반) <br/>
@@ -415,7 +434,7 @@ BEGIN
 
 - 먼저, **리뷰작성** 입니다. <br/>
   아래 보이는것과 같이 **메뉴명, 수량, 가격** 등의 정보가 표시되며,<br/>
-  원하는 대로 별점을 줄 수 있고, 리뷰 작성 후 등록이 가능 하도록 구현 되었습니다.<br/><br/>
+  원하는 대로 별점을 줄 수 있고, 리뷰 작성 후 등록이 가능 하도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/6ac2a490-75d7-4d3a-b46d-98a17751a11e)
 
 - 유저가 자신이 작성한 리뷰를 관리하고 싶다면 유저 페이지에 **"리뷰관리"** <br/>
@@ -448,7 +467,7 @@ BEGIN
   일반 소비자와 업체 회원들은 모두 저희의 **"소중한 고객"** <br/>
   이라는 신념을 갖고 있기 때문 입니다.</br></br>
   
-  그 다음, 신고 횟수와 신고 내용을 볼 수 있도록 구현 되었으며,<br/>
+  그 다음, 신고 횟수와 신고 내용을 볼 수 있도록 구현 하으며,<br/>
   업체 내리기 버튼을 누르면 실제로 악성 유저나 업체로 신고 받은<br/>
   계정이 차단 되는 작업이 수행 됩니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/4aec7eac-05d3-41c8-8ca9-d50e177ce0dd)<br/>
@@ -456,10 +475,10 @@ BEGIN
   우선, 악성 업체부터 먼저 차단해 보도록 하겠습니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/c5d20ab8-9abd-4081-9162-352e4d7ca7d1)
   
-  차단 후 다시 로그인을 해보면 아래 이미지와 같이 계정이 차단 되도록 구현 되었습니다.<br/><br/>
+  차단 후 다시 로그인을 해보면 아래 이미지와 같이 계정이 차단 되도록 구현 하였습니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/6bca8632-df11-46ca-aeaa-3ae2e6b802a8)
 
-  악성 유저 차단도 악성 업체 차단과 동일하게 구현 되었습니다.<br/>
+  악성 유저 차단도 악성 업체 차단과 동일하게 구현 하였습니다.<br/>
   우선 악성유저 신고내용 상세보기 입니다. <br/><br/>
   ![image](https://github.com/user-attachments/assets/db57cfc3-5c11-4f0e-b0e4-98bf896c2672)
   
@@ -477,6 +496,8 @@ BEGIN
   ![image](https://github.com/user-attachments/assets/b19c4935-0dca-4ff3-aad0-c8b8c20956c1)
 
 - 다음은, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현되었습니다. <br/><br/>
+![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0)
+
 
 <!--
 =================================================
