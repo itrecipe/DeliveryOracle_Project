@@ -405,7 +405,7 @@ BEGIN
   메뉴추천 기능 입니다.<br/><br/>
   아래 이미지는 Gemini AI API를 활용하여<br/>
   일반 유저 회원의 주문 내역 데이터를 기반으로 하여<br/>
-  **"계절, 날씨, 기온"**에 따라 AI가 자동으로<br/>
+  **"계절, 날씨, 기온"** 에 따라 AI가 자동으로<br/>
   메뉴를 추천해 줍니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e53d7e34-88f1-4ad0-936e-b0eba66c4659)
 
