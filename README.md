@@ -1,20 +1,20 @@
 ### 개발기간 : 24.06.18 ~ 24.07.18
 
-# 프로젝트명 :  DeliveryOracle
+# 1. 프로젝트명 :  DeliveryOracle
 ![image](https://github.com/user-attachments/assets/a4dd9696-fd30-4620-8759-0647a448d89c)
 
-# 팀구성 (담당업무)
+# 2. 팀구성 (담당업무)
 ![image](https://github.com/user-attachments/assets/a2ad0375-d1d8-4d2f-bb7b-4e333c41fa88)<br/><br/>
 ![image](https://github.com/user-attachments/assets/8941ea07-81f0-4132-8beb-ec719cbcd2bb)<br/><br/>
 ![image](https://github.com/user-attachments/assets/272530e4-3e06-46b8-a3a5-db3d1c4fb19d)<br/><br/>
 
-# 프로젝트 소개
+# 3. 프로젝트 소개
 ![image](https://github.com/user-attachments/assets/a0fae65e-9acd-42d7-be70-4d988d597ef4)<br/><br/>
 
-# 개발환경 (기술 스택)
+# 4. 개발환경 (기술 스택)
 ![image](https://github.com/user-attachments/assets/b2b1c8ad-9c55-4ddf-bf11-7ee97ae9c622)<br/><br/>
 
-# ERD
+# 5. ERD
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)<br/><br/>
 총 14개의 테이블을 제작 하였습니다.
 
@@ -241,12 +241,12 @@ BEGIN
 </details>
 <br/><br/>
 
-# UseCase
+# 6. UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
 - **User, Store, Admin, Rider** 순으로 **4가지** 회원 유형의 **UseCase** 를 작성 하였습니다.
 <br/><br/>
 
-# Jira를 활용한 일정관리
+# 7. Jira를 활용한 일정관리
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)
 - 색상별로 담당자를 배정하였고, 각자가 맡은 파트별로 나누었습니다.<br/><br/>
 - 각자가 맡은 기능이 구현이 되었는지 진행중인지 시작 전인지에 대한 진행 상황을 파악하기 위해<br/>
@@ -258,35 +258,35 @@ BEGIN
   자신이 맡은 작업이 일찍 끝난 사람이 도와서 개발하는 방법을 알아보고 문제해결 방법을<br/>
   찾아보며 같이 고민하며 작업을 진행하였습니다.<br/><br/>
 
-# API 명세서
+# 8. API 명세서
 - POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <br/><br/>
 
-# 페이지 소개
+# 9. 페이지 소개
 
 **DeliveryOracle 메인 페이지**<br/> 
 - 4가지 회원 유형별로 접속할 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/8bc1bc42-6301-45eb-9fae-f9fdf9e397c9)
 <br/><br/>
 
-## 1. USER PART
+## 9-1. USER PART
 **User 메인 페이지** <br/><br/>
 ![image](https://github.com/user-attachments/assets/9020a43d-d8d4-419a-8788-d90963a5ca67)
 
-## 2. STORE PART
+## 9-2. STORE PART
 **Store 메인 페이지** <br/><br/>
 ![image](https://github.com/user-attachments/assets/4c66275d-141c-4a20-8aeb-9673f1c5311f)
 
-## 3. ADMIN PART
+## 9-3. ADMIN PART
 **Admin 메인 페이지** <br/><br/>
 ![image](https://github.com/user-attachments/assets/88bb835e-d355-4a28-89ca-940eaaf2b4ce)
 
-## 4. RIDER PART
+## 9-4. RIDER PART
 **Rider 메인 페이지** <br/><br/>
 ![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
 
-# 프로젝트 동작 시나리오 & 기능 소개
+# 10.프로젝트 동작 시나리오 & 기능 소개
 
 ### 공통기능 (로그인, 회원가입)
 
@@ -500,16 +500,7 @@ BEGIN
 - 마지막으로, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
 ![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0)
 
-<!--
-=================================================
-현재 여기까지 작성... 다음날 이어서 다시 작성하기
-
-<나머지 추가로 더 작성해야할 기능>
-업체 페이지 :  업체관리
-=================================================
--->
-
-# 프로젝트 회고 (소감, 느낀점, 아쉬운점)
+# 11.프로젝트 회고 (소감, 느낀점, 아쉬운점)
 
 - **소감** <br/><br/>
 우리는 “문제를 해결하는 사람들” 답게 의사소통과 의사결정에 있어서<br/>
