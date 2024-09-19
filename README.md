@@ -292,16 +292,16 @@ BEGIN
 
 ### 공통기능 (로그인, 회원가입)
 
-☞ 회원가입 <br/>
+**☞ 회원가입** <br/>
 - 메인 페이지에서 해당되는 회원 유형의 페이지로 접속하여 회원가입을 진행 합니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/0ffc9e4e-4711-45c6-baf4-5be373d72906)
 <br/><br/>
 
-☞ 로그인 <br/>
+**☞ 로그인** <br/>
 - 회원가입 후 해당되는 회원 유형의 페이지에서 접속할 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
 
-☞ 업체 등록 <br/>
+**☞ 업체 등록** <br/>
 - 메뉴 주문을 하기 전 **"업체등록"** 을 먼저 진행 해야 합니다.<br/>
   업체 등록을 먼저 해보도록 하곘습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e05ca278-bc07-494e-a9c3-456174287227)
@@ -309,7 +309,7 @@ BEGIN
 - 업체 등록이 완료되면 alert 창으로 **"등록이 요청 되었습니다"** 라는 문구가 출력 됩니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/399a0fe6-f328-436f-a825-fe276abce8e0)
 
-☞ 업체 승인 <br/>
+**☞ 업체 승인** <br/>
 - 이제 업체 등록이 되었다면 **"관리자"** 페이지에서 **"업체승인"** 을 받아야 합니다.<br/>
   관리자 페이지에서 **"업체 승인"** 을 해보도록 하겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e0a946fa-5c1d-4bef-bd45-6fb0afe3b94d)
@@ -318,7 +318,7 @@ BEGIN
   **"Approval Status"** 값은 1로	**"Action"** 값은 **"완료"** 로 변경되는 모습을 보실 수 있습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/19e24a8b-8a62-4eb0-820d-8576a70fd66a)
 
-☞ 메뉴 추가 <br/>
+**☞ 메뉴 추가** <br/>
 - 다음은 메뉴를 추가 해야 합니다.<br/>
 **"꿔바로우, 마라탕, 탕후루"** 주문할 메뉴 3가지를 등록 해두겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/aaebf40f-8ec5-4a6f-b4c4-170151113acf)
@@ -330,26 +330,26 @@ BEGIN
   현재 보이는 **"마라탕후루"** 라는 음식점에 있는 메뉴를 주문하기 위해 주문 가능한 페이지로 이동하겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/2a48e4aa-d2b4-4db6-b4af-f64672cd7d16)
 
-☞ 유저 페이지 (상세보기) : 메뉴 선택, 결제 페이지 <br/>
+**☞ 유저 페이지 (상세보기) : 메뉴 선택, 결제 페이지** <br/>
 - 그 전에 먼저 간단히 소개를 드리자면 **"유저 페이지"** 상세보기 페이지에 접속한 화면 입니다.<br/>
   현재 페이지에서는 메뉴 선택 및 주문을 할 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/818d235f-de0c-4128-99bf-674b27be1d9a)
 
-☞ 유저 페이지 (댓글 상세보기) : 유저의 입장에서 유저와 업체가 달아둔 **댓글, 대댓글** 을 확인할 수 있는 페이지  <br/>
+**☞ 유저 페이지 (댓글 상세보기) : 유저의 입장에서 유저와 업체가 달아둔 **댓글, 대댓글** 을 확인할 수 있는 페이지**  <br/>
 - 현재 페이지는 유저 입장에서 업체 회원과 주고 받은 댓글과 대댓글 목록이 조회되어 출력 되는 페이지 입니다.<br/>
   유저는 해당 탭에서 자신과 업체 회원이 대화를 나눈 기록을 언제든지 볼 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/01e4e0c3-f51f-46a0-b8b3-f3fe7b82b7c3)
 
-☞ 유저 페이지 (매장 소개) : 매장 위치 소개 페이지 <br/>
+**☞ 유저 페이지 (매장 소개) : 매장 위치 소개 페이지** <br/>
 - 현재 페이지에서는 유저가 음식을 주문하고자 하는 매장의 위치를<br/>
   카카오맵 API를 활용하여 개발한 지도와 마커로 확인할 수 있도록 구현 하였습니다. <br/><br/>
 ![image](https://github.com/user-attachments/assets/2957d156-a2c8-4a15-921c-5ea112523252)
 
-☞ 유저 페이지 (검색 기능) : 현재 **운영중 or 운영종료** 된 음식점을 검색을 통해 확인할 수 있는 기능 <br/>
+**☞ 유저 페이지 (검색 기능) : 현재 **운영중 or 운영종료** 된 음식점을 검색을 통해 확인할 수 있는 기능** <br/>
 - 유저가 찾고자 하는 매장(음식점)을 검색을 통하여 찾을 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/d1b8e2b0-68d2-4192-bbae-dce573d75266)
 
-☞ 주문하기 & 결제하기 <br/>
+**☞ 주문하기 & 결제하기** <br/>
 - 현재 보이는 모습은 **"마라탕후루"** 라는 음식점에서 음식을 주문하는 화면 입니다.<br/>
   **마라탕, 탕후루, 꿔바로우** 3가지 음식을 주문 해보도록 하겠습니다.<br/>
   **"결제하기"** 버튼을 누르면 다음 결제창으로 이동하게 됩니다.<br/><br/>
@@ -361,7 +361,7 @@ BEGIN
   추후에 PG사 결제 모듈을 연결해 볼 예정 입니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/c8f3f7fa-bfe6-4520-b2a6-47fb25f8cc14)
 
-☞ 충전하기 <br/>
+**☞ 충전하기** <br/>
 - 음식을 주문하기전, 먼저 저희 사이트 내에서 이용할 수 있는 **"충전금"** 을 먼저 충전 해줘야 합니다.<br/>
   충전하기 버튼을 눌러서 금액 충전을 먼저 진행해 보겠습니다.<br/>
   (금액은 최대 10억까지 충전 가능 합니다.)<br/><br/>
@@ -388,7 +388,7 @@ BEGIN
   거절할 것인지 선택하실 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e5f14a66-cedb-49d1-a30b-5bbf2583ec80)
 
-☞ 라이더 배정하기 <br/>
+**☞ 라이더 배정하기** <br/>
 - 조리하기 버튼을 누르면 **라이더 배정하기** 라는 버튼이 활성화 됩니다.<br/>
   해당 버튼을 누르면 웹소켓으로 연결되어 있어 라이더 페이지에<br/>
   콜을 받는 페이지에서 들어오는 콜을 잡을 수가 있도록 구현되어 있습니다.<br/><br/>
@@ -403,7 +403,7 @@ BEGIN
   라는 상태값이 반영 되도록 구현 하였습니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/71d1d5db-3bc1-4471-abb6-6d9326d89f1c)
 
-☞ 콜 받기 <br/>
+**☞ 콜 받기** <br/>
 - 다시 라이더페이지에 **콜받기** 페이지에서 **수락** 버튼을 누르면 배달이 등록되며,<br/>
   **"진행중인 배달 페이지"** 에 **"가게명, 가게와 주문자의 거리, 배달가격"** 등의 정보가 표시 됩니다.<br/><br/>
   현재 아래에 보이는 지도를 보시면 카카오맵 API를 활용하여 개발한 <br/>
@@ -422,7 +422,7 @@ BEGIN
   이 가능 하도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e51e5b49-34ab-4f4a-b57a-dcc8a5b371e8)
 
-☞ Gemini AI & Weather API를 활용한 메뉴 추천 기능 (주문 내역 데이터 기반) <br/>
+**☞ Gemini AI & Weather API를 활용한 메뉴 추천 기능 (주문 내역 데이터 기반)** <br/>
 - 다음은, 저희 팀의 **주요기능** 이라고 할 수 있는<br/>
   유저의 주문 내역 테이터를 기반으로 하는<br/>
   메뉴추천 기능 입니다.<br/><br/>
@@ -432,7 +432,7 @@ BEGIN
   메뉴를 추천해 줍니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e53d7e34-88f1-4ad0-936e-b0eba66c4659)
 
-☞ 유저의 입장에서 **리뷰쓰기** <br/>
+**☞ 유저의 입장에서 리뷰쓰기** <br/>
 - 다음은 유저 페이지의 **리뷰작성** 기능을 소개 합니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/054419c6-cdcd-4898-ad85-fbe23a2cc382)
 
@@ -447,20 +447,20 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/7f57780d-9e0d-4052-a9c6-0395df79a763)<br/>
 ![image](https://github.com/user-attachments/assets/9d6616fe-0480-4dc5-9e03-b3614000ecf9)
 
-☞ 업체 페이지 → 댓글관리 <br/>
+**☞ 업체 페이지 → 댓글관리** <br/>
 - 유저가 작성한 댓글을 업체도 볼 수 있어야 답글을<br/>
   작성해 줄 수 있기 때문에 해당 부분을 생각하며 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/bd02f8a7-18fc-47b8-a439-948604fadae1)
 
-☞ 유저의 입장에서 악성 업체를 **신고하기** <br/>
+**☞ 유저의 입장에서 악성 업체를 신고하기** <br/>
 - 유저 입장에서 악성 업체를 신고해 보겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/383a4874-9a33-4d98-ba0d-a16c0d6ef030)
 
-☞ 업체(점주)의 입장에서 악성 유저를 **신고하기** <br/>
+**☞ 업체(점주)의 입장에서 악성 유저를 신고하기** <br/>
 - 이번엔 업체 입장에서 악성 유저를 신고해 보겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/b1bae858-7c5b-4671-a30f-db19c9bc7dbf)
 
-☞ 관리자 페이지 → 악성 (유저 & 업체) 차단하기 <br/>
+**☞ 관리자 페이지 → 악성 (유저 & 업체) 차단하기** <br/>
 - 악성 업체와 유저는 서로 각각 2회씩 신고를 받으면 관리자 페이지에서<br/>
   사이트 관리자가 차단을 할 수 있는 기능이 활성화 됩니다.<br/><br/>
   해당 기능은 저희 사이트에 주요 기능중 하나라고 할 수 있습니다.<br/>
@@ -492,7 +492,7 @@ BEGIN
   정상적으로 악성 유저의 계정도 차단된 모습 입니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/6f91c96b-e7eb-499e-a11e-54762d0bcc62)
 
-☞ (관리자 & 업체 & 라이더) 페이지 매출 내역 보기 <br/>
+**☞ (관리자 & 업체 & 라이더) 페이지 매출 내역 보기** <br/>
 - 다음은, 업체 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
   ![image](https://github.com/user-attachments/assets/3b9f6658-ec6e-4a14-9c76-47f58edcb282)
 
