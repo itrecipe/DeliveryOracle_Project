@@ -23,15 +23,24 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.Arrays;
 
+// 1.  클래스 선언 및 어노테이션
+
 @Slf4j //로그 출력을 위한 Lombok의 Slf4j 어노테이션 사용
 @Configuration // 해당 클래스가 Spring의 설정 클래스로 사용되는 것을 나타낸다.
 @EnableWebSecurity //Spring Security를 활성화하는 어노테이션
 
 /* @EnableMethodSecurity : 메서드 수준의 보안을 활성화 시킨다.
-@preAuthorize, @postAuthorize, @Secured 사용가능 하다 */
+해당 설정이 있으면 @preAuthorize, @postAuthorize, @Secured 등의
+어노테이션을 사용가능 하다 */
 
 @EnableMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class SecurityConfig { //Spring Security 설정을 담당하는 SecurityConfig 클래스는 웹 애플리케이션의 보안 정책을 정의한다.
+
+    //2. 의존성 주입
+
+    /* @Autowired : Spring이 자동으로 필요한 빈(객체)를 주입해준다.
+       여기서는 사용자의 상세 정보를 제공하는 서비스와 JWT 토른을 관리하는 프로바이더를 주입 받는다.
+     */
 
     @Autowired
     private CustomUserDetailService customUserDetailService;
@@ -39,7 +48,7 @@ public class SecurityConfig { //Spring Security 설정을 담당하는 SecurityC
     @Autowired
     private JwtTokenProvider jwtTokenProvider;
 
-    // 시큐리티 설정
+    // 3. SecurityFilterChain 설정
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         log.info("시큐리티 설정...");
