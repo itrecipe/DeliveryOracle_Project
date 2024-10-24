@@ -23,10 +23,13 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.Arrays;
 
-@Slf4j
-@Configuration
-@EnableWebSecurity
-// @preAuthorize, @postAuthorize, @Secured 활성화
+@Slf4j //로그 출력을 위한 Lombok의 Slf4j 어노테이션 사용
+@Configuration // 해당 클래스가 Spring의 설정 클래스로 사용되는 것을 나타낸다.
+@EnableWebSecurity //Spring Security를 활성화하는 어노테이션
+
+/* @EnableMethodSecurity : 메서드 수준의 보안을 활성화 시킨다.
+@preAuthorize, @postAuthorize, @Secured 사용가능 하다 */
+
 @EnableMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class SecurityConfig { //Spring Security 설정을 담당하는 SecurityConfig 클래스는 웹 애플리케이션의 보안 정책을 정의한다.
 

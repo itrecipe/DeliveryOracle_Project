@@ -12,7 +12,7 @@ public class RiderController {
     @Autowired
     private RiderService riderService;
 
-    //배달전체 목록 불러오기
+    //배달 전체 목록 불러오기
     @GetMapping("/order")
     public List<RiderVo> orderlist(@RequestParam("x")BigDecimal x,@RequestParam("y")BigDecimal y){
         return riderService.orderlist(x,y);
