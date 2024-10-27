@@ -97,6 +97,7 @@ public class AdminController {
     public ResponseEntity<?> Storeblockblock (@RequestBody Map<String, Integer> id){
         //아이디값을 받아와서 그 아이디 값하고 같은 이메일의 유저 권한을 변경한다.
         int rs=adminService.Storeblockblock(id.get("id"));
+        System.out.println(rs);
         if (rs==1){
             return new ResponseEntity<>("SUCCESS", HttpStatus.OK);
         }
