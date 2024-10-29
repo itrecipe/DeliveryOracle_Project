@@ -53,10 +53,11 @@ const UserJoin = () => {
     const emailPassButton = (e) => {
         e.preventDefault();
        
-        if (emailError) {
-            alert("올바른 이메일 형식을 입력해주세요.");
-            return;
-        }
+        // 추후 주석 취소
+        // if (emailError) {
+        //     alert("올바른 이메일 형식을 입력해주세요.");
+        //     return;
+        // }
 
         axios.post('http://localhost:8080/user/checkEmail', { email: email })
             .then(rs => {
