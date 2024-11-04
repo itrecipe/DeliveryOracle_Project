@@ -4,12 +4,12 @@
 ![image](https://github.com/user-attachments/assets/a4dd9696-fd30-4620-8759-0647a448d89c)
 
 # 2. 팀구성 (담당업무)
-![image](https://github.com/user-attachments/assets/a2ad0375-d1d8-4d2f-bb7b-4e333c41fa88)<br/><br/>
+![image](https://github.com/user-attachments/assets/7a6f8f47-0a91-436d-9ab1-7cbb5bb7493a)<br/><br/>
 ![image](https://github.com/user-attachments/assets/8941ea07-81f0-4132-8beb-ec719cbcd2bb)<br/><br/>
-![image](https://github.com/user-attachments/assets/272530e4-3e06-46b8-a3a5-db3d1c4fb19d)<br/><br/>
+![image](https://github.com/user-attachments/assets/22ee6e18-371c-48d7-8686-bd842f77666b)<br/><br/>
 
 # 3. 프로젝트 소개
-![image](https://github.com/user-attachments/assets/a0fae65e-9acd-42d7-be70-4d988d597ef4)<br/><br/>
+![image](https://github.com/user-attachments/assets/a0f64cc4-79f4-4b0e-902f-0e4a57f8fc1d)<br/><br/>
 
 # 4. 개발환경 (기술 스택)
 ![image](https://github.com/user-attachments/assets/b2b1c8ad-9c55-4ddf-bf11-7ee97ae9c622)<br/><br/>
