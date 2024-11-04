@@ -1,7 +1,6 @@
-### 개발기간 : 24.06.18 ~ 24.07.18
+# 1. 프로젝트명 & 개발기간
+![image](https://github.com/user-attachments/assets/a6c59c03-777e-4f95-adc0-9a03655f2162)
 
-# 1. 프로젝트명 :  DeliveryOracle
-![image](https://github.com/user-attachments/assets/a4dd9696-fd30-4620-8759-0647a448d89c)
 
 # 2. 팀구성 (담당업무)
 ![image](https://github.com/user-attachments/assets/7a6f8f47-0a91-436d-9ab1-7cbb5bb7493a)<br/><br/>
