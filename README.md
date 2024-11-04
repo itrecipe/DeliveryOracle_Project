@@ -287,8 +287,6 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
 
 # 10. 프로젝트 동작 시나리오 & 기능 소개
-<details>
-  <summary>상세보기</summary><br/>
 
 ### 공통기능 (로그인, 회원가입)
 
@@ -501,7 +499,6 @@ BEGIN
 
 - 마지막으로, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
 ![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0)
-</details>
 
 # 11. 프로젝트 회고 (소감, 느낀점, 아쉬운점)
 <details>
