@@ -69,7 +69,7 @@
 - 주문자 x좌표 : user_x
 - 주문자 y좌표 : user_y
 
-6. RiderDelivery (라이더 배달 테이블)
+6. RiderDelivery (라이더 배달 테이블)c
 
 - 배달 번호 : delivery_id
 - 주문 번호 : order_id
@@ -242,7 +242,9 @@ BEGIN
 
 # 6. UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
-- **User, Store, Admin, Rider** 순으로 **4가지** 회원 유형의 **UseCase** 를 작성 하였습니다.
+- **User, Store, Admin, Rider** 순으로 **4가지** 회원 유형의 <br/>
+  전체적인 **기능 수행 및 작업** 프로세스를 **UseCase** 를 활용하여<br/>
+  표현 하였습니다.
 <br/><br/>
 
 # 7. Jira를 활용한 일정관리
