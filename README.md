@@ -1,17 +1,18 @@
-# 1. 프로젝트명 & 개발기간
-![image](https://github.com/user-attachments/assets/a6c59c03-777e-4f95-adc0-9a03655f2162)
+# 1. 프로젝트명 : DeliveryOracle
+![image](https://github.com/user-attachments/assets/af151fcd-6a4f-4065-bbba-a757dc523c35)
 
-
-# 2. 팀구성 (담당업무)
-![image](https://github.com/user-attachments/assets/7a6f8f47-0a91-436d-9ab1-7cbb5bb7493a)<br/><br/>
+# 2. 팀구성 및 담당업무
+![image](https://github.com/user-attachments/assets/5a8b8207-24cc-4d5e-bb45-9546371c18ca)<br/><br/>
 ![image](https://github.com/user-attachments/assets/8941ea07-81f0-4132-8beb-ec719cbcd2bb)<br/><br/>
 ![image](https://github.com/user-attachments/assets/22ee6e18-371c-48d7-8686-bd842f77666b)<br/><br/>
 
-# 3. 프로젝트 소개
-![image](https://github.com/user-attachments/assets/a0f64cc4-79f4-4b0e-902f-0e4a57f8fc1d)<br/><br/>
+# 3. 프로젝트 소개 (제작동기)
+![image](https://github.com/user-attachments/assets/49fe39bb-3e16-450a-9037-332f9fa212bd)<br/><br/>
+![image](https://github.com/user-attachments/assets/33dc3b26-c014-4d69-8cbd-4ade77739627)<br/><br/>
 
-# 4. 개발환경 (기술 스택)
-![image](https://github.com/user-attachments/assets/b2b1c8ad-9c55-4ddf-bf11-7ee97ae9c622)<br/><br/>
+
+# 4. 개발환경 (기술스택)
+![image](https://github.com/user-attachments/assets/741761d0-6461-48f6-890b-5ee28c516c38)<br/><br/>
 
 # 5. ERD
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)<br/><br/>
@@ -269,8 +270,7 @@ BEGIN
 
 **DeliveryOracle 메인 페이지**<br/> 
 - 4가지 회원 유형별로 접속할 수 있도록 구현 하였습니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/8bc1bc42-6301-45eb-9fae-f9fdf9e397c9)
-<br/><br/>
+![image](https://github.com/user-attachments/assets/57ea03c4-6967-4f76-8ec8-10d5c0d6bf92)
 
 ## 9-1. USER PART
 **User 메인 페이지** <br/><br/>
@@ -294,8 +294,7 @@ BEGIN
 
 **☞ 회원가입** <br/>
 - 메인 페이지에서 해당되는 회원 유형의 페이지로 접속하여 회원가입을 진행 합니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/0ffc9e4e-4711-45c6-baf4-5be373d72906)
-<br/><br/>
+![image](https://github.com/user-attachments/assets/059a1b9f-c0fb-4cb3-8e4e-9138f1ba7e47)<br/><br/>
 
 **☞ 로그인** <br/>
 - 회원가입 후 해당되는 회원 유형의 페이지에서 접속할 수 있도록 구현 하였습니다.<br/><br/>
