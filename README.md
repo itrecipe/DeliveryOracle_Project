@@ -1,14 +1,14 @@
 # 1. 프로젝트명 : DeliveryOracle
-![image](https://github.com/user-attachments/assets/af151fcd-6a4f-4065-bbba-a757dc523c35)
+![image](https://github.com/user-attachments/assets/f9071330-d474-4296-9602-8875d1a6ff78)
 
 # 2. 팀구성 및 담당업무
-![image](https://github.com/user-attachments/assets/d6858dd8-e810-48d6-9caa-14c5fbb85de5)<br/><br/>
+![image](https://github.com/user-attachments/assets/9cdfba3a-7c36-400c-8bf2-e669fd40b08e)<br/><br/>
 ![image](https://github.com/user-attachments/assets/4f8de8fe-7001-4589-9c6d-92f0517398d1)<br/><br/>
 ![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152)<br/><br/>
 
 # 3. 프로젝트 소개 (제작동기)
-![image](https://github.com/user-attachments/assets/49fe39bb-3e16-450a-9037-332f9fa212bd)<br/><br/>
-![image](https://github.com/user-attachments/assets/33dc3b26-c014-4d69-8cbd-4ade77739627)<br/><br/>
+![image](https://github.com/user-attachments/assets/ae203d6d-0160-4636-9e74-89fc0162d3f0)<br/><br/>
+![image](https://github.com/user-attachments/assets/3b1f5847-22b2-4262-b951-305cfb85d270)<br/><br/>
 
 
 # 4. 개발환경 (기술스택)
