@@ -298,7 +298,7 @@ BEGIN
 
 **☞ 로그인** <br/>
 - 회원가입 후 해당되는 회원 유형의 페이지에서 접속할 수 있도록 구현 하였습니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/c15dff46-44fc-4459-8496-a2398700c910)
+![image](https://github.com/user-attachments/assets/d5278916-d342-4b47-9a8c-9cae0c89cbfa)
 
 **☞ 업체 등록** <br/>
 - 메뉴 주문을 하기 전 **"업체등록"** 을 먼저 진행 해야 합니다.<br/>
@@ -332,7 +332,7 @@ BEGIN
 **☞ 유저 페이지 (상세보기) : 메뉴 선택, 결제 페이지** <br/>
 - 그 전에 먼저 간단히 소개를 드리자면 **"유저 페이지"** 상세보기 페이지에 접속한 화면 입니다.<br/>
   현재 페이지에서는 메뉴 선택 및 주문을 할 수 있도록 구현 하였습니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/818d235f-de0c-4128-99bf-674b27be1d9a)
+![image](https://github.com/user-attachments/assets/c0ddaea0-c1c6-4f18-a076-25801688d959)
 
 **☞ 유저 페이지 (댓글 상세보기) : 유저의 입장에서 유저와 업체가 달아둔 **댓글, 대댓글** 을 확인할 수 있는 페이지**  <br/>
 - 현재 페이지는 유저 입장에서 업체 회원과 주고 받은 댓글과 대댓글 목록이 조회되어 출력 되는 페이지 입니다.<br/>
@@ -352,13 +352,13 @@ BEGIN
 - 현재 보이는 모습은 **"마라탕후루"** 라는 음식점에서 음식을 주문하는 화면 입니다.<br/>
   **마라탕, 탕후루, 꿔바로우** 3가지 음식을 주문 해보도록 하겠습니다.<br/>
   **"결제하기"** 버튼을 누르면 다음 결제창으로 이동하게 됩니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/0f6a7b6d-905a-426e-8e11-0088de276768)
+![image](https://github.com/user-attachments/assets/d0b0a43e-f93b-42e6-8a3d-91d4eef0dc83)
 
 - 다음으로, 결제창이 활성화가 되며, **"배달 정보"** 와 **"결제금액"** 이 표시됩니다.<br/>
   **"결제수단"** 을 선택하여 결제 하도록 구현 하였습니다.<br/><br/>
   현재 결제 수단은 **"포인트 결제 방식"** 으로 구현되어 있으며,<br/>
   추후에 PG사 결제 모듈을 연결해 볼 예정 입니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/c8f3f7fa-bfe6-4520-b2a6-47fb25f8cc14)
+![image](https://github.com/user-attachments/assets/0c8d4211-2656-4537-bd92-ad8bd42ec5ac)
 
 **☞ 충전하기** <br/>
 - 음식을 주문하기전, 먼저 저희 사이트 내에서 이용할 수 있는 **"충전금"** 을 먼저 충전 해줘야 합니다.<br/>
@@ -366,17 +366,17 @@ BEGIN
   (금액은 최대 10억까지 충전 가능 합니다.)<br/><br/>
   
   **충전하기 전**
-![image](https://github.com/user-attachments/assets/89a03ce9-5491-4f8e-95a7-be13b0b315fe)<br/><br/>
+![image](https://github.com/user-attachments/assets/449db068-2241-4918-ba22-171cd06d825c)<br/><br/>
 
   **금액 충전 모달 창 활성화** <br/>
 ![image](https://github.com/user-attachments/assets/c2eab172-6c17-46e2-8e1d-e9965d111b76)<br/><br/>
 
   **충전 후**
-![image](https://github.com/user-attachments/assets/3608f17e-9c98-4b10-821f-571b2b20be56)
+![image](https://github.com/user-attachments/assets/292c1af6-8b5c-43bb-8e62-0f2506240f42)
 
 - 그럼 이제 본격적으로 **"주문하기"** 버튼을 눌러 다시 주문을 해보도록 하겠습니다.<br/>
   버튼을 누르고 결제방식을 **"포인트 결제 방식"** 으로 선택하여 먹고 싶은 음식을 주문 합니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/c28d1a90-051d-4298-9dbc-65c58811e24b)
+![image](https://github.com/user-attachments/assets/691853f6-d509-4883-8d0d-f1373714d48a)
 
 - 주문 성공이 되었다면, 이번엔 업체 페이지로 이동하여<br/>
   **"현재 주문 상태"** 페이지에 나타나는 주문 내역을 확인해보겠습니다.<br/><br/>
@@ -489,7 +489,7 @@ BEGIN
   ![image](https://github.com/user-attachments/assets/4bbc13e6-f086-4128-bb89-548f68569315)
   
   정상적으로 악성 유저의 계정도 차단된 모습 입니다.<br/><br/>
-  ![image](https://github.com/user-attachments/assets/6f91c96b-e7eb-499e-a11e-54762d0bcc62)
+  ![image](https://github.com/user-attachments/assets/05bc0b29-62b0-4efb-960c-fdd683703dab)
 
 **☞ (관리자 & 업체 & 라이더) 페이지 매출 내역 보기** <br/>
 - 다음은, 업체 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
