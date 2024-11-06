@@ -2,9 +2,9 @@
 ![image](https://github.com/user-attachments/assets/af151fcd-6a4f-4065-bbba-a757dc523c35)
 
 # 2. 팀구성 및 담당업무
-![image](https://github.com/user-attachments/assets/5a8b8207-24cc-4d5e-bb45-9546371c18ca)<br/><br/>
-![image](https://github.com/user-attachments/assets/8941ea07-81f0-4132-8beb-ec719cbcd2bb)<br/><br/>
-![image](https://github.com/user-attachments/assets/22ee6e18-371c-48d7-8686-bd842f77666b)<br/><br/>
+![image](https://github.com/user-attachments/assets/d6858dd8-e810-48d6-9caa-14c5fbb85de5)<br/><br/>
+![image](https://github.com/user-attachments/assets/4f8de8fe-7001-4589-9c6d-92f0517398d1)<br/><br/>
+![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152)<br/><br/>
 
 # 3. 프로젝트 소개 (제작동기)
 ![image](https://github.com/user-attachments/assets/49fe39bb-3e16-450a-9037-332f9fa212bd)<br/><br/>
