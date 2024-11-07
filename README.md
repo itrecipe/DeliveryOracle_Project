@@ -251,6 +251,7 @@ BEGIN
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)<br/><br/>
 
 **1. 담당자 배정**<br/>
+
 색상별로 담당자를 배정하였고, 각자가 맡은 파트별로 나누었습니다.<br/><br/>
 
 **2. 진행 상황 관리**<br/>
