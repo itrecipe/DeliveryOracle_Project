@@ -2,7 +2,7 @@
 ![image](https://github.com/user-attachments/assets/f9071330-d474-4296-9602-8875d1a6ff78)
 
 # 2. 팀구성 및 담당업무
-![image](https://github.com/user-attachments/assets/6467074b-7e93-4428-a592-d27a75f08893)<br/><br/>
+![image](https://github.com/user-attachments/assets/66ad3f46-7783-4e5c-9ea8-cdef8bea6af3)<br/><br/>
 ![image](https://github.com/user-attachments/assets/1efcfd84-5b90-45fa-be91-8181ffd4baed)<br/><br/>
 ![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152)<br/><br/>
 
