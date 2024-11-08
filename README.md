@@ -274,29 +274,32 @@ BEGIN
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <br/><br/>
 
-# 9. 페이지 소개
+# 9. 페이지 소개 (User, Store, Admin, Rider)  
 
 **DeliveryOracle 메인 페이지**<br/> 
 - 4가지 회원 유형별로 접속할 수 있도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/57ea03c4-6967-4f76-8ec8-10d5c0d6bf92)
 
-## 9-1. USER PART
 **User 메인 페이지** <br/><br/>
-![image](https://github.com/user-attachments/assets/9020a43d-d8d4-419a-8788-d90963a5ca67)
+![image](https://github.com/user-attachments/assets/9020a43d-d8d4-419a-8788-d90963a5ca67) <br/><br/>
 
-## 9-2. STORE PART
 **Store 메인 페이지** <br/><br/>
-![image](https://github.com/user-attachments/assets/4c66275d-141c-4a20-8aeb-9673f1c5311f)
+![image](https://github.com/user-attachments/assets/4c66275d-141c-4a20-8aeb-9673f1c5311f ) <br/><br/>
 
-## 9-3. ADMIN PART
 **Admin 메인 페이지** <br/><br/>
-![image](https://github.com/user-attachments/assets/88bb835e-d355-4a28-89ca-940eaaf2b4ce)
+![image](https://github.com/user-attachments/assets/88bb835e-d355-4a28-89ca-940eaaf2b4ce) <br/><br/>
 
-## 9-4. RIDER PART
 **Rider 메인 페이지** <br/><br/>
-![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076)
+![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076) <br/><br/>
 
-# 10. 프로젝트 동작 시나리오 & 기능 소개
+# 10. 핵심기능
+/*
+제미나이 AI 활용 (날씨, 온도, 계절) 기반 메뉴추천기능
+악성 유저 / 업체 간의 신고기능
+제작이유 : 어느 한쪽만 배려해주는게 아닌 양쪽 서로의 입장을 배려해주기 위함
+*/
+
+# 11. 프로젝트 동작 시나리오 & 기능 소개
 
 ### 공통기능 (로그인, 회원가입)
 
@@ -509,7 +512,9 @@ BEGIN
 - 마지막으로, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
 ![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0)
 
-# 11. 프로젝트 회고 (소감, 느낀점, 아쉬운점)
+# 12. 트러블슈팅 경험
+
+# 13. 프로젝트 회고 (소감, 느낀점, 아쉬운점)
 <details>
   <summary>상세보기</summary><br/>
 
