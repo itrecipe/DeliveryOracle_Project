@@ -1,8 +1,9 @@
-[1. 프로젝트 소개](#프로젝트-소개)
-[2. 개발 기간](#2-개발-기간)
+# 목차
+[프로젝트명 : DeliveryOracle](#프로젝트명-DeliveryOracle)
+[3.개발환경](#3.개발환경)
 [3. 팀원 소개](#3-팀원-소개)
 
-# 프로젝트명 : DeliveryOracle
+# 프로젝트명 DeliveryOracle
 ![image](https://github.com/user-attachments/assets/f9071330-d474-4296-9602-8875d1a6ff78) <br/><br/>
 
 ## 프로젝트 소개
@@ -15,7 +16,7 @@
 ![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152) <br/><br/>
 
 
-## 3. 개발환경 (기술스택)
+## 3.개발환경
 ![image](https://github.com/user-attachments/assets/741761d0-6461-48f6-890b-5ee28c516c38)<br/><br/>
 
 ## 4. ERD
