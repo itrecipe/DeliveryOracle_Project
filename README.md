@@ -1,18 +1,18 @@
-[1. 목표와 기능](#1-목표와-기능)
+[1. 프로젝트 소개](#프로젝트-소개)
 [2. 개발 기간](#2-개발-기간)
 [3. 팀원 소개](#3-팀원-소개)
 
 # 프로젝트명 : DeliveryOracle
 ![image](https://github.com/user-attachments/assets/f9071330-d474-4296-9602-8875d1a6ff78) <br/><br/>
 
-## 1. 팀구성 및 담당업무
+## 프로젝트 소개
+![image](https://github.com/user-attachments/assets/ae203d6d-0160-4636-9e74-89fc0162d3f0) <br/><br/>
+![image](https://github.com/user-attachments/assets/3b1f5847-22b2-4262-b951-305cfb85d270) <br/><br/>
+
+## 담당업무
 ![image](https://github.com/user-attachments/assets/66ad3f46-7783-4e5c-9ea8-cdef8bea6af3) <br/><br/>
 ![image](https://github.com/user-attachments/assets/1efcfd84-5b90-45fa-be91-8181ffd4baed) <br/><br/>
 ![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152) <br/><br/>
-
-## 2. 프로젝트 소개 (제작동기)
-![image](https://github.com/user-attachments/assets/ae203d6d-0160-4636-9e74-89fc0162d3f0) <br/><br/>
-![image](https://github.com/user-attachments/assets/3b1f5847-22b2-4262-b951-305cfb85d270) <br/><br/>
 
 
 ## 3. 개발환경 (기술스택)
