@@ -1,10 +1,10 @@
 # 목차
-[프로젝트명 : DeliveryOracle](#프로젝트명-DeliveryOracle)
-[3.개발환경](#3.개발환경)
-[3. 팀원 소개](#3-팀원-소개)
+[프로젝트명 (개발기간)](#프로젝트명-및-개발기간) <br/><br/>
+[1. 프로젝트 소개](#프로젝트-소개) </br><br/>
+[2. 담당업무](#담당업무) </br><br/>
 
-# 프로젝트명 DeliveryOracle
-![image](https://github.com/user-attachments/assets/f9071330-d474-4296-9602-8875d1a6ff78) <br/><br/>
+# 프로젝트명 및 개발기간
+![image](https://github.com/user-attachments/assets/df909e7f-b860-4b7a-8617-16e2cde9181b) <br/><br/>
 
 ## 프로젝트 소개
 ![image](https://github.com/user-attachments/assets/ae203d6d-0160-4636-9e74-89fc0162d3f0) <br/><br/>
