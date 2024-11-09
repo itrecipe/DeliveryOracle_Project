@@ -1,22 +1,26 @@
-# 1. 프로젝트명 : DeliveryOracle
-![image](https://github.com/user-attachments/assets/f9071330-d474-4296-9602-8875d1a6ff78)
+[1. 목표와 기능](#1-목표와-기능)
+[2. 개발 기간](#2-개발-기간)
+[3. 팀원 소개](#3-팀원-소개)
 
-# 2. 팀구성 및 담당업무
-![image](https://github.com/user-attachments/assets/66ad3f46-7783-4e5c-9ea8-cdef8bea6af3)<br/><br/>
-![image](https://github.com/user-attachments/assets/1efcfd84-5b90-45fa-be91-8181ffd4baed)<br/><br/>
-![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152)<br/><br/>
+# 프로젝트명 : DeliveryOracle
+![image](https://github.com/user-attachments/assets/f9071330-d474-4296-9602-8875d1a6ff78) <br/><br/>
 
-# 3. 프로젝트 소개 (제작동기)
-![image](https://github.com/user-attachments/assets/ae203d6d-0160-4636-9e74-89fc0162d3f0)<br/><br/>
-![image](https://github.com/user-attachments/assets/3b1f5847-22b2-4262-b951-305cfb85d270)<br/><br/>
+## 1. 팀구성 및 담당업무
+![image](https://github.com/user-attachments/assets/66ad3f46-7783-4e5c-9ea8-cdef8bea6af3) <br/><br/>
+![image](https://github.com/user-attachments/assets/1efcfd84-5b90-45fa-be91-8181ffd4baed) <br/><br/>
+![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152) <br/><br/>
+
+## 2. 프로젝트 소개 (제작동기)
+![image](https://github.com/user-attachments/assets/ae203d6d-0160-4636-9e74-89fc0162d3f0) <br/><br/>
+![image](https://github.com/user-attachments/assets/3b1f5847-22b2-4262-b951-305cfb85d270) <br/><br/>
 
 
-# 4. 개발환경 (기술스택)
+## 3. 개발환경 (기술스택)
 ![image](https://github.com/user-attachments/assets/741761d0-6461-48f6-890b-5ee28c516c38)<br/><br/>
 
-# 5. ERD
+## 4. ERD
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)<br/><br/>
-총 14개의 테이블을 제작 하였습니다.
+- 총 14개의 테이블을 제작 하였습니다.
 
 <details>
   <summary>테이블 Entity 상세보기 ☞ Click Here!!</summary> <br/>
@@ -241,20 +245,20 @@ BEGIN
 </details>
 <br/><br/>
 
-# 6. UseCase
+## 5. UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
 - **User, Store, Admin, Rider** 순으로 **4가지** 회원 유형의 <br/>
   전체적인 **작업(기능)** 수행 프로세스를 **UseCase** 를 활용하여<br/>
   표현 하였습니다.<br/><br/>
 
-# 7. Jira를 활용한 일정관리
+## 6. Jira를 활용한 일정관리
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)<br/><br/>
 
-**1. 담당자 배정**<br/>
+**6-1. 담당자 배정**<br/>
 
 색상별로 담당자를 배정하였고, 각자가 맡은 파트별로 나누었습니다.<br/><br/>
 
-**2. 진행 상황 관리**<br/>
+**6-2. 진행 상황 관리**<br/>
 
 각자가 맡은 기능이 구현되었는지? 진행 중인지?<br/> 
 시작 전인지? 파악하기 위해 작업 진행 중인 경우 **진행중**<br/> 
@@ -263,18 +267,25 @@ BEGIN
 
 모든 팀원이 팀 회의를 통해 작업 진행 상황을 공유하며 진행하였습니다.<br/><br/>
 
-**3. 문제 해결**
+**6-3. 문제 해결**<br/>
 
 작업을 이행해야 하는 날짜에 아무런 상태 값이 표시되어 있지 않다면<br/>
 즉시 어떤 문제점과 어려움이 있는지를 파악하여 함께 공유하고 의견을<br/>
 나누며 문제 해결 방법을 찾아나가는 방향으로 진행하였습니다.<br/><br/>
   
-# 8. API 명세서
+## 7. API 명세서
 - POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <br/><br/>
 
-# 9. 페이지 소개 (User, Store, Admin, Rider)  
+# 8. 핵심기능
+<!--
+제미나이 AI 활용 (날씨, 온도, 계절) 기반 메뉴추천기능
+악성 유저 / 업체 간의 신고기능
+제작이유 : 어느 한쪽만 배려해주는게 아닌 양쪽 서로의 입장을 배려해주기 위함
+-->
+
+## 9. 회원 유형별 메인 페이지 간단 소개 (User, Store, Admin, Rider)  
 
 **DeliveryOracle 메인 페이지**<br/> 
 - 4가지 회원 유형별로 접속할 수 있도록 구현 하였습니다.<br/><br/>
@@ -292,14 +303,7 @@ BEGIN
 **Rider 메인 페이지** <br/><br/>
 ![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076) <br/><br/>
 
-# 10. 핵심기능
-/*
-제미나이 AI 활용 (날씨, 온도, 계절) 기반 메뉴추천기능
-악성 유저 / 업체 간의 신고기능
-제작이유 : 어느 한쪽만 배려해주는게 아닌 양쪽 서로의 입장을 배려해주기 위함
-*/
-
-# 11. 프로젝트 동작 시나리오 & 기능 소개
+## 10. 프로젝트 동작 시나리오 & 기능 소개
 
 ### 공통기능 (로그인, 회원가입)
 
@@ -512,9 +516,9 @@ BEGIN
 - 마지막으로, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
 ![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0)
 
-# 12. 트러블슈팅 경험
+## 11. 트러블슈팅 경험
 
-# 13. 프로젝트 회고 (소감, 느낀점, 아쉬운점)
+## 12. 프로젝트 회고 (소감, 느낀점, 아쉬운점)
 <details>
   <summary>상세보기</summary><br/>
 
