@@ -1,7 +1,18 @@
 # 목차
-[프로젝트명 (개발기간)](#프로젝트명-및-개발기간) <br/><br/>
+[프로젝트명 및 개발기간](#프로젝트명-및-개발기간) <br/><br/>
+
 [1. 프로젝트 소개](#프로젝트-소개) </br><br/>
 [2. 담당업무](#담당업무) </br><br/>
+[3. 담당업무](#담당업무) </br><br/>
+[4. 담당업무](#담당업무) </br><br/>
+[5. 담당업무](#담당업무) </br><br/>
+[6. 담당업무](#담당업무) </br><br/>
+[7. 담당업무](#담당업무) </br><br/>
+[8. 담당업무](#담당업무) </br><br/>
+[9. 담당업무](#담당업무) </br><br/>
+[10. 담당업무](#담당업무) </br><br/>
+[11. 담당업무](#담당업무) </br><br/>
+[12. 담당업무](#담당업무) </br><br/>
 
 # 프로젝트명 및 개발기간
 ![image](https://github.com/user-attachments/assets/df909e7f-b860-4b7a-8617-16e2cde9181b) <br/><br/>
@@ -16,10 +27,10 @@
 ![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152) <br/><br/>
 
 
-## 3.개발환경
+## 개발환경
 ![image](https://github.com/user-attachments/assets/741761d0-6461-48f6-890b-5ee28c516c38)<br/><br/>
 
-## 4. ERD
+## ERD
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)<br/><br/>
 - 총 14개의 테이블을 제작 하였습니다.
 
@@ -246,13 +257,13 @@ BEGIN
 </details>
 <br/><br/>
 
-## 5. UseCase
+## UseCase
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
 - **User, Store, Admin, Rider** 순으로 **4가지** 회원 유형의 <br/>
   전체적인 **작업(기능)** 수행 프로세스를 **UseCase** 를 활용하여<br/>
   표현 하였습니다.<br/><br/>
 
-## 6. Jira를 활용한 일정관리
+## Jira를 활용한 일정관리
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)<br/><br/>
 
 **6-1. 담당자 배정**<br/>
@@ -274,19 +285,19 @@ BEGIN
 즉시 어떤 문제점과 어려움이 있는지를 파악하여 함께 공유하고 의견을<br/>
 나누며 문제 해결 방법을 찾아나가는 방향으로 진행하였습니다.<br/><br/>
   
-## 7. API 명세서
+## API 명세서
 - POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <br/><br/>
 
-# 8. 핵심기능
+# 핵심기능
 <!--
 제미나이 AI 활용 (날씨, 온도, 계절) 기반 메뉴추천기능
 악성 유저 / 업체 간의 신고기능
 제작이유 : 어느 한쪽만 배려해주는게 아닌 양쪽 서로의 입장을 배려해주기 위함
 -->
 
-## 9. 회원 유형별 메인 페이지 간단 소개 (User, Store, Admin, Rider)  
+## 회원 유형별 메인 페이지 소개
 
 **DeliveryOracle 메인 페이지**<br/> 
 - 4가지 회원 유형별로 접속할 수 있도록 구현 하였습니다.<br/><br/>
@@ -304,7 +315,7 @@ BEGIN
 **Rider 메인 페이지** <br/><br/>
 ![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076) <br/><br/>
 
-## 10. 프로젝트 동작 시나리오 & 기능 소개
+## 프로젝트 동작 시나리오
 
 ### 공통기능 (로그인, 회원가입)
 
