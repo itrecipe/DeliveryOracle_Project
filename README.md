@@ -1,6 +1,5 @@
 # 목차
-[프로젝트명 및 개발기간](#프로젝트명-및-개발기간) <br/><br/>
-
+[프로젝트명 & 개발기간](#프로젝트명-개발기간) <br/><br/>
 [1. 프로젝트 소개](#프로젝트-소개) </br><br/>
 [2. 담당업무](#담당업무) </br><br/>
 [3. 개발환경](#개발환경) </br><br/>
@@ -14,7 +13,7 @@
 [11. 트러블 슈팅 경험](#트러블-슈팅-경험) </br><br/>
 [12. 프로젝트 회고](#프로젝트-회고) </br><br/>
 
-# 프로젝트명 및 개발기간
+# 프로젝트명-개발기간
 ![image](https://github.com/user-attachments/assets/df909e7f-b860-4b7a-8617-16e2cde9181b) <br/><br/>
 
 ## 프로젝트 소개
@@ -527,9 +526,13 @@ BEGIN
 - 마지막으로, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
 ![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0)
 
+[목차로 이동하기](#목차)<br/><br/>
+
 ## 트러블 슈팅 경험
 ![image](https://github.com/user-attachments/assets/c553b647-9edd-46b9-b774-f9cdcad334e9) <br/><br/>
 ![image](https://github.com/user-attachments/assets/07ac7069-33a3-448f-90b3-b78ab0c00af1) <br/><br/>
+
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 프로젝트 회고
 <details>
@@ -574,5 +577,4 @@ BEGIN
 </details>
 
 <br/><br/>
-
 [목차로 이동하기](#목차)
