@@ -7,7 +7,9 @@
 [5. UseCase](#유스케이스) </br><br/>
 [6. Jira - 일정관리](#지라를-활용한-일정관리) </br><br/>
 [7. API 명세서](#응용-프로그램-인터페이스-명세서) </br><br/>
-[8. 핵심기능](#핵심기능) </br><br/>
+[8. 핵심기능 1번째](#핵심기능-1) </br><br/>
+[8-1. 핵심기능 2번째](#핵심기능-2) </br><br/>
+[8-2. 핵심기능 3번째](#핵심기능-3) </br><br/>
 [9. 회원 유형별 메인 페이지 소개](#회원-유형별-메인-페이지-소개) </br><br/>
 [10. 프로젝트 동작 시나리오](#프로젝트-동작-시나리오) </br><br/>
 [11. 트러블 슈팅 경험](#트러블-슈팅-경험) </br><br/>
@@ -258,6 +260,7 @@ BEGIN
 ```
 </details>
 <br/><br/>
+
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 유스케이스
@@ -294,14 +297,6 @@ BEGIN
 ## 응용 프로그램 인터페이스 명세서
 - POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/> <br/><br/>
-[목차로 이동하기](#목차)<br/><br/>
-
-# 핵심기능
-<!--
-제미나이 AI 활용 (날씨, 온도, 계절) 기반 메뉴추천기능
-악성 유저 / 업체 간의 신고기능
-제작이유 : 어느 한쪽만 배려해주는게 아닌 양쪽 서로의 입장을 배려해주기 위함
--->
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 회원 유형별 메인 페이지 소개
@@ -393,7 +388,7 @@ BEGIN
 - 다음으로, 결제창이 활성화가 되며, **"배달 정보"** 와 **"결제금액"** 이 표시됩니다.<br/>
   **"결제수단"** 을 선택하여 결제 하도록 구현 하였습니다.<br/><br/>
   현재 결제 수단은 **"포인트 결제 방식"** 으로 구현되어 있으며,<br/>
-  추후에 PG사 결제 모듈을 연결해 볼 예정 입니다.<br/><br/>
+  (추후에 PG사 결제 모듈을 연결해 볼 예정 입니다.)<br/><br/>
 ![image](https://github.com/user-attachments/assets/0c8d4211-2656-4537-bd92-ad8bd42ec5ac)
 
 **☞ 충전하기** <br/>
@@ -457,7 +452,9 @@ BEGIN
   이 가능 하도록 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e51e5b49-34ab-4f4a-b57a-dcc8a5b371e8)
 
-**☞ Gemini AI & Weather API를 활용한 메뉴 추천 기능 (주문 내역 데이터 기반)** <br/>
+### 핵심기능-1
+
+ **Gemini AI API & Weather API를 활용한 메뉴추천 기능**<br/>
 - 다음은, 저희 팀의 **주요기능** 이라고 할 수 있는<br/>
   유저의 주문 내역 테이터를 기반으로 하는<br/>
   메뉴추천 기능 입니다.<br/><br/>
@@ -487,6 +484,7 @@ BEGIN
   작성해 줄 수 있기 때문에 해당 부분을 생각하며 구현 하였습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/bd02f8a7-18fc-47b8-a439-948604fadae1)
 
+### 핵심기능-2
 **☞ 유저의 입장에서 악성 업체를 신고하기** <br/>
 - 유저 입장에서 악성 업체를 신고해 보겠습니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/383a4874-9a33-4d98-ba0d-a16c0d6ef030)
@@ -527,6 +525,10 @@ BEGIN
   정상적으로 악성 유저의 계정도 차단된 모습 입니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/05bc0b29-62b0-4efb-960c-fdd683703dab)
 
+- 여기까지 핵심기능 2번째 끝
+
+### 핵심기능-3
+
 **☞ (관리자 & 업체 & 라이더) 페이지 매출 내역 보기** <br/>
 - 다음은, 업체 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
   ![image](https://github.com/user-attachments/assets/3b9f6658-ec6e-4a14-9c76-47f58edcb282)
@@ -535,7 +537,9 @@ BEGIN
   ![image](https://github.com/user-attachments/assets/b19c4935-0dca-4ff3-aad0-c8b8c20956c1)
 
 - 마지막으로, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
-![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0)
+![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0) <br/><br/>
+
+- 여기까지 핵심기능 3번째 끝 <br/><br/>
 
 [목차로 이동하기](#목차)<br/><br/>
 
