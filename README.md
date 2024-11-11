@@ -3,13 +3,13 @@
 
 [1. 프로젝트 소개](#프로젝트-소개) </br><br/>
 [2. 담당업무](#담당업무) </br><br/>
-[3. 담당업무](#담당업무) </br><br/>
-[4. 담당업무](#담당업무) </br><br/>
-[5. 담당업무](#담당업무) </br><br/>
-[6. 담당업무](#담당업무) </br><br/>
-[7. 담당업무](#담당업무) </br><br/>
-[8. 담당업무](#담당업무) </br><br/>
-[9. 담당업무](#담당업무) </br><br/>
+[3. 개발환경](#개발환경) </br><br/>
+[4. ERD](#개체-관계-다이어그램) </br><br/>
+[5. UseCase](#유스케이스) </br><br/>
+[6. Jira - 일정관리](#지라를-활용한-일정관리) </br><br/>
+[7. API 명세서](#응용-프로그램-인터페이스-명세서) </br><br/>
+[8. 핵심기능](#핵심기능) </br><br/>
+[9. 회원 유형별 메인 페이지 소개](#회원-유형별-메인-페이지-소개) </br><br/>
 [10. 담당업무](#담당업무) </br><br/>
 [11. 담당업무](#담당업무) </br><br/>
 [12. 담당업무](#담당업무) </br><br/>
@@ -26,11 +26,10 @@
 ![image](https://github.com/user-attachments/assets/1efcfd84-5b90-45fa-be91-8181ffd4baed) <br/><br/>
 ![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152) <br/><br/>
 
-
 ## 개발환경
 ![image](https://github.com/user-attachments/assets/741761d0-6461-48f6-890b-5ee28c516c38)<br/><br/>
 
-## ERD
+## 개체-관계-다이어그램
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)<br/><br/>
 - 총 14개의 테이블을 제작 하였습니다.
 
@@ -257,13 +256,13 @@ BEGIN
 </details>
 <br/><br/>
 
-## UseCase
+## 유스케이스
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
 - **User, Store, Admin, Rider** 순으로 **4가지** 회원 유형의 <br/>
   전체적인 **작업(기능)** 수행 프로세스를 **UseCase** 를 활용하여<br/>
   표현 하였습니다.<br/><br/>
 
-## Jira를 활용한 일정관리
+## 지라를 활용한 일정관리
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)<br/><br/>
 
 **6-1. 담당자 배정**<br/>
@@ -285,7 +284,7 @@ BEGIN
 즉시 어떤 문제점과 어려움이 있는지를 파악하여 함께 공유하고 의견을<br/>
 나누며 문제 해결 방법을 찾아나가는 방향으로 진행하였습니다.<br/><br/>
   
-## API 명세서
+## 응용 프로그램 인터페이스 명세서
 - POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
 <a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
 <br/><br/>
@@ -528,9 +527,11 @@ BEGIN
 - 마지막으로, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
 ![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0)
 
-## 11. 트러블슈팅 경험
+## 트러블 슈팅 경험
+![image](https://github.com/user-attachments/assets/c553b647-9edd-46b9-b774-f9cdcad334e9) <br/><br/>
+![image](https://github.com/user-attachments/assets/07ac7069-33a3-448f-90b3-b78ab0c00af1) <br/><br/>
 
-## 12. 프로젝트 회고 (소감, 느낀점, 아쉬운점)
+## 프로젝트 회고
 <details>
   <summary>상세보기</summary><br/>
 
