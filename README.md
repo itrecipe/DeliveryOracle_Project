@@ -450,7 +450,7 @@ BEGIN
 
 - 관리자 페이지에서도 업체 페이지와 동일하게 **"주문 내역 확인"** <br/>
   이 가능 하도록 구현 하였습니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/e51e5b49-34ab-4f4a-b57a-dcc8a5b371e8)
+![image](https://github.com/user-attachments/assets/e51e5b49-34ab-4f4a-b57a-dcc8a5b371e8) <br/><br/>
 
 ### 핵심기능-1
 
@@ -462,7 +462,9 @@ BEGIN
   일반 유저 회원의 주문 내역 데이터를 기반으로 하여<br/>
   **"계절, 날씨, 기온"** 에 따라 AI가 자동으로<br/>
   메뉴를 추천해 줍니다.<br/><br/>
-![image](https://github.com/user-attachments/assets/e53d7e34-88f1-4ad0-936e-b0eba66c4659)
+![image](https://github.com/user-attachments/assets/e53d7e34-88f1-4ad0-936e-b0eba66c4659) <br/><br/>
+
+- **핵심기능 1번째 끝**
 
 **☞ 유저의 입장에서 리뷰쓰기** <br/>
 - 다음은 유저 페이지의 **리뷰작성** 기능을 소개 합니다.<br/><br/>
@@ -523,9 +525,9 @@ BEGIN
   ![image](https://github.com/user-attachments/assets/4bbc13e6-f086-4128-bb89-548f68569315)
   
   정상적으로 악성 유저의 계정도 차단된 모습 입니다.<br/><br/>
-  ![image](https://github.com/user-attachments/assets/05bc0b29-62b0-4efb-960c-fdd683703dab)
+  ![image](https://github.com/user-attachments/assets/05bc0b29-62b0-4efb-960c-fdd683703dab) <br/><br/>
 
-- 여기까지 핵심기능 2번째 끝
+- **핵심기능 2번째 끝**
 
 ### 핵심기능-3
 
@@ -539,7 +541,7 @@ BEGIN
 - 마지막으로, 라이더 페이지의 일 단위 매출내역이 그래프로 표현되어 보여지도록 구현 하였습니다. <br/><br/>
 ![image](https://github.com/user-attachments/assets/8f7c1ad0-ed54-4146-bd9d-71239c3902e0) <br/><br/>
 
-- 여기까지 핵심기능 3번째 끝 <br/><br/>
+- **핵심기능 3번째 끝** <br/><br/>
 
 [목차로 이동하기](#목차)<br/><br/>
 
