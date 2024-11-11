@@ -464,7 +464,9 @@ BEGIN
   메뉴를 추천해 줍니다.<br/><br/>
 ![image](https://github.com/user-attachments/assets/e53d7e34-88f1-4ad0-936e-b0eba66c4659) <br/><br/>
 
-- **핵심기능 1번째 끝**
+- **핵심기능 1번째 끝** <br/><br/>
+
+[목차로 이동하기](#목차)<br/><br/>
 
 **☞ 유저의 입장에서 리뷰쓰기** <br/>
 - 다음은 유저 페이지의 **리뷰작성** 기능을 소개 합니다.<br/><br/>
@@ -527,7 +529,9 @@ BEGIN
   정상적으로 악성 유저의 계정도 차단된 모습 입니다.<br/><br/>
   ![image](https://github.com/user-attachments/assets/05bc0b29-62b0-4efb-960c-fdd683703dab) <br/><br/>
 
-- **핵심기능 2번째 끝**
+- **핵심기능 2번째 끝** <br/><br/>
+
+[목차로 이동하기](#목차)<br/><br/>
 
 ### 핵심기능-3
 
