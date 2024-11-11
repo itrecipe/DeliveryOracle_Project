@@ -15,18 +15,22 @@
 
 # 프로젝트명-개발기간
 ![image](https://github.com/user-attachments/assets/df909e7f-b860-4b7a-8617-16e2cde9181b) <br/><br/>
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 프로젝트 소개
 ![image](https://github.com/user-attachments/assets/ae203d6d-0160-4636-9e74-89fc0162d3f0) <br/><br/>
 ![image](https://github.com/user-attachments/assets/3b1f5847-22b2-4262-b951-305cfb85d270) <br/><br/>
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 담당업무
 ![image](https://github.com/user-attachments/assets/66ad3f46-7783-4e5c-9ea8-cdef8bea6af3) <br/><br/>
 ![image](https://github.com/user-attachments/assets/1efcfd84-5b90-45fa-be91-8181ffd4baed) <br/><br/>
 ![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152) <br/><br/>
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 개발환경
 ![image](https://github.com/user-attachments/assets/741761d0-6461-48f6-890b-5ee28c516c38)<br/><br/>
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 개체-관계-다이어그램
 ![DeliveryOracle_ERD](https://github.com/user-attachments/assets/5efc7279-a238-4d75-bc04-8155d1fbc517)<br/><br/>
@@ -254,12 +258,14 @@ BEGIN
 ```
 </details>
 <br/><br/>
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 유스케이스
 ![DeliveryOracle_UseCase drawio](https://github.com/user-attachments/assets/9013e409-9b7f-46ba-bc21-3d35c740edc5)
 - **User, Store, Admin, Rider** 순으로 **4가지** 회원 유형의 <br/>
   전체적인 **작업(기능)** 수행 프로세스를 **UseCase** 를 활용하여<br/>
   표현 하였습니다.<br/><br/>
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 지라를 활용한 일정관리
 ![image](https://github.com/user-attachments/assets/1e17488e-dea1-4caf-9eb1-80a834bddb6f)<br/><br/>
@@ -277,16 +283,18 @@ BEGIN
 
 모든 팀원이 팀 회의를 통해 작업 진행 상황을 공유하며 진행하였습니다.<br/><br/>
 
-**6-3. 문제 해결**<br/>
+**3. 문제 해결**<br/>
 
 작업을 이행해야 하는 날짜에 아무런 상태 값이 표시되어 있지 않다면<br/>
 즉시 어떤 문제점과 어려움이 있는지를 파악하여 함께 공유하고 의견을<br/>
 나누며 문제 해결 방법을 찾아나가는 방향으로 진행하였습니다.<br/><br/>
+
+[목차로 이동하기](#목차)<br/><br/>
   
 ## 응용 프로그램 인터페이스 명세서
 - POSTMAN을 활용하여 작성한 API 명세서 링크 ☞ Click Here!! ↓↓↓<br/>
-<a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/>
-<br/><br/>
+<a>https://documenter.getpostman.com/view/35282954/2sAXjDevm5<a/> <br/><br/>
+[목차로 이동하기](#목차)<br/><br/>
 
 # 핵심기능
 <!--
@@ -294,6 +302,7 @@ BEGIN
 악성 유저 / 업체 간의 신고기능
 제작이유 : 어느 한쪽만 배려해주는게 아닌 양쪽 서로의 입장을 배려해주기 위함
 -->
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 회원 유형별 메인 페이지 소개
 
@@ -312,6 +321,8 @@ BEGIN
 
 **Rider 메인 페이지** <br/><br/>
 ![image](https://github.com/user-attachments/assets/b49af423-655d-49cc-b771-5c647908c076) <br/><br/>
+
+[목차로 이동하기](#목차)<br/><br/>
 
 ## 프로젝트 동작 시나리오
 
