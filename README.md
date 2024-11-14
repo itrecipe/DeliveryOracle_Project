@@ -25,13 +25,13 @@
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 담당업무
-![image](https://github.com/user-attachments/assets/66ad3f46-7783-4e5c-9ea8-cdef8bea6af3) <br/><br/>
+![image](https://github.com/user-attachments/assets/8ee74965-d8c3-46d5-862e-61026f88090c) <br/><br/>
 ![image](https://github.com/user-attachments/assets/1efcfd84-5b90-45fa-be91-8181ffd4baed) <br/><br/>
 ![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152) <br/><br/>
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 개발환경
-![image](https://github.com/user-attachments/assets/741761d0-6461-48f6-890b-5ee28c516c38)<br/><br/>
+![image](https://github.com/user-attachments/assets/879487bf-f9e0-4dfe-8cdc-72138a9512e9)<br/><br/>
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 개체-관계-다이어그램
@@ -550,8 +550,7 @@ BEGIN
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 트러블 슈팅 경험
-![image](https://github.com/user-attachments/assets/c553b647-9edd-46b9-b774-f9cdcad334e9) <br/><br/>
-![image](https://github.com/user-attachments/assets/07ac7069-33a3-448f-90b3-b78ab0c00af1) <br/><br/>
+![image](https://github.com/user-attachments/assets/2adc2ba3-734d-439a-b677-2f18e3b935f5) <br/><br/>
 
 [목차로 이동하기](#목차)<br/><br/>
 
