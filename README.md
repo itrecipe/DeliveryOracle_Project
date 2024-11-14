@@ -25,9 +25,9 @@
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 담당업무
-![image](https://github.com/user-attachments/assets/8ee74965-d8c3-46d5-862e-61026f88090c) <br/><br/>
-![image](https://github.com/user-attachments/assets/1efcfd84-5b90-45fa-be91-8181ffd4baed) <br/><br/>
-![image](https://github.com/user-attachments/assets/6aac4ecd-0917-4d35-8f03-acd383317152) <br/><br/>
+![image](https://github.com/user-attachments/assets/83e20552-997a-457b-bd82-4166cf582ab1) <br/><br/>
+![image](https://github.com/user-attachments/assets/54abdcfa-9003-4bcd-8639-128115748ef4) <br/><br/>
+![image](https://github.com/user-attachments/assets/9223c8a6-c4e6-4383-8a1e-c8b8328ca971) <br/><br/>
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 개발환경
