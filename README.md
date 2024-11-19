@@ -31,7 +31,12 @@
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 개발환경
-![image](https://github.com/user-attachments/assets/879487bf-f9e0-4dfe-8cdc-72138a9512e9)<br/><br/>
+![image](https://github.com/user-attachments/assets/879487bf-f9e0-4dfe-8cdc-72138a9512e9)<br/>
+
+**- BE : java(17), Spring Boot(3.2.0), Spring Security & JWT, MyBatis, JDBC Template** <br/>
+**- FE : HTML5, CSS3, JavaScript(ES6), React** <br/>
+**- DB : MySQL 8.0** <br/>
+  
 [목차로 이동하기](#목차)<br/><br/>
 
 ## 개체-관계-다이어그램
